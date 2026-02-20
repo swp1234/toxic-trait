@@ -19,7 +19,7 @@
 }
 
 /* ===== Light mode ===== */
-.light-mode {
+[data-theme="light"] {
   --bg: #f8fafc;
   --bg2: #f1f5f9;
   --surface: #ffffff;
@@ -99,7 +99,7 @@ body {
   backdrop-filter: blur(20px); z-index: 1001;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
-.light-mode .lang-dropdown {
+[data-theme="light"] .lang-dropdown {
   background: rgba(255, 255, 255, 0.97);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
@@ -228,7 +228,7 @@ header {
   display: flex; align-items: center; gap: 12px;
   line-height: 1.5; min-height: 44px;
 }
-.light-mode .choice-btn {
+[data-theme="light"] .choice-btn {
   background: rgba(0, 0, 0, 0.02);
 }
 .choice-btn:hover {
@@ -367,7 +367,7 @@ header {
   background: #1a1a1a; color: #fff;
   border: 1px solid #333;
 }
-.light-mode .share-twitter {
+[data-theme="light"] .share-twitter {
   background: #0f1419; color: #fff;
 }
 .share-copied {
