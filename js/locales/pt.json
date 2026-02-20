@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Detector de Traço Tóxico | DopaBrain",
+    "description": "Descubra seu traço tóxico escondido com 12 perguntas situacionais brutalmente honestas. Todo mundo tem um."
+  },
+  "a11y": {
+    "skip": "Ir para o conteúdo"
+  },
+  "app": {
+    "title": "☠️ Detector de Traço Tóxico",
+    "subtitle": "Todo mundo tem um...",
+    "loading": "Analisando...",
+    "start": "Revelar Meu Traço",
+    "warning": "Resultados brutalmente honestos à frente!"
+  },
+  "question": {
+    "progress": "{current} / {total}"
+  },
+  "questions": {
+    "q1": {
+      "text": "Seu amigo foi promovido no trabalho. Seu primeiro pensamento é...",
+      "a": "\"Fico tão feliz por ele/a!\" (emocionado de verdade)",
+      "b": "\"Por que não eu...?\"",
+      "c": "\"Preciso me esforçar mais\" (já pesquisando cursos)",
+      "d": "\"Ah, promoção é superestimada\""
+    },
+    "q2": {
+      "text": "Você recebe uma mensagem vaga do seu crush. Você...",
+      "a": "Analisa cada palavra por 30 minutos",
+      "b": "Responde \"ok.\"",
+      "c": "Printa e manda no grupo pra análise coletiva",
+      "d": "Responde normalmente e segue a vida"
+    },
+    "q3": {
+      "text": "Os planos mudam de última hora. Você...",
+      "a": "Tem um colapso mental completo",
+      "b": "Diz \"tudo bem!\" (morrendo por dentro)",
+      "c": "Some e não responde ninguém",
+      "d": "Realmente não liga"
+    },
+    "q4": {
+      "text": "Um amigo desabafa sobre os problemas dele. Você...",
+      "a": "Absorve todas as emoções como uma esponja",
+      "b": "Secretamente pensa que seus problemas são maiores",
+      "c": "Dá conselhos não pedidos e um plano de 5 etapas",
+      "d": "Escuta mas mantém limites"
+    },
+    "q5": {
+      "text": "Você cometeu um pequeno erro no trabalho. Você...",
+      "a": "Repassa mentalmente por 3 semanas",
+      "b": "Sutilmente coloca a culpa em outra pessoa",
+      "c": "Nem percebeu que foi um erro (protagonista vibe)",
+      "d": "Corrige e segue em frente"
+    },
+    "q6": {
+      "text": "Alguém discorda de você no grupo. Você...",
+      "a": "Escreve uma resposta de 3 parágrafos",
+      "b": "Deixa no vácuo por dias",
+      "c": "\"Tá bom... você que sabe 🙃\"",
+      "d": "Tem uma discussão respeitosa"
+    },
+    "q7": {
+      "text": "Seu/sua parceiro/a sai com alguém atraente. Você...",
+      "a": "Checa as redes sociais 47 vezes",
+      "b": "\"Diverte-se! 😊\" (rastreando a localização)",
+      "c": "Não sente nada, você é o/a protagonista",
+      "d": "Confia completamente"
+    },
+    "q8": {
+      "text": "Um amigo pede sua opinião sincera. Você...",
+      "a": "Adoça tudo",
+      "b": "É brutalmente honesto/a",
+      "c": "\"Hmm é... interessante\"",
+      "d": "Dá um feedback honesto e cuidadoso"
+    },
+    "q9": {
+      "text": "Você está organizando uma viagem em grupo. Você...",
+      "a": "Cria uma apresentação de 47 slides",
+      "b": "Deixa todo mundo decidir (e reclama depois)",
+      "c": "Só planeja o que você quer fazer",
+      "d": "Colabora no planejamento"
+    },
+    "q10": {
+      "text": "Alguém te deixa no vácuo. Você...",
+      "a": "Assume que te odeiam",
+      "b": "Deixa no vácuo pelo dobro do tempo",
+      "c": "Deleta a conversa",
+      "d": "Assume que está ocupado/a"
+    },
+    "q11": {
+      "text": "Seu amigo consegue algo que você fracassou. Você...",
+      "a": "Fica genuinamente feliz (depois de um breve luto)",
+      "b": "Absorve a felicidade dele e se sente melhor",
+      "c": "Pensa \"minha hora vai chegar, eu sou diferente\"",
+      "d": "Se inspira pra tentar de novo"
+    },
+    "q12": {
+      "text": "Um relacionamento fica sério. Você...",
+      "a": "Começa a planejar o casamento na cabeça",
+      "b": "De repente fica muito ocupado/a",
+      "c": "Precisa controlar cada detalhe",
+      "d": "Deixa rolar naturalmente"
+    }
+  },
+  "archetypes": {
+    "overthinker": {
+      "emoji": "🧠",
+      "title": "O/A Pensador(a) Crônico/a",
+      "desc": "Você já imaginou 47 cenários de catástrofe antes de terminar esta frase."
+    },
+    "passive": {
+      "emoji": "😏",
+      "title": "O/A Passivo-Agressivo/a",
+      "desc": "Seu 'tô bem.' já causou mais estrago que a maioria dos desastres naturais."
+    },
+    "mainchar": {
+      "emoji": "👑",
+      "title": "O/A Protagonista",
+      "desc": "Todos os outros são NPCs no seu filme e você está de boa com isso."
+    },
+    "sponge": {
+      "emoji": "🧽",
+      "title": "A Esponja Emocional",
+      "desc": "Você absorve os sentimentos de todo mundo como um roteador WiFi humano de emoções."
+    },
+    "control": {
+      "emoji": "🎮",
+      "title": "O/A Controlador(a)",
+      "desc": "Sua agenda colorida tem uma agenda reserva por precaução."
+    },
+    "ghost": {
+      "emoji": "👻",
+      "title": "O/A Fantasma",
+      "desc": "Você aperfeiçoou a arte de sumir justo quando as coisas ficam sérias."
+    },
+    "jealous": {
+      "emoji": "👀",
+      "title": "O/A Amigo/a Ciumento/a",
+      "desc": "Você apoia o sucesso dos amigos... depois de um breve período de luto."
+    },
+    "pleaser": {
+      "emoji": "🤝",
+      "title": "O/A Agradador(a)",
+      "desc": "Você pediria desculpas por levar uma facada porque a faca pode estar desconfortável."
+    }
+  },
+  "result": {
+    "title": "Seu Traço Tóxico",
+    "toxicityLevel": "Nível de Toxicidade",
+    "secondary": "Traço secundário: {trait}",
+    "badge": "Me senti muito atacado/a!",
+    "retake": "Refazer Teste"
+  },
+  "share": {
+    "title": "Detector de Traço Tóxico",
+    "text": "Meu traço tóxico: {trait} {emoji} ☠️ E o seu?",
+    "copied": "Copiado!",
+    "twitter": "Compartilhar no Twitter",
+    "copyUrl": "Copiar Link"
+  },
+  "nav": {
+    "back": "DopaBrain Início"
+  }
+}

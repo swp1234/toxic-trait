@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Detector de Rasgo Tóxico | DopaBrain",
+    "description": "Descubre tu rasgo tóxico oculto con 12 preguntas situacionales brutalmente honestas. Todos tenemos uno."
+  },
+  "a11y": {
+    "skip": "Ir al contenido"
+  },
+  "app": {
+    "title": "☠️ Detector de Rasgo Tóxico",
+    "subtitle": "Todos tenemos uno...",
+    "loading": "Analizando...",
+    "start": "Descubrir Mi Rasgo",
+    "warning": "¡Resultados brutalmente honestos!"
+  },
+  "question": {
+    "progress": "{current} / {total}"
+  },
+  "questions": {
+    "q1": {
+      "text": "Tu amigo/a consigue un ascenso. Tu primer pensamiento es...",
+      "a": "\"¡Me alegro mucho!\" (de verdad emocionado/a)",
+      "b": "\"¿Y por qué yo no...?\"",
+      "c": "\"Tengo que esforzarme más\" (ya buscando cursos online)",
+      "d": "\"Bah, los ascensos están sobrevalorados\""
+    },
+    "q2": {
+      "text": "Recibes un mensaje ambiguo de quien te gusta. Tú...",
+      "a": "Analizas cada palabra durante 30 minutos",
+      "b": "Respondes \"ok.\"",
+      "c": "Capturas pantalla para el análisis grupal del chat",
+      "d": "Respondes normal y sigues con tu vida"
+    },
+    "q3": {
+      "text": "Los planes cambian a última hora. Tú...",
+      "a": "Tienes un colapso mental total",
+      "b": "Dices \"¡claro, sin problema!\" (muriendo por dentro)",
+      "c": "Desapareces y no contestas",
+      "d": "Realmente no te importa"
+    },
+    "q4": {
+      "text": "Un/a amigo/a te cuenta sus problemas. Tú...",
+      "a": "Absorbes todas sus emociones como una esponja",
+      "b": "Piensas secretamente que tus problemas son peores",
+      "c": "Das consejos no pedidos y un plan de 5 pasos",
+      "d": "Escuchas pero pones límites"
+    },
+    "q5": {
+      "text": "Cometiste un pequeño error en el trabajo. Tú...",
+      "a": "Lo repites en tu cabeza durante 3 semanas",
+      "b": "Le echas la culpa sutilmente a otra persona",
+      "c": "Ni te diste cuenta de que fue un error",
+      "d": "Lo arreglas y sigues adelante"
+    },
+    "q6": {
+      "text": "Alguien te contradice en el chat grupal. Tú...",
+      "a": "Escribes una respuesta de 3 párrafos",
+      "b": "Lo dejas en visto varios días",
+      "c": "\"Claro... lo que tú digas 🙃\"",
+      "d": "Tienes una discusión respetuosa"
+    },
+    "q7": {
+      "text": "Tu pareja sale con alguien atractivo/a. Tú...",
+      "a": "Revisas sus redes sociales 47 veces",
+      "b": "\"¡Pásala bien! 😊\" (rastreando su ubicación)",
+      "c": "No sientes nada, eres el/la protagonista",
+      "d": "Confías completamente"
+    },
+    "q8": {
+      "text": "Un/a amigo/a pide tu opinión sincera. Tú...",
+      "a": "Endulzas todo",
+      "b": "Eres brutalmente honesto/a",
+      "c": "\"Mmm es... interesante\"",
+      "d": "Das una opinión honesta y considerada"
+    },
+    "q9": {
+      "text": "Estás organizando un viaje grupal. Tú...",
+      "a": "Creas una presentación de 47 diapositivas",
+      "b": "Dejas que los demás decidan (y luego te quejas)",
+      "c": "Solo planeas lo que tú quieres hacer",
+      "d": "Colaboras en la planificación"
+    },
+    "q10": {
+      "text": "Alguien te deja en visto. Tú...",
+      "a": "Asumes que te odian",
+      "b": "Los dejas en visto el doble de tiempo",
+      "c": "Borras la conversación",
+      "d": "Asumes que están ocupados"
+    },
+    "q11": {
+      "text": "Tu amigo/a triunfa en algo que tú fallaste. Tú...",
+      "a": "Te alegras de verdad (después de un breve luto)",
+      "b": "Absorbes su felicidad y te sientes mejor",
+      "c": "Piensas \"mi momento llegará, soy diferente\"",
+      "d": "Te inspiras para intentarlo de nuevo"
+    },
+    "q12": {
+      "text": "Una relación se pone seria. Tú...",
+      "a": "Empiezas a planear la boda en tu cabeza",
+      "b": "De repente estás muy ocupado/a",
+      "c": "Necesitas controlar cada aspecto",
+      "d": "Te dejas llevar"
+    }
+  },
+  "archetypes": {
+    "overthinker": {
+      "emoji": "🧠",
+      "title": "El/La Sobrepiensa-Todo",
+      "desc": "Ya imaginaste 47 escenarios catastróficos antes de terminar esta frase."
+    },
+    "passive": {
+      "emoji": "😏",
+      "title": "El/La Pasivo-Agresivo/a",
+      "desc": "Tu 'estoy bien.' ha causado más daño que la mayoría de desastres naturales."
+    },
+    "mainchar": {
+      "emoji": "👑",
+      "title": "El/La Protagonista",
+      "desc": "Los demás son NPCs en tu película y estás perfectamente bien con eso."
+    },
+    "sponge": {
+      "emoji": "🧽",
+      "title": "La Esponja Emocional",
+      "desc": "Absorbes los sentimientos de todos como un router WiFi humano de emociones."
+    },
+    "control": {
+      "emoji": "🎮",
+      "title": "El/La Control Freak",
+      "desc": "Tu calendario con código de colores tiene un calendario de respaldo por si acaso."
+    },
+    "ghost": {
+      "emoji": "👻",
+      "title": "El/La Fantasma",
+      "desc": "Has perfeccionado el arte de desaparecer justo cuando las cosas se ponen serias."
+    },
+    "jealous": {
+      "emoji": "👀",
+      "title": "El/La Amigo/a Celoso/a",
+      "desc": "Apoyas el éxito de tus amigos... después de un breve periodo de luto."
+    },
+    "pleaser": {
+      "emoji": "🤝",
+      "title": "El/La Complaciente",
+      "desc": "Pedirías perdón por ser apuñalado/a porque el cuchillo podría estar incómodo."
+    }
+  },
+  "result": {
+    "title": "Tu Rasgo Tóxico",
+    "toxicityLevel": "Nivel de Toxicidad",
+    "secondary": "Rasgo secundario: {trait}",
+    "badge": "¡Me siento muy atacado/a!",
+    "retake": "Repetir Test"
+  },
+  "share": {
+    "title": "Detector de Rasgo Tóxico",
+    "text": "Mi rasgo tóxico: {trait} {emoji} ☠️ ¿Cuál es el tuyo?",
+    "copied": "¡Copiado!",
+    "twitter": "Compartir en Twitter",
+    "copyUrl": "Copiar Enlace"
+  },
+  "nav": {
+    "back": "DopaBrain Inicio"
+  }
+}

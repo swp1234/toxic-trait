@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Toxischer-Eigenschaft-Detektor | DopaBrain",
+    "description": "Entdecke deine verborgene toxische Eigenschaft mit 12 brutal ehrlichen Situationsfragen. Jeder hat eine."
+  },
+  "a11y": {
+    "skip": "Zum Inhalt springen"
+  },
+  "app": {
+    "title": "☠️ Toxischer-Eigenschaft-Detektor",
+    "subtitle": "Jeder hat eine...",
+    "loading": "Analysiere...",
+    "start": "Meine Eigenschaft aufdecken",
+    "warning": "Brutal ehrliche Ergebnisse voraus!"
+  },
+  "question": {
+    "progress": "{current} / {total}"
+  },
+  "questions": {
+    "q1": {
+      "text": "Dein Freund wurde befördert. Dein erster Gedanke ist...",
+      "a": "\"Ich freue mich so für dich!\" (echt gerührt)",
+      "b": "\"Warum nicht ich...?\"",
+      "c": "\"Ich muss härter arbeiten\" (googelt sofort Selbsthilfe)",
+      "d": "\"Beförderungen sind überbewertet\""
+    },
+    "q2": {
+      "text": "Du bekommst eine vage Nachricht von deinem Schwarm. Du...",
+      "a": "Analysierst jedes Wort 30 Minuten lang",
+      "b": "Antwortest \"ok.\"",
+      "c": "Machst einen Screenshot für die Gruppenanalyse",
+      "d": "Antwortest normal und machst weiter"
+    },
+    "q3": {
+      "text": "Pläne ändern sich in letzter Minute. Du...",
+      "a": "Hast einen kompletten Nervenzusammenbruch",
+      "b": "Sagst \"klar, kein Problem!\" (stirbst innerlich)",
+      "c": "Verschwindest und antwortest nicht",
+      "d": "Findest es wirklich nicht schlimm"
+    },
+    "q4": {
+      "text": "Ein Freund erzählt dir von seinen Problemen. Du...",
+      "a": "Saugst alle Emotionen wie ein Schwamm auf",
+      "b": "Denkst heimlich, deine Probleme sind größer",
+      "c": "Gibst ungebetene Ratschläge und einen 5-Schritte-Plan",
+      "d": "Hörst zu, aber setzt Grenzen"
+    },
+    "q5": {
+      "text": "Du hast einen kleinen Fehler bei der Arbeit gemacht. Du...",
+      "a": "Spielst ihn 3 Wochen im Kopf ab",
+      "b": "Schiebst es subtil auf jemand anderen",
+      "c": "Merkst nicht mal, dass es ein Fehler war (Hauptcharakter-Energie)",
+      "d": "Behebst ihn und machst weiter"
+    },
+    "q6": {
+      "text": "Jemand widerspricht dir im Gruppenchat. Du...",
+      "a": "Schreibst eine 3-Absatz-Antwort",
+      "b": "Lässt sie tagelang auf gelesen",
+      "c": "\"Klar... was du sagst 🙃\"",
+      "d": "Führst eine respektvolle Diskussion"
+    },
+    "q7": {
+      "text": "Dein Partner trifft sich mit jemandem Attraktivem. Du...",
+      "a": "Checkst deren Social Media 47 Mal",
+      "b": "\"Viel Spaß! 😊\" (trackst den Standort)",
+      "c": "Fühlst nichts, du bist der Hauptcharakter",
+      "d": "Vertraust vollkommen"
+    },
+    "q8": {
+      "text": "Ein Freund bittet um ehrliches Feedback. Du...",
+      "a": "Verpackst alles in Watte",
+      "b": "Gibst brutal ehrliches Feedback",
+      "c": "\"Hmm, es ist... interessant\"",
+      "d": "Gibst durchdachtes ehrliches Feedback"
+    },
+    "q9": {
+      "text": "Du organisierst eine Gruppenreise. Du...",
+      "a": "Erstellst eine 47-Folien-Präsentation",
+      "b": "Lässt alle anderen entscheiden (beschwerst dich dann)",
+      "c": "Planst nur Aktivitäten, die du willst",
+      "d": "Planst gemeinsam"
+    },
+    "q10": {
+      "text": "Jemand lässt dich auf gelesen. Du...",
+      "a": "Nimmst an, sie hassen dich",
+      "b": "Lässt sie doppelt so lange auf gelesen",
+      "c": "Löschst die Konversation",
+      "d": "Nimmst an, sie sind einfach beschäftigt"
+    },
+    "q11": {
+      "text": "Dein Freund schafft, woran du gescheitert bist. Du...",
+      "a": "Freust dich echt (nach einer kurzen Trauerphase)",
+      "b": "Saugst deren Glück auf und fühlst dich besser",
+      "c": "Denkst \"meine Zeit kommt, ich bin anders\"",
+      "d": "Bist inspiriert, es nochmal zu versuchen"
+    },
+    "q12": {
+      "text": "Eine Beziehung wird ernst. Du...",
+      "a": "Fängst im Kopf an, die Hochzeit zu planen",
+      "b": "Bist plötzlich sehr beschäftigt",
+      "c": "Musst jeden Aspekt kontrollieren",
+      "d": "Lässt es auf dich zukommen"
+    }
+  },
+  "archetypes": {
+    "overthinker": {
+      "emoji": "🧠",
+      "title": "Der/Die Chronische Überdenker/in",
+      "desc": "Du hast dir bereits 47 Worst-Case-Szenarien vorgestellt, bevor du diesen Satz zu Ende gelesen hast."
+    },
+    "passive": {
+      "emoji": "😏",
+      "title": "Der/Die Passiv-Aggressive Texter/in",
+      "desc": "Dein 'Mir geht's gut.' hat mehr Schaden angerichtet als die meisten Naturkatastrophen."
+    },
+    "mainchar": {
+      "emoji": "👑",
+      "title": "Der/Die Hauptcharakter",
+      "desc": "Alle anderen sind NPCs in deinem Film und du findest das völlig okay."
+    },
+    "sponge": {
+      "emoji": "🧽",
+      "title": "Der/Die Emotionale Schwamm",
+      "desc": "Du saugst die Gefühle aller auf wie ein menschlicher WiFi-Router für Emotionen."
+    },
+    "control": {
+      "emoji": "🎮",
+      "title": "Der/Die Kontrollfreak",
+      "desc": "Dein farbcodierter Kalender hat einen Backup-Kalender für alle Fälle."
+    },
+    "ghost": {
+      "emoji": "👻",
+      "title": "Der/Die Geist",
+      "desc": "Du hast die Kunst perfektioniert, genau dann zu verschwinden, wenn es ernst wird."
+    },
+    "jealous": {
+      "emoji": "👀",
+      "title": "Der/Die Eifersüchtige Freund/in",
+      "desc": "Du unterstützt den Erfolg deiner Freunde... nach einer kurzen Trauerphase."
+    },
+    "pleaser": {
+      "emoji": "🤝",
+      "title": "Der/Die People Pleaser",
+      "desc": "Du würdest dich dafür entschuldigen, erstochen zu werden, weil das Messer sich unwohl fühlen könnte."
+    }
+  },
+  "result": {
+    "title": "Deine Toxische Eigenschaft",
+    "toxicityLevel": "Toxizitätslevel",
+    "secondary": "Sekundäre Eigenschaft: {trait}",
+    "badge": "Ich fühle mich so angegriffen!",
+    "retake": "Nochmal testen"
+  },
+  "share": {
+    "title": "Toxischer-Eigenschaft-Detektor",
+    "text": "Meine toxische Eigenschaft: {trait} {emoji} ☠️ Was ist deine?",
+    "copied": "Kopiert!",
+    "twitter": "Auf Twitter teilen",
+    "copyUrl": "Link kopieren"
+  },
+  "nav": {
+    "back": "DopaBrain Startseite"
+  }
+}

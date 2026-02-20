@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Detektor Sifat Toksik | DopaBrain",
+    "description": "Temukan sifat toksikmu yang tersembunyi dengan 12 pertanyaan situasional yang jujur brutal. Semua orang punya satu."
+  },
+  "a11y": {
+    "skip": "Langsung ke konten"
+  },
+  "app": {
+    "title": "☠️ Detektor Sifat Toksik",
+    "subtitle": "Semua orang punya satu...",
+    "loading": "Menganalisis...",
+    "start": "Ungkap Sifat Toksikku",
+    "warning": "Hasil yang jujur brutal menanti!"
+  },
+  "question": {
+    "progress": "{current} / {total}"
+  },
+  "questions": {
+    "q1": {
+      "text": "Temanmu dapat promosi di kantor. Pikiran pertamamu adalah...",
+      "a": "\"Aku senang banget buat dia!\" (terharu beneran)",
+      "b": "\"Kenapa bukan aku...?\"",
+      "c": "\"Aku harus kerja lebih keras\" (langsung googling self-improvement)",
+      "d": "\"Promosi tuh overrated\""
+    },
+    "q2": {
+      "text": "Kamu dapat chat ambigu dari gebetan. Kamu...",
+      "a": "Analisis setiap kata selama 30 menit",
+      "b": "Balas \"ok.\"",
+      "c": "Screenshot buat analisis bareng di grup chat",
+      "d": "Balas biasa dan lanjut hidup"
+    },
+    "q3": {
+      "text": "Rencana berubah mendadak. Kamu...",
+      "a": "Mental breakdown total",
+      "b": "Bilang \"santai, gak masalah!\" (padahal mau nangis)",
+      "c": "Menghilang dan gak balas chat",
+      "d": "Beneran gak masalah"
+    },
+    "q4": {
+      "text": "Teman curhat soal masalahnya. Kamu...",
+      "a": "Nyerap semua emosinya kayak spons",
+      "b": "Diam-diam mikir masalahmu lebih berat",
+      "c": "Kasih saran yang gak diminta plus rencana 5 langkah",
+      "d": "Dengerin tapi tetap jaga batasan"
+    },
+    "q5": {
+      "text": "Kamu bikin kesalahan kecil di kantor. Kamu...",
+      "a": "Replay di kepala selama 3 minggu",
+      "b": "Diam-diam salahin orang lain",
+      "c": "Gak sadar itu kesalahan (main character energy)",
+      "d": "Benerin dan move on"
+    },
+    "q6": {
+      "text": "Seseorang gak setuju sama kamu di grup chat. Kamu...",
+      "a": "Nulis balasan 3 paragraf",
+      "b": "Read doang berhari-hari",
+      "c": "\"Iya deh... terserah kamu 🙃\"",
+      "d": "Diskusi dengan sopan"
+    },
+    "q7": {
+      "text": "Pasanganmu hang out sama orang yang menarik. Kamu...",
+      "a": "Stalking sosmed 47 kali",
+      "b": "\"Have fun! 😊\" (sambil tracking lokasi)",
+      "c": "Gak ngerasa apa-apa, kamu kan main character",
+      "d": "Percaya sepenuhnya"
+    },
+    "q8": {
+      "text": "Teman minta pendapat jujur. Kamu...",
+      "a": "Manis-manisin semuanya",
+      "b": "Kasih feedback yang brutal jujur",
+      "c": "\"Hmm ini... unik sih\"",
+      "d": "Kasih feedback jujur tapi bijak"
+    },
+    "q9": {
+      "text": "Kamu ngatur trip bareng. Kamu...",
+      "a": "Bikin presentasi 47 slide",
+      "b": "Biarin semua orang yang mutusin (terus ngeluh)",
+      "c": "Cuma rencana yang kamu mau aja",
+      "d": "Bareng-bareng ngerencanain"
+    },
+    "q10": {
+      "text": "Seseorang read doang chatmu. Kamu...",
+      "a": "Ngerasa dia benci kamu",
+      "b": "Read balik dua kali lebih lama",
+      "c": "Hapus percakapannya",
+      "d": "Mikir dia lagi sibuk aja"
+    },
+    "q11": {
+      "text": "Temanmu berhasil di hal yang kamu gagal. Kamu...",
+      "a": "Beneran seneng (setelah sedikit berkabung)",
+      "b": "Nyerap kebahagiaannya biar kamu ikut seneng",
+      "c": "Mikir \"waktuku akan tiba, aku berbeda\"",
+      "d": "Terinspirasi buat coba lagi"
+    },
+    "q12": {
+      "text": "Hubungan jadi serius. Kamu...",
+      "a": "Mulai rencanain nikahan di kepala",
+      "b": "Tiba-tiba jadi super sibuk",
+      "c": "Harus kontrol setiap aspek",
+      "d": "Ngalir aja"
+    }
+  },
+  "archetypes": {
+    "overthinker": {
+      "emoji": "🧠",
+      "title": "Si Overthinking Kronis",
+      "desc": "Kamu udah bayangin 47 skenario terburuk sebelum selesai baca kalimat ini."
+    },
+    "passive": {
+      "emoji": "😏",
+      "title": "Si Pasif-Agresif",
+      "desc": "'Gak apa-apa kok.' kamu udah bikin lebih banyak kerusakan daripada kebanyakan bencana alam."
+    },
+    "mainchar": {
+      "emoji": "👑",
+      "title": "Si Main Character",
+      "desc": "Semua orang cuma NPC di film kamu dan kamu fine-fine aja sama itu."
+    },
+    "sponge": {
+      "emoji": "🧽",
+      "title": "Si Spons Emosional",
+      "desc": "Kamu nyerap perasaan semua orang kayak router WiFi manusia buat emosi."
+    },
+    "control": {
+      "emoji": "🎮",
+      "title": "Si Control Freak",
+      "desc": "Kalender warna-warnimu punya kalender cadangan jaga-jaga."
+    },
+    "ghost": {
+      "emoji": "👻",
+      "title": "Si Hantu",
+      "desc": "Kamu udah menguasai seni menghilang tepat saat hal-hal jadi serius."
+    },
+    "jealous": {
+      "emoji": "👀",
+      "title": "Si Teman Cemburu",
+      "desc": "Kamu dukung kesuksesan temanmu... setelah periode berkabung singkat."
+    },
+    "pleaser": {
+      "emoji": "🤝",
+      "title": "Si People Pleaser",
+      "desc": "Kamu bakal minta maaf kalau ditusuk karena takut pisaunya gak nyaman."
+    }
+  },
+  "result": {
+    "title": "Sifat Toksikmu",
+    "toxicityLevel": "Level Toksisitas",
+    "secondary": "Sifat sekunder: {trait}",
+    "badge": "Aku merasa diserang!",
+    "retake": "Tes Ulang"
+  },
+  "share": {
+    "title": "Detektor Sifat Toksik",
+    "text": "Sifat toksikku: {trait} {emoji} ☠️ Kamu apa?",
+    "copied": "Tersalin!",
+    "twitter": "Bagikan di Twitter",
+    "copyUrl": "Salin Link"
+  },
+  "nav": {
+    "back": "DopaBrain Beranda"
+  }
+}

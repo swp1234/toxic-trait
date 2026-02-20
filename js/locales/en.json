@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Toxic Trait Detector | DopaBrain",
+    "description": "Discover your hidden toxic trait with 12 brutally honest situational questions. Everyone has one."
+  },
+  "a11y": {
+    "skip": "Skip to content"
+  },
+  "app": {
+    "title": "☠️ Toxic Trait Detector",
+    "subtitle": "Everyone has one...",
+    "loading": "Analyzing...",
+    "start": "Expose My Trait",
+    "warning": "Brutally honest results ahead!"
+  },
+  "question": {
+    "progress": "{current} / {total}"
+  },
+  "questions": {
+    "q1": {
+      "text": "Your friend gets promoted at work. Your first thought is...",
+      "a": "\"I'm so happy for them!\" (genuinely moved)",
+      "b": "\"Why not me though?\"",
+      "c": "\"I need to work harder now\" (immediately googles self-help)",
+      "d": "\"Meh, promotions are overrated\""
+    },
+    "q2": {
+      "text": "You receive a vague text from your crush. You...",
+      "a": "Analyze every word for 30 minutes",
+      "b": "Reply \"k.\"",
+      "c": "Screenshot it for your group chat analysis",
+      "d": "Reply normally and move on"
+    },
+    "q3": {
+      "text": "Plans change last minute. You...",
+      "a": "Have a full mental breakdown",
+      "b": "Say \"sure, no problem!\" while dying inside",
+      "c": "Disappear and don't respond",
+      "d": "Actually don't mind"
+    },
+    "q4": {
+      "text": "A friend vents about their problems. You...",
+      "a": "Absorb all their emotions like a sponge",
+      "b": "Secretly think your problems are bigger",
+      "c": "Give unsolicited advice and a 5-step plan",
+      "d": "Listen but set boundaries"
+    },
+    "q5": {
+      "text": "You made a small mistake at work. You...",
+      "a": "Replay it in your head for 3 weeks",
+      "b": "Blame it on someone else subtly",
+      "c": "Don't even realize it was a mistake",
+      "d": "Fix it and move on"
+    },
+    "q6": {
+      "text": "Someone disagrees with you in a group chat. You...",
+      "a": "Write a 3-paragraph response",
+      "b": "Leave them on read for days",
+      "c": "\"Sure... whatever you say 🙃\"",
+      "d": "Have a respectful discussion"
+    },
+    "q7": {
+      "text": "Your partner hangs out with someone attractive. You...",
+      "a": "Check their social media 47 times",
+      "b": "\"Have fun! 😊\" (tracks their location)",
+      "c": "Feel nothing, you're the main character",
+      "d": "Trust them completely"
+    },
+    "q8": {
+      "text": "A friend asks for honest feedback. You...",
+      "a": "Sugarcoat everything",
+      "b": "Give brutally honest feedback",
+      "c": "\"Hmm it's... interesting\"",
+      "d": "Give thoughtful honest feedback"
+    },
+    "q9": {
+      "text": "You're organizing a group trip. You...",
+      "a": "Create a 47-slide presentation",
+      "b": "Let everyone else decide (then complain)",
+      "c": "Only plan activities you want",
+      "d": "Collaborate on planning"
+    },
+    "q10": {
+      "text": "Someone leaves you on read. You...",
+      "a": "Assume they hate you",
+      "b": "Leave them on read for twice as long",
+      "c": "Delete the conversation",
+      "d": "Assume they're just busy"
+    },
+    "q11": {
+      "text": "Your friend succeeds at something you failed at. You...",
+      "a": "Feel genuinely happy (after a brief mourning period)",
+      "b": "Absorb their happiness and feel better",
+      "c": "Think \"my time will come, I'm different\"",
+      "d": "Feel inspired to try again"
+    },
+    "q12": {
+      "text": "A relationship gets serious. You...",
+      "a": "Start planning the wedding in your head",
+      "b": "Suddenly become very busy",
+      "c": "Need to control every aspect",
+      "d": "Go with the flow"
+    }
+  },
+  "archetypes": {
+    "overthinker": {
+      "emoji": "🧠",
+      "title": "The Chronic Overthinker",
+      "desc": "You've already imagined 47 worst-case scenarios before finishing this sentence."
+    },
+    "passive": {
+      "emoji": "😏",
+      "title": "The Passive-Aggressive Texter",
+      "desc": "Your 'I'm fine.' has caused more damage than most natural disasters."
+    },
+    "mainchar": {
+      "emoji": "👑",
+      "title": "The Main Character",
+      "desc": "Everyone else is an NPC in your movie and you're fine with that."
+    },
+    "sponge": {
+      "emoji": "🧽",
+      "title": "The Emotional Sponge",
+      "desc": "You absorb everyone's feelings like a human WiFi router for emotions."
+    },
+    "control": {
+      "emoji": "🎮",
+      "title": "The Control Freak",
+      "desc": "Your color-coded calendar has a backup calendar just in case."
+    },
+    "ghost": {
+      "emoji": "👻",
+      "title": "The Ghost",
+      "desc": "You've perfected the art of disappearing right when things get real."
+    },
+    "jealous": {
+      "emoji": "👀",
+      "title": "The Jealous Friend",
+      "desc": "You support your friends' success... after a brief mourning period."
+    },
+    "pleaser": {
+      "emoji": "🤝",
+      "title": "The People Pleaser",
+      "desc": "You'd apologize for being stabbed because the knife might be uncomfortable."
+    }
+  },
+  "result": {
+    "title": "Your Toxic Trait",
+    "toxicityLevel": "Toxicity Level",
+    "secondary": "Secondary trait: {trait}",
+    "badge": "I feel so attacked!",
+    "retake": "Retake Test"
+  },
+  "share": {
+    "title": "Toxic Trait Detector",
+    "text": "My toxic trait: {trait} {emoji} ☠️ What's yours?",
+    "copied": "Copied!",
+    "twitter": "Share on Twitter",
+    "copyUrl": "Copy Link"
+  },
+  "nav": {
+    "back": "DopaBrain Home"
+  }
+}

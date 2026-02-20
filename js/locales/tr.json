@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Toksik Özellik Dedektörü | DopaBrain",
+    "description": "12 durumsal soruyla gizli toksik özelliğinizi keşfedin. Acımasızca dürüst sonuçlar."
+  },
+  "a11y": {
+    "skip": "İçeriğe geç"
+  },
+  "app": {
+    "title": "☠️ Toksik Özellik Dedektörü",
+    "subtitle": "Herkesin bir tanesi var...",
+    "loading": "Analiz ediliyor...",
+    "start": "Toksik Özelliğimi Bul",
+    "warning": "Acımasızca dürüst sonuçlar geliyor!"
+  },
+  "question": {
+    "progress": "{current} / {total}"
+  },
+  "questions": {
+    "q1": {
+      "text": "Arkadaşın terfi aldı. İlk düşüncen...",
+      "a": "\"Onun için çok mutluyum!\" (gerçekten duygusal)",
+      "b": "\"Neden ben değilim...?\"",
+      "c": "\"Daha çok çalışmalıyım\" (hemen kişisel gelişim araştırıyor)",
+      "d": "\"Terfi filan abartı ya\""
+    },
+    "q2": {
+      "text": "Hoşlandığın kişiden belirsiz bir mesaj geldi. Sen...",
+      "a": "Her kelimeyi 30 dakika analiz edersin",
+      "b": "\"tamam.\" diye cevap verirsin",
+      "c": "Grup sohbetine screenshot atıp ortak analiz başlatırsın",
+      "d": "Normal cevap verir devam edersin"
+    },
+    "q3": {
+      "text": "Planlar son dakikada değişti. Sen...",
+      "a": "Tam bir zihinsel çöküş yaşarsın",
+      "b": "\"Tabii, sorun yok!\" dersin (içinden ölüyorsun)",
+      "c": "Ortadan kaybolur, cevap vermezsin",
+      "d": "Gerçekten umursamazsın"
+    },
+    "q4": {
+      "text": "Arkadaşın dert yanıyor. Sen...",
+      "a": "Sünger gibi tüm duygularını emersin",
+      "b": "İçinden 'benim sorunlarım daha büyük' dersin",
+      "c": "İstenmemiş tavsiye ve 5 adımlık plan verirsin",
+      "d": "Dinlersin ama sınır koyarsın"
+    },
+    "q5": {
+      "text": "İşte küçük bir hata yaptın. Sen...",
+      "a": "3 hafta boyunca kafanda tekrar edersin",
+      "b": "Ustaca başkasının üstüne atarsın",
+      "c": "Hata olduğunun farkında bile değilsin (ana karakter)",
+      "d": "Düzeltir devam edersin"
+    },
+    "q6": {
+      "text": "Grup sohbetinde biri sana karşı çıkıyor. Sen...",
+      "a": "3 paragraflık cevap yazarsın",
+      "b": "Günlerce okundu bırakırsın",
+      "c": "\"Tabii... sen bilirsin 🙃\"",
+      "d": "Saygılı bir tartışma yaparsın"
+    },
+    "q7": {
+      "text": "Partneriniz çekici biriyle takılıyor. Sen...",
+      "a": "Sosyal medyasını 47 kere kontrol edersin",
+      "b": "\"İyi eğlenceler! 😊\" (konum takibi açık)",
+      "c": "Hiçbir şey hissetmezsin, sen ana karaktersin",
+      "d": "Tamamen güvenirsin"
+    },
+    "q8": {
+      "text": "Arkadaşın dürüst geri bildirim istiyor. Sen...",
+      "a": "Her şeyi tatlıya bağlarsın",
+      "b": "Acımasızca dürüst geri bildirim verirsin",
+      "c": "\"Hmm bu... ilginç\"",
+      "d": "Düşünceli ve dürüst geri bildirim verirsin"
+    },
+    "q9": {
+      "text": "Grup gezisi planlıyorsun. Sen...",
+      "a": "47 slaytlık sunum hazırlarsın",
+      "b": "Herkesin karar vermesini beklersin (sonra şikayet edersin)",
+      "c": "Sadece senin istediğin aktiviteleri planlarsın",
+      "d": "Birlikte planlarsın"
+    },
+    "q10": {
+      "text": "Biri seni okundu bıraktı. Sen...",
+      "a": "Senden nefret ettiğini düşünürsün",
+      "b": "İki kat uzun süre okundu bırakırsın",
+      "c": "Sohbeti silersin",
+      "d": "Meşgul olduğunu düşünürsün"
+    },
+    "q11": {
+      "text": "Senin başaramadığın şeyde arkadaşın başarılı oldu. Sen...",
+      "a": "Gerçekten mutlu olursun (kısa bir yas döneminden sonra)",
+      "b": "Onun mutluluğunu emer kendini iyi hissedersin",
+      "c": "\"Benim zamanım gelecek, ben farklıyım\" dersin",
+      "d": "İlham alıp tekrar denersin"
+    },
+    "q12": {
+      "text": "İlişki ciddi oluyor. Sen...",
+      "a": "Kafanda düğün planlamaya başlarsın",
+      "b": "Aniden çok meşgul olursun",
+      "c": "Her şeyi kontrol etmen gerekir",
+      "d": "Akışına bırakırsın"
+    }
+  },
+  "archetypes": {
+    "overthinker": {
+      "emoji": "🧠",
+      "title": "Kronik Aşırı Düşünceli",
+      "desc": "Bu cümleyi bitirmeden önce zaten 47 en kötü senaryo hayal etmişsindir."
+    },
+    "passive": {
+      "emoji": "😏",
+      "title": "Pasif-Agresif Mesajcı",
+      "desc": "'İyiyim.' mesajın çoğu doğal afetten daha fazla hasar vermiştir."
+    },
+    "mainchar": {
+      "emoji": "👑",
+      "title": "Ana Karakter",
+      "desc": "Herkes senin filmindeki NPC ve sen bununla gayet barışıksın."
+    },
+    "sponge": {
+      "emoji": "🧽",
+      "title": "Duygusal Sünger",
+      "desc": "Herkesin duygularını insan WiFi yönlendiricisi gibi emersin."
+    },
+    "control": {
+      "emoji": "🎮",
+      "title": "Kontrol Hastası",
+      "desc": "Renk kodlu takviminin bir de yedek takvimi var, her ihtimale karşı."
+    },
+    "ghost": {
+      "emoji": "👻",
+      "title": "Hayalet",
+      "desc": "İşler ciddileşince kaybolma sanatını mükemmelleştirmişsin."
+    },
+    "jealous": {
+      "emoji": "👀",
+      "title": "Kıskanç Arkadaş",
+      "desc": "Arkadaşlarının başarısını desteklersin... kısa bir yas döneminden sonra."
+    },
+    "pleaser": {
+      "emoji": "🤝",
+      "title": "Herkesi Memnun Eden",
+      "desc": "Bıçaklandığın için özür dilersin çünkü bıçak rahatsız olmuş olabilir."
+    }
+  },
+  "result": {
+    "title": "Toksik Özelliğin",
+    "toxicityLevel": "Toksisite Seviyesi",
+    "secondary": "İkincil özellik: {trait}",
+    "badge": "Çok alındım!",
+    "retake": "Tekrar Test Et"
+  },
+  "share": {
+    "title": "Toksik Özellik Dedektörü",
+    "text": "Toksik özelliğim: {trait} {emoji} ☠️ Seninki ne?",
+    "copied": "Kopyalandı!",
+    "twitter": "Twitter'da Paylaş",
+    "copyUrl": "Linki Kopyala"
+  },
+  "nav": {
+    "back": "DopaBrain Ana Sayfa"
+  }
+}

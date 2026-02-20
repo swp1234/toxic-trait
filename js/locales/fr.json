@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Détecteur de Trait Toxique | DopaBrain",
+    "description": "Découvrez votre trait toxique caché avec 12 questions situationnelles brutalement honnêtes. Tout le monde en a un."
+  },
+  "a11y": {
+    "skip": "Aller au contenu"
+  },
+  "app": {
+    "title": "☠️ Détecteur de Trait Toxique",
+    "subtitle": "Tout le monde en a un...",
+    "loading": "Analyse en cours...",
+    "start": "Révéler Mon Trait",
+    "warning": "Résultats brutalement honnêtes !"
+  },
+  "question": {
+    "progress": "{current} / {total}"
+  },
+  "questions": {
+    "q1": {
+      "text": "Ton ami(e) obtient une promotion. Ta première pensée...",
+      "a": "\"Je suis trop content(e) pour lui/elle !\" (vraiment ému(e))",
+      "b": "\"Pourquoi pas moi...?\"",
+      "c": "\"Je dois travailler plus dur\" (cherche déjà du développement perso)",
+      "d": "\"Bof, les promotions c'est surcôté\""
+    },
+    "q2": {
+      "text": "Tu reçois un message flou de ton crush. Tu...",
+      "a": "Analyses chaque mot pendant 30 minutes",
+      "b": "Réponds \"ok.\"",
+      "c": "Screenshot pour l'analyse collective du groupe",
+      "d": "Réponds normalement et passes à autre chose"
+    },
+    "q3": {
+      "text": "Les plans changent à la dernière minute. Tu...",
+      "a": "Fais un effondrement mental complet",
+      "b": "Dis \"pas de souci !\" (en mourant à l'intérieur)",
+      "c": "Disparais et ne réponds plus",
+      "d": "T'en fiches vraiment"
+    },
+    "q4": {
+      "text": "Un(e) ami(e) se confie sur ses problèmes. Tu...",
+      "a": "Absorbes toutes ses émotions comme une éponge",
+      "b": "Penses secrètement que tes problèmes sont plus graves",
+      "c": "Donnes des conseils non sollicités et un plan en 5 étapes",
+      "d": "Écoutes en posant des limites"
+    },
+    "q5": {
+      "text": "Tu as fait une petite erreur au travail. Tu...",
+      "a": "La rejoues dans ta tête pendant 3 semaines",
+      "b": "Rejettes subtilement la faute sur quelqu'un d'autre",
+      "c": "Ne réalises même pas que c'était une erreur (personnage principal)",
+      "d": "Corriges et passes à autre chose"
+    },
+    "q6": {
+      "text": "Quelqu'un n'est pas d'accord avec toi dans le groupe. Tu...",
+      "a": "Écris une réponse de 3 paragraphes",
+      "b": "Le/la laisses en vu pendant des jours",
+      "c": "\"Ouais... comme tu veux 🙃\"",
+      "d": "As une discussion respectueuse"
+    },
+    "q7": {
+      "text": "Ton/ta partenaire sort avec quelqu'un d'attirant. Tu...",
+      "a": "Vérifies ses réseaux sociaux 47 fois",
+      "b": "\"Amuse-toi bien ! 😊\" (traque sa localisation)",
+      "c": "Ne ressens rien, tu es le personnage principal",
+      "d": "Fais entièrement confiance"
+    },
+    "q8": {
+      "text": "Un(e) ami(e) demande ton avis honnête. Tu...",
+      "a": "Enrobes tout de sucre",
+      "b": "Donnes un avis brutalement honnête",
+      "c": "\"Hmm c'est... intéressant\"",
+      "d": "Donnes un avis réfléchi et honnête"
+    },
+    "q9": {
+      "text": "Tu organises un voyage de groupe. Tu...",
+      "a": "Crées une présentation de 47 diapositives",
+      "b": "Laisses les autres décider (puis te plains)",
+      "c": "Ne planifies que ce que tu veux faire",
+      "d": "Collabores sur l'organisation"
+    },
+    "q10": {
+      "text": "Quelqu'un te laisse en vu. Tu...",
+      "a": "Supposes qu'il/elle te déteste",
+      "b": "Le/la laisses en vu deux fois plus longtemps",
+      "c": "Supprimes la conversation",
+      "d": "Supposes qu'il/elle est juste occupé(e)"
+    },
+    "q11": {
+      "text": "Ton ami(e) réussit là où tu as échoué. Tu...",
+      "a": "Es vraiment content(e) (après une brève période de deuil)",
+      "b": "Absorbes son bonheur pour te sentir mieux",
+      "c": "Penses \"mon tour viendra, je suis différent(e)\"",
+      "d": "Es inspiré(e) pour réessayer"
+    },
+    "q12": {
+      "text": "Une relation devient sérieuse. Tu...",
+      "a": "Commences à planifier le mariage dans ta tête",
+      "b": "Deviens soudainement très occupé(e)",
+      "c": "Dois contrôler chaque aspect",
+      "d": "Te laisses porter"
+    }
+  },
+  "archetypes": {
+    "overthinker": {
+      "emoji": "🧠",
+      "title": "L'Overthinker Chronique",
+      "desc": "Tu as déjà imaginé 47 scénarios catastrophe avant de finir cette phrase."
+    },
+    "passive": {
+      "emoji": "😏",
+      "title": "Le/La Passif(ve)-Agressif(ve)",
+      "desc": "Ton 'ça va.' a causé plus de dégâts que la plupart des catastrophes naturelles."
+    },
+    "mainchar": {
+      "emoji": "👑",
+      "title": "Le/La Personnage Principal",
+      "desc": "Les autres sont des PNJ dans ton film et ça te convient parfaitement."
+    },
+    "sponge": {
+      "emoji": "🧽",
+      "title": "L'Éponge Émotionnelle",
+      "desc": "Tu absorbes les sentiments de tout le monde comme un routeur WiFi humain pour les émotions."
+    },
+    "control": {
+      "emoji": "🎮",
+      "title": "Le/La Control Freak",
+      "desc": "Ton calendrier à code couleur a un calendrier de secours au cas où."
+    },
+    "ghost": {
+      "emoji": "👻",
+      "title": "Le/La Fantôme",
+      "desc": "Tu as perfectionné l'art de disparaître pile quand les choses deviennent sérieuses."
+    },
+    "jealous": {
+      "emoji": "👀",
+      "title": "L'Ami(e) Jaloux(se)",
+      "desc": "Tu soutiens le succès de tes amis... après une brève période de deuil."
+    },
+    "pleaser": {
+      "emoji": "🤝",
+      "title": "Le/La People Pleaser",
+      "desc": "Tu t'excuserais de te faire poignarder parce que le couteau pourrait être mal à l'aise."
+    }
+  },
+  "result": {
+    "title": "Ton Trait Toxique",
+    "toxicityLevel": "Niveau de Toxicité",
+    "secondary": "Trait secondaire : {trait}",
+    "badge": "Je me sens tellement attaqué(e) !",
+    "retake": "Refaire le Test"
+  },
+  "share": {
+    "title": "Détecteur de Trait Toxique",
+    "text": "Mon trait toxique : {trait} {emoji} ☠️ Et toi c'est quoi ?",
+    "copied": "Copié !",
+    "twitter": "Partager sur Twitter",
+    "copyUrl": "Copier le Lien"
+  },
+  "nav": {
+    "back": "DopaBrain Accueil"
+  }
+}
