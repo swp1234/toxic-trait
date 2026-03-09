@@ -1,164 +1,39 @@
 {
-  "meta": {
-    "title": "Toksik Özellik Dedektörü | DopaBrain",
-    "description": "12 durumsal soruyla gizli toksik özelliğinizi keşfedin. Acımasızca dürüst sonuçlar."
+  "meta": { "title": "Toksik Özellik Mahkemesi | DopaBrain", "description": "Mesajlarına celp çıkarıldı. Mahkeme mesajlaşma davranışını inceleyerek toksik özelliğini açığa çıkaracak." },
+  "a11y": { "skip": "İçeriğe geç" },
+  "app": { "title": "Toksik Özellik Mahkemesi", "subtitle": "Mesajlarına celp çıkarıldı.", "loading": "MAHKEME YÜKLENİYOR..." },
+  "start": { "notifApp": "MAHKEME", "notifTitle": "Mesajlarına celp çıkarıldı", "notifBody": "Mahkeme mesajlaşma davranışını inceleyecek.", "notifTime": "şimdi", "desc": "8 mesaj konuşması + 4 sosyal medya tepkisi. Mahkeme kararını verecek.", "btn": "Mahkemeyi Başlat" },
+  "meter": { "label": "TOKSİSİTE TESPİT EDİLDİ", "count": "{current} / {total}" },
+  "phase": { "messages": "MESAJLAR", "social": "SOSYAL MEDYA DENETİMİ" },
+  "chat": { "online": "çevrimiçi", "today": "Bugün" },
+  "stamp": { "toxic": "TOKSİSİTE TESPİT EDİLDİ", "clean": "TEMİZ" },
+  "scenarios": {
+    "msg1": { "name": "En Yakın Arkadaş", "messages": ["Selam, çok özür dilerim ama bu gece iptal etmem gerekiyor", "Beklenmedik bir şey çıktı \uD83D\uDE14"], "options": ["Sorun değil! Olur böyle şeyler, tekrar ayarlarız \uD83D\uDE0A", "Vay, yine mi? Ben hep sana vakit ayırıyorum...", "..."] },
+    "msg2": { "name": "Partner", "messages": ["Az önce kiminle yazışıyordun?", "Telefonuna bakarken çok gülümsüyordun"], "options": ["Ah, [isim]'di! Bak, şundan bahsediyorduk...", "Neden her şeyi bilmek zorundasın?", "İlginç. Peki sen dün kiminle yazışıyordun? \uD83E\uDD14"] },
+    "msg3": { "name": "İş Arkadaşı", "messages": ["İyi haber! Patron proje fikrini çok beğendi", "Bundan sonra benim yönetmemi istiyor \uD83D\uDE04"], "options": ["Dur, o benim fikrimdi. Konuşmamız lazım.", "Tebrikler... *gruba screenshot* buna inanabiliyor musunuz??", "Son e-postamda belirttiğim gibi, orijinal konsept işbirliğiydi \uD83D\uDE42"] },
+    "msg4": { "name": "Eski Sevgili", "messages": ["Selam...", "Seni özledim"], "options": ["*cevap vermez*", "Haha ben de... ne yapıyorsun peki? \uD83D\uDE0F", "*arkadaşlara screenshot* BAKIN KİM SÜRÜNEREK GERİ GELMİŞ"] },
+    "msg5": { "name": "Yakın Arkadaş", "messages": ["KABUL EDİLDİM!!! \uD83C\uDF89\uD83C\uDF89\uD83C\uDF89", "İkimizin de başvurduğu programa kabul edildim!"], "options": ["TEBRİKLER!! Seninle çok gurur duyuyorum!! \uD83E\uDD73", "Ah güzel... aslında o kadar da istemiyordum", "İyi. Duyduğuma göre söylendiği kadar iyi değilmiş"] },
+    "msg6": { "name": "Hoşlandığın Kişi", "messages": ["*2 saat önce görüldü*"], "options": ["*telefonu bırakır, gününe devam eder*", "Mesajımı gördün mü?\nAlo?\nİyi misin?", "Story paylaşmaya vaktin var ama cevap vermeye yok mu? \uD83D\uDE10"] },
+    "msg7": { "name": "Arkadaş Grubu", "messages": ["[Sensiz yeni bir grup oluşturulduğunu fark ediyorsun]", "Davet edilmediğin bir buluşmanın fotoğraflarını paylaşmışlar"], "options": ["Selam, buluşmuşsunuz! Bir dahakine ben de geleyim \uD83D\uDE0A", "*Onlarsız yeni grup kurar* \"Kim GERÇEKTEN harika bir şey yapmak ister?\"", "Galiba kimse beni umursamıyor... hep dışlanıyorum \uD83D\uDE22"] },
+    "msg8": { "name": "Partner", "messages": ["Konuşmamız lazım.", "Müsait olunca beni arar mısın?"], "options": ["Tabii, şu an müsaitim. Ne oldu?", "TANRIM ne yaptım?? Salı yüzünden mi? BENİ Mİ BIRAKIYORSUN?!", "Pardon, çok meşgulüm şu an. *telefonu 3 gün kapatır*"] },
+    "social1": { "username": "Eski Sevgilin", "handle": "@en_iyi_hayatimi_yasiyorum", "image": "\uD83C\uDFD6\uFE0F\u2728", "content": "En iyi tatil! Sonunda hak ettiğim hayat \u2728\uD83C\uDF34 #mübarek #yenibölüm", "engagement": "847 beğeni \u00B7 62 yorum" },
+    "social2": { "username": "Tanıdık", "handle": "@alçakgönüllü_çalışkan", "image": "\uD83D\uDCAA\u2728", "content": "Bir terfi daha aldığımı alçakgönüllülükle duyuruyorum \uD83D\uDE07 Emek karşılığını veriyor! (yeni BMW'de kutluyorum lol) #şükür", "engagement": "1.2K beğeni \u00B7 89 yorum" },
+    "social3": { "username": "Gizemli Arkadaş", "handle": "@kriptik_paylaşımcı", "content": "Bazı insanlar en çok ihtiyacın olduğunda gerçek yüzünü gösteriyor \uD83D\uDE12 Kim olduğunu biliyorsun. #sahtearkadaş", "engagement": "234 beğeni \u00B7 47 yorum" },
+    "social4": { "username": "Arkadaşın", "handle": "@sosyal_kelebek", "image": "\uD83D\uDC6B\uD83C\uDF89", "content": "EN SEVDİĞİM insanlarla en güzel gece!! \uD83E\uDD70 Bu arkadaşlara çok şükür \u2764\uFE0F #ekip #mübarek", "engagement": "562 beğeni \u00B7 38 yorum" }
   },
-  "a11y": {
-    "skip": "İçeriğe geç"
-  },
-  "app": {
-    "title": "☠️ Toksik Özellik Dedektörü",
-    "subtitle": "Herkesin bir tanesi var...",
-    "loading": "Analiz ediliyor...",
-    "start": "Toksik Özelliğimi Bul",
-    "warning": "Acımasızca dürüst sonuçlar geliyor!"
-  },
-  "question": {
-    "progress": "{current} / {total}"
-  },
-  "questions": {
-    "q1": {
-      "text": "Arkadaşın terfi aldı. İlk düşüncen...",
-      "a": "\"Onun için çok mutluyum!\" (gerçekten duygusal)",
-      "b": "\"Neden ben değilim...?\"",
-      "c": "\"Daha çok çalışmalıyım\" (hemen kişisel gelişim araştırıyor)",
-      "d": "\"Terfi filan abartı ya\""
-    },
-    "q2": {
-      "text": "Hoşlandığın kişiden belirsiz bir mesaj geldi. Sen...",
-      "a": "Her kelimeyi 30 dakika analiz edersin",
-      "b": "\"tamam.\" diye cevap verirsin",
-      "c": "Grup sohbetine screenshot atıp ortak analiz başlatırsın",
-      "d": "Normal cevap verir devam edersin"
-    },
-    "q3": {
-      "text": "Planlar son dakikada değişti. Sen...",
-      "a": "Tam bir zihinsel çöküş yaşarsın",
-      "b": "\"Tabii, sorun yok!\" dersin (içinden ölüyorsun)",
-      "c": "Ortadan kaybolur, cevap vermezsin",
-      "d": "Gerçekten umursamazsın"
-    },
-    "q4": {
-      "text": "Arkadaşın dert yanıyor. Sen...",
-      "a": "Sünger gibi tüm duygularını emersin",
-      "b": "İçinden 'benim sorunlarım daha büyük' dersin",
-      "c": "İstenmemiş tavsiye ve 5 adımlık plan verirsin",
-      "d": "Dinlersin ama sınır koyarsın"
-    },
-    "q5": {
-      "text": "İşte küçük bir hata yaptın. Sen...",
-      "a": "3 hafta boyunca kafanda tekrar edersin",
-      "b": "Ustaca başkasının üstüne atarsın",
-      "c": "Hata olduğunun farkında bile değilsin (ana karakter)",
-      "d": "Düzeltir devam edersin"
-    },
-    "q6": {
-      "text": "Grup sohbetinde biri sana karşı çıkıyor. Sen...",
-      "a": "3 paragraflık cevap yazarsın",
-      "b": "Günlerce okundu bırakırsın",
-      "c": "\"Tabii... sen bilirsin 🙃\"",
-      "d": "Saygılı bir tartışma yaparsın"
-    },
-    "q7": {
-      "text": "Partneriniz çekici biriyle takılıyor. Sen...",
-      "a": "Sosyal medyasını 47 kere kontrol edersin",
-      "b": "\"İyi eğlenceler! 😊\" (konum takibi açık)",
-      "c": "Hiçbir şey hissetmezsin, sen ana karaktersin",
-      "d": "Tamamen güvenirsin"
-    },
-    "q8": {
-      "text": "Arkadaşın dürüst geri bildirim istiyor. Sen...",
-      "a": "Her şeyi tatlıya bağlarsın",
-      "b": "Acımasızca dürüst geri bildirim verirsin",
-      "c": "\"Hmm bu... ilginç\"",
-      "d": "Düşünceli ve dürüst geri bildirim verirsin"
-    },
-    "q9": {
-      "text": "Grup gezisi planlıyorsun. Sen...",
-      "a": "47 slaytlık sunum hazırlarsın",
-      "b": "Herkesin karar vermesini beklersin (sonra şikayet edersin)",
-      "c": "Sadece senin istediğin aktiviteleri planlarsın",
-      "d": "Birlikte planlarsın"
-    },
-    "q10": {
-      "text": "Biri seni okundu bıraktı. Sen...",
-      "a": "Senden nefret ettiğini düşünürsün",
-      "b": "İki kat uzun süre okundu bırakırsın",
-      "c": "Sohbeti silersin",
-      "d": "Meşgul olduğunu düşünürsün"
-    },
-    "q11": {
-      "text": "Senin başaramadığın şeyde arkadaşın başarılı oldu. Sen...",
-      "a": "Gerçekten mutlu olursun (kısa bir yas döneminden sonra)",
-      "b": "Onun mutluluğunu emer kendini iyi hissedersin",
-      "c": "\"Benim zamanım gelecek, ben farklıyım\" dersin",
-      "d": "İlham alıp tekrar denersin"
-    },
-    "q12": {
-      "text": "İlişki ciddi oluyor. Sen...",
-      "a": "Kafanda düğün planlamaya başlarsın",
-      "b": "Aniden çok meşgul olursun",
-      "c": "Her şeyi kontrol etmen gerekir",
-      "d": "Akışına bırakırsın"
-    }
-  },
+  "dimensions": { "manipulation": "Manipülasyon", "passive_aggression": "Pasif Agresyon", "deflection": "Saptırma", "avoidance": "Kaçınma", "jealousy": "Kıskançlık", "volatility": "Duygusal Değişkenlik", "projection": "Yansıtma", "surveillance": "Gözetleme" },
   "archetypes": {
-    "overthinker": {
-      "emoji": "🧠",
-      "title": "Kronik Aşırı Düşünceli",
-      "desc": "Bu cümleyi bitirmeden önce zaten 47 en kötü senaryo hayal etmişsindir."
-    },
-    "passive": {
-      "emoji": "😏",
-      "title": "Pasif-Agresif Mesajcı",
-      "desc": "'İyiyim.' mesajın çoğu doğal afetten daha fazla hasar vermiştir."
-    },
-    "mainchar": {
-      "emoji": "👑",
-      "title": "Ana Karakter",
-      "desc": "Herkes senin filmindeki NPC ve sen bununla gayet barışıksın."
-    },
-    "sponge": {
-      "emoji": "🧽",
-      "title": "Duygusal Sünger",
-      "desc": "Herkesin duygularını insan WiFi yönlendiricisi gibi emersin."
-    },
-    "control": {
-      "emoji": "🎮",
-      "title": "Kontrol Hastası",
-      "desc": "Renk kodlu takviminin bir de yedek takvimi var, her ihtimale karşı."
-    },
-    "ghost": {
-      "emoji": "👻",
-      "title": "Hayalet",
-      "desc": "İşler ciddileşince kaybolma sanatını mükemmelleştirmişsin."
-    },
-    "jealous": {
-      "emoji": "👀",
-      "title": "Kıskanç Arkadaş",
-      "desc": "Arkadaşlarının başarısını desteklersin... kısa bir yas döneminden sonra."
-    },
-    "pleaser": {
-      "emoji": "🤝",
-      "title": "Herkesi Memnun Eden",
-      "desc": "Bıçaklandığın için özür dilersin çünkü bıçak rahatsız olmuş olabilir."
-    }
+    "puppeteer": { "title": "Kuklacı", "desc": "Her konuşmada görünmez ipler çekiyorsun. Suçluluk, ince manipülasyon, stratejik kırılganlık \u2014 hepsinde ustasın.", "defense": "Duygusal zekan olağanüstü. Bu gücü bağ kurmak için kullan, kontrol etmek için değil." },
+    "ghost": { "title": "Hayalet", "desc": "İşler rahatsız edici olduğunda, hiç var olmamış gibi kaybolursun.", "defense": "Huzurunu koruma konusunda ustasın. Sadece geride bıraktığın insanları unutma." },
+    "victim": { "title": "Kurban", "desc": "Her şey SANA oluyor, senin yüzünden değil. Dünya sana karşı komplo kuruyor ve kanıtların var.", "defense": "Adaletsizliğe karşı duyarlılığın bir süper güç. Bunu savunuculuğa yönlendir, kendine acımaya değil." },
+    "prosecutor": { "title": "Savcı", "desc": "Her hakareti, her kırılan sözü, her cevaplanmayan mesajı hatırlıyorsun.", "defense": "Detaylara dikkatın ve sorumluluk bilincing gerçek güçler." },
+    "spy": { "title": "Casus", "desc": "Takipçilerini, takip ettiklerini, etiketlendiği fotoğrafları ve arkadaşların hikayelerini kontrol ettin. Sen buna 'ilgi' diyorsun. Biz buna gözetleme diyoruz.", "defense": "Araştırma yeteneklerin eşsiz. Bu aşırı uyanıklığı merak yönüne çevir." },
+    "saboteur": { "title": "Sabotajcı", "desc": "Her şey yolunda giderken, bozmanın bir yolunu bulursun. Kendi kendini gerçekleştiren kehanet senin sanatın.", "defense": "Kusur farkındalığın nadir ve değerli. İyi şeylere güvenmeyi öğren." },
+    "mirror": { "title": "Ayna", "desc": "Sana ne suçlama yapılırsa, geri yansıtırsın. 'Savunmacısın!' 'Hayır, SEN savunmacısın!' \u2014 sen, her zaman.", "defense": "Farklı bakış açıları görme yeteneğin güçlü. Bu anlayışı şefkatle kullan." },
+    "thermometer": { "title": "Termometre", "desc": "Duyguların odayı kontrol ediyor. Bir mesaj seni 30 saniyede neşeden öfkeye, krizden krize sürüklüyor.", "defense": "Duygusal derinliğin olağanüstü. Bu tutku seni inanılmaz canlı ve otantik kılıyor." }
   },
-  "result": {
-    "title": "Toksik Özelliğin",
-    "toxicityLevel": "Toksisite Seviyesi",
-    "secondary": "İkincil özellik: {trait}",
-    "badge": "Çok alındım!",
-    "retake": "Tekrar Test Et"
-  },
-  "share": {
-    "title": "Toksik Özellik Dedektörü",
-    "text": "Toksik özelliğim: {trait} {emoji} ☠️ Seninki ne?",
-    "copied": "Kopyalandı!",
-    "twitter": "Twitter'da Paylaş",
-    "copyUrl": "Linki Kopyala"
-  },
-  "nav": {
-    "back": "DopaBrain Ana Sayfa"
-  }
+  "verdict": { "intro": "Mahkeme kararını verdi...", "guilty": "SUÇLU" },
+  "result": { "toxicityLevel": "TOKSİSİTE SEVİYESİ", "breakdownTitle": "TOKSİSİTE DAĞILIMI", "defenseTitle": "SAVUNMA ÖZETİ", "retake": "Yeni Dava" },
+  "share": { "text": "Mahkeme beni suçlu buldu: {trait} {emoji} Senin kararın ne?", "copied": "Kopyalandı!", "twitter": "X'te Paylaş", "copyUrl": "Linki Kopyala" },
+  "nav": { "back": "DopaBrain Ana Sayfa" }
 }
