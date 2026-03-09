@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="meta.title">독성 특성 탐지기 | Toxic Trait Detector - DopaBrain</title>
-  <meta name="description" data-i18n="meta.description" content="당신의 숨겨진 독성 특성을 발견하세요. 12개 상황 질문으로 잔인할 정도로 정직한 결과를 알려드립니다.">
+  <title data-i18n="meta.title">Toxic Trait Tribunal | DopaBrain</title>
+  <meta name="description" data-i18n="meta.description" content="Your texts have been subpoenaed. The Tribunal examines your messaging behavior to expose your toxic trait.">
   <meta name="robots" content="max-image-preview:large">
-  <meta property="og:title" content="Toxic Trait Detector - DopaBrain">
-  <meta property="og:description" content="Everyone has a toxic trait. 12 brutally honest questions to expose yours.">
+  <meta property="og:title" content="Toxic Trait Tribunal - DopaBrain">
+  <meta property="og:description" content="Your texts have been subpoenaed. The Tribunal will now examine your messaging behavior.">
   <meta property="og:image" content="https://dopabrain.com/toxic-trait/icon-512.svg">
   <meta property="og:url" content="https://dopabrain.com/toxic-trait/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Toxic Trait Detector - DopaBrain">
-  <meta name="twitter:description" content="Everyone has a toxic trait. Find yours now.">
+  <meta name="twitter:title" content="Toxic Trait Tribunal - DopaBrain">
+  <meta name="twitter:description" content="Your texts have been subpoenaed. Find your toxic verdict.">
   <meta name="twitter:image" content="https://dopabrain.com/toxic-trait/icon-512.svg">
   <link rel="canonical" href="https://dopabrain.com/toxic-trait/">
   <link rel="alternate" hreflang="ko" href="https://dopabrain.com/toxic-trait/">
@@ -41,9 +41,9 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Toxic Trait Detector",
+    "name": "Toxic Trait Tribunal",
     "url": "https://dopabrain.com/toxic-trait/",
-    "description": "Discover your hidden toxic trait with 12 brutally honest situational questions. 8 archetype results with toxicity meter.",
+    "description": "Your texts have been subpoenaed. The Tribunal examines your messaging behavior through realistic text and social media scenarios to reveal your toxic trait verdict.",
     "applicationCategory": "EntertainmentApplication",
     "operatingSystem": "Any",
     "offers": {"@type": "Offer", "price": "0"}
@@ -54,104 +54,121 @@
 </head>
 <body>
 <a href="#main-content" class="skip-link" data-i18n="a11y.skip">Skip to content</a>
-<div id="app-loader"><div class="loader-icon">☠️</div></div>
+<div id="app-loader">
+  <div class="loader-icon">&#x2696;&#xFE0F;</div>
+  <div class="loader-text" data-i18n="app.loading">TRIBUNAL LOADING...</div>
+</div>
 
 <!-- Theme toggle -->
 <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-  <span class="theme-icon" id="themeIcon">☀️</span>
+  <span class="theme-icon" id="themeIcon">&#x2600;&#xFE0F;</span>
 </button>
 
 <!-- Language selector -->
 <div class="lang-selector">
-  <button class="lang-btn" id="langBtn" aria-label="Language">🌐 <span id="currentLang">한국어</span></button>
+  <button class="lang-btn" id="langBtn" aria-label="Language">&#x1F310; <span id="currentLang">한국어</span></button>
   <div class="lang-dropdown" id="langDropdown" role="menu">
-    <button class="lang-option" data-lang="ko" role="menuitem">🇰🇷 한국어</button>
-    <button class="lang-option" data-lang="en" role="menuitem">🇺🇸 English</button>
-    <button class="lang-option" data-lang="zh" role="menuitem">🇨🇳 中文</button>
-    <button class="lang-option" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</button>
-    <button class="lang-option" data-lang="ru" role="menuitem">🇷🇺 Русский</button>
-    <button class="lang-option" data-lang="ja" role="menuitem">🇯🇵 日本語</button>
-    <button class="lang-option" data-lang="es" role="menuitem">🇪🇸 Español</button>
-    <button class="lang-option" data-lang="pt" role="menuitem">🇧🇷 Português</button>
-    <button class="lang-option" data-lang="id" role="menuitem">🇮🇩 Indonesia</button>
-    <button class="lang-option" data-lang="tr" role="menuitem">🇹🇷 Türkçe</button>
-    <button class="lang-option" data-lang="de" role="menuitem">🇩🇪 Deutsch</button>
-    <button class="lang-option" data-lang="fr" role="menuitem">🇫🇷 Français</button>
+    <button class="lang-option" data-lang="ko" role="menuitem">&#x1F1F0;&#x1F1F7; 한국어</button>
+    <button class="lang-option" data-lang="en" role="menuitem">&#x1F1FA;&#x1F1F8; English</button>
+    <button class="lang-option" data-lang="zh" role="menuitem">&#x1F1E8;&#x1F1F3; 中文</button>
+    <button class="lang-option" data-lang="hi" role="menuitem">&#x1F1EE;&#x1F1F3; हिन्दी</button>
+    <button class="lang-option" data-lang="ru" role="menuitem">&#x1F1F7;&#x1F1FA; Русский</button>
+    <button class="lang-option" data-lang="ja" role="menuitem">&#x1F1EF;&#x1F1F5; 日本語</button>
+    <button class="lang-option" data-lang="es" role="menuitem">&#x1F1EA;&#x1F1F8; Español</button>
+    <button class="lang-option" data-lang="pt" role="menuitem">&#x1F1E7;&#x1F1F7; Português</button>
+    <button class="lang-option" data-lang="id" role="menuitem">&#x1F1EE;&#x1F1E9; Indonesia</button>
+    <button class="lang-option" data-lang="tr" role="menuitem">&#x1F1F9;&#x1F1F7; Türkçe</button>
+    <button class="lang-option" data-lang="de" role="menuitem">&#x1F1E9;&#x1F1EA; Deutsch</button>
+    <button class="lang-option" data-lang="fr" role="menuitem">&#x1F1EB;&#x1F1F7; Français</button>
   </div>
 </div>
 
 <main id="main-content">
   <header>
-    <h1 class="app-title" data-i18n="app.title">☠️ Toxic Trait Detector</h1>
-    <p class="app-subtitle" data-i18n="app.subtitle">Everyone has one...</p>
+    <h1 class="app-title" data-i18n="app.title">Toxic Trait Tribunal</h1>
+    <p class="app-subtitle" data-i18n="app.subtitle">Your texts have been subpoenaed.</p>
   </header>
 
   <div class="container">
     <!-- Start screen -->
     <section id="start-screen" aria-label="Start">
       <div class="start-card">
-        <div class="warning-badge">
-          <span class="warning-icon">⚠️</span>
-          <span data-i18n="app.warning">Brutally honest results ahead!</span>
+        <div class="phone-notification">
+          <div class="notif-icon">&#x2696;&#xFE0F;</div>
+          <div class="notif-content">
+            <div class="notif-app" data-i18n="start.notifApp">TRIBUNAL COURT</div>
+            <div class="notif-title" data-i18n="start.notifTitle">Your texts have been subpoenaed</div>
+            <div class="notif-body" data-i18n="start.notifBody">The Tribunal will now examine your messaging behavior.</div>
+          </div>
+          <div class="notif-time" data-i18n="start.notifTime">now</div>
         </div>
-        <div class="archetype-preview">
-          <span>🧠</span><span>😏</span><span>👑</span><span>🧽</span>
-          <span>🎮</span><span>👻</span><span>👀</span><span>🤝</span>
-        </div>
-        <p class="start-desc" data-i18n="app.subtitle">Everyone has one...</p>
-        <button class="start-btn" id="startBtn" data-i18n="app.start">Expose My Trait</button>
+        <p class="start-desc" data-i18n="start.desc">8 text message conversations + 4 social media reactions. The Tribunal will deliver its verdict.</p>
+        <button class="start-btn" id="startBtn" data-i18n="start.btn">Begin Tribunal</button>
       </div>
     </section>
 
-    <!-- Question screen -->
-    <section id="quiz-screen" style="display:none;" aria-label="Quiz">
-      <div class="progress-container" role="progressbar" aria-label="Progress">
-        <div class="progress-bar-bg">
-          <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <!-- Quiz screen (Phase 1: Chat + Phase 2: Social) -->
+    <section id="quiz-screen" style="display:none;" aria-label="Tribunal">
+      <div class="tox-meter-wrap">
+        <div class="tox-meter-header">
+          <span class="tox-meter-label" data-i18n="meter.label">TOXICITY DETECTED</span>
+          <span class="tox-meter-count" id="roundCount">1 / 12</span>
         </div>
-        <div class="progress-text" id="progressText">1 / 12</div>
+        <div class="tox-meter-bar-bg">
+          <div class="tox-meter-bar" id="toxMeterBar"></div>
+        </div>
       </div>
-      <div class="question-card fade-in" id="questionCard">
-        <div class="question-number" id="qNumber">Q1</div>
-        <p class="question-text" id="qText"></p>
-        <div class="choice-container" id="choiceContainer"></div>
+      <div class="phase-label" id="phaseLabel">
+        <span id="phaseIcon">&#x1F4AC;</span>
+        <span id="phaseText" data-i18n="phase.messages">TEXT MESSAGES</span>
       </div>
+      <div id="scenarioContainer"></div>
     </section>
 
     <!-- Result screen -->
     <section id="result-screen" style="display:none;" aria-label="Result">
+      <div class="verdict-intro" id="verdictIntro">
+        <div class="verdict-gavel">&#x2696;&#xFE0F;</div>
+        <p class="verdict-text" data-i18n="verdict.intro">The Tribunal has reached a verdict...</p>
+      </div>
+
       <div class="result-hero" id="resultHero">
-        <div class="result-emoji" id="resultEmoji">🧠</div>
+        <div class="verdict-stamp" data-i18n="verdict.guilty">GUILTY</div>
+        <div class="result-emoji" id="resultEmoji"></div>
         <h2 class="result-title" id="resultTitle"></h2>
         <p class="result-desc" id="resultDesc"></p>
       </div>
 
       <div class="toxicity-meter">
-        <h3 class="meter-label" data-i18n="result.toxicityLevel">Toxicity Level</h3>
+        <h3 class="meter-label" data-i18n="result.toxicityLevel">TOXICITY LEVEL</h3>
         <div class="meter-bar-bg">
           <div class="meter-bar-fill" id="meterFill" style="width:0%"></div>
         </div>
         <div class="meter-value" id="meterValue">0%</div>
       </div>
 
-      <div class="secondary-trait" id="secondaryTrait"></div>
+      <div class="tox-breakdown" id="toxBreakdown">
+        <h3 class="tox-breakdown-title" data-i18n="result.breakdownTitle">TOXICITY BREAKDOWN</h3>
+        <div id="breakdownBars"></div>
+      </div>
 
-      <div class="badge-container">
-        <div class="attacked-badge" id="attackedBadge">
-          <span class="badge-icon">😤</span>
-          <span data-i18n="result.badge">I feel so attacked!</span>
+      <div class="defense-brief" id="defenseBrief">
+        <div class="defense-title">
+          <span>&#x1F6E1;&#xFE0F;</span>
+          <span data-i18n="result.defenseTitle">DEFENSE BRIEF</span>
         </div>
+        <p class="defense-text" id="defenseText"></p>
       </div>
 
       <div class="share-section">
         <div class="share-btns">
-          <button class="share-btn share-twitter" id="shareTwitterBtn" data-i18n="share.twitter">Share on Twitter</button>
+          <button class="share-btn share-twitter" id="shareTwitterBtn" data-i18n="share.twitter">Share on X</button>
           <button class="share-btn share-copy" id="shareCopyBtn" data-i18n="share.copyUrl">Copy Link</button>
         </div>
         <div class="share-copied" id="copiedMsg" data-i18n="share.copied">Copied!</div>
       </div>
 
-      <button class="retake-btn" id="retakeBtn" data-i18n="result.retake">Retake Test</button>
+      <button class="retake-btn" id="retakeBtn" data-i18n="result.retake">New Trial</button>
 
       <div class="cross-promo-section" id="crossPromoContainer"></div>
     </section>
@@ -164,5 +181,6 @@
 
 <script src="js/app.js"></script>
 <script src="/portal/js/cross-promo.js" defer></script>
+  <script>if("serviceWorker"in navigator){navigator.serviceWorker.register("sw.js").catch(()=>{});}</script>
 </body>
 </html>

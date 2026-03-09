@@ -1,164 +1,39 @@
 {
-  "meta": {
-    "title": "Détecteur de Trait Toxique | DopaBrain",
-    "description": "Découvrez votre trait toxique caché avec 12 questions situationnelles brutalement honnêtes. Tout le monde en a un."
+  "meta": { "title": "Tribunal du Trait Toxique | DopaBrain", "description": "Vos messages ont \u00e9t\u00e9 assign\u00e9s. Le Tribunal examinera votre comportement de messagerie pour r\u00e9v\u00e9ler votre trait toxique." },
+  "a11y": { "skip": "Aller au contenu" },
+  "app": { "title": "Tribunal du Trait Toxique", "subtitle": "Vos messages ont \u00e9t\u00e9 assign\u00e9s.", "loading": "CHARGEMENT DU TRIBUNAL..." },
+  "start": { "notifApp": "TRIBUNAL", "notifTitle": "Vos messages ont \u00e9t\u00e9 assign\u00e9s", "notifBody": "Le Tribunal va examiner votre comportement de messagerie.", "notifTime": "maintenant", "desc": "8 conversations texte + 4 r\u00e9actions r\u00e9seaux sociaux. Le Tribunal rendra son verdict.", "btn": "D\u00e9buter le Tribunal" },
+  "meter": { "label": "TOXICIT\u00c9 D\u00c9TECT\u00c9E", "count": "{current} / {total}" },
+  "phase": { "messages": "MESSAGES TEXTE", "social": "AUDIT R\u00c9SEAUX SOCIAUX" },
+  "chat": { "online": "en ligne", "today": "Aujourd'hui" },
+  "stamp": { "toxic": "TOXICIT\u00c9 D\u00c9TECT\u00c9E", "clean": "CLEAN" },
+  "scenarios": {
+    "msg1": { "name": "Meilleur/e Ami/e", "messages": ["H\u00e9, je suis vraiment d\u00e9sol\u00e9/e mais je dois annuler ce soir", "J'ai eu un impr\u00e9vu \uD83D\uDE14"], "options": ["Pas de souci ! \u00c7a arrive, on replanifie \uD83D\uDE0A", "Wow, encore ? Moi je fais toujours du temps pour toi...", "..."] },
+    "msg2": { "name": "Partenaire", "messages": ["Tu \u00e9crivais \u00e0 qui l\u00e0 ?", "Tu souriais beaucoup en regardant ton t\u00e9l\u00e9phone"], "options": ["Oh, c'\u00e9tait [nom] ! Regarde, on parlait de...", "Pourquoi tu as besoin de tout savoir ?", "Int\u00e9ressant. Et toi, tu \u00e9crivais \u00e0 qui hier ? \uD83E\uDD14"] },
+    "msg3": { "name": "Coll\u00e8gue", "messages": ["Bonne nouvelle ! La cheffe a ador\u00e9 l'id\u00e9e du projet", "Elle veut que je le dirige d\u00e9sormais \uD83D\uDE04"], "options": ["Attends, c'\u00e9tait mon id\u00e9e. On doit en parler.", "F\u00e9licitations... *capture d'\u00e9cran au groupe* vous y croyez ??", "Comme mentionn\u00e9 dans mon dernier mail, le concept original \u00e9tait collaboratif \uD83D\uDE42"] },
+    "msg4": { "name": "Ex", "messages": ["Hey...", "Tu me manques"], "options": ["*ne r\u00e9pond pas*", "Haha toi aussi... tu fais quoi en ce moment ? \uD83D\uDE0F", "*capture aux amis* REGARDEZ QUI EST REVENU EN RAMPANT"] },
+    "msg5": { "name": "Ami/e Proche", "messages": ["J'AI \u00c9T\u00c9 ACCEPT\u00c9/E !!! \uD83C\uDF89\uD83C\uDF89\uD83C\uDF89", "J'ai \u00e9t\u00e9 accept\u00e9/e dans le programme pour lequel on avait postul\u00e9 !"], "options": ["F\u00c9LICITATIONS !! Je suis trop fier/fi\u00e8re !! \uD83E\uDD73", "Ah cool... en vrai je le voulais pas tant que \u00e7a", "C'est cool. J'ai entendu que c'est pas si bien que \u00e7a en fait"] },
+    "msg6": { "name": "Crush", "messages": ["*Lu il y a 2 heures*"], "options": ["*pose le t\u00e9l\u00e9phone et continue sa journ\u00e9e*", "T'as vu mon message ?\nAll\u00f4 ?\nTu vas bien ?", "T'as le temps de poster des stories mais pas de r\u00e9pondre ? \uD83D\uDE10"] },
+    "msg7": { "name": "Groupe d'Amis", "messages": ["[Tu remarques qu'un nouveau groupe a \u00e9t\u00e9 cr\u00e9\u00e9 sans toi]", "Ils ont post\u00e9 des photos d'une sortie o\u00f9 tu n'\u00e9tais pas invit\u00e9/e"], "options": ["Hey, vous \u00eates sortis ! J'aimerais venir la prochaine fois \uD83D\uDE0A", "*Cr\u00e9e un nouveau groupe sans eux* \"Qui veut faire un truc VRAIMENT cool ?\"", "Personne ne se soucie de moi... je suis toujours exclu/e \uD83D\uDE22"] },
+    "msg8": { "name": "Partenaire", "messages": ["Faut qu'on parle.", "Tu peux m'appeler quand t'es dispo ?"], "options": ["Bien s\u00fbr, je suis dispo l\u00e0. Qu'est-ce qu'il y a ?", "Oh mon dieu qu'est-ce que j'ai fait ?? C'est \u00e0 cause de mardi ? TU VAS ME QUITTER ?!", "D\u00e9sol\u00e9/e, super occup\u00e9/e l\u00e0. *\u00e9teint le t\u00e9l\u00e9phone pendant 3 jours*"] },
+    "social1": { "username": "Ton Ex", "handle": "@vivre_ma_meilleure_vie", "image": "\uD83C\uDFD6\uFE0F\u2728", "content": "Meilleures vacances ! Enfin la vie que je m\u00e9rite \u2728\uD83C\uDF34 #b\u00e9ni #nouveauchapitre", "engagement": "847 j'aime \u00B7 62 commentaires" },
+    "social2": { "username": "Connaissance", "handle": "@humble_bosseur", "image": "\uD83D\uDCAA\u2728", "content": "Si humble d'annoncer une autre promotion \uD83D\uDE07 Le travail paye ! (en f\u00eatant dans ma nouvelle BMW lol) #reconnaissant", "engagement": "1.2K j'aime \u00B7 89 commentaires" },
+    "social3": { "username": "Ami/e Myst\u00e9rieux/se", "handle": "@cryptique", "content": "Certaines personnes montrent leur vrai visage quand tu as le plus besoin d'eux \uD83D\uDE12 Tu sais qui tu es. #fauxamis", "engagement": "234 j'aime \u00B7 47 commentaires" },
+    "social4": { "username": "Ton Ami/e", "handle": "@papillon_social", "image": "\uD83D\uDC6B\uD83C\uDF89", "content": "Meilleure soir\u00e9e avec mes gens PR\u00c9F\u00c9R\u00c9S !! \uD83E\uDD70 Tellement reconnaissant/e \u2764\uFE0F #squad #b\u00e9ni", "engagement": "562 j'aime \u00B7 38 commentaires" }
   },
-  "a11y": {
-    "skip": "Aller au contenu"
-  },
-  "app": {
-    "title": "☠️ Détecteur de Trait Toxique",
-    "subtitle": "Tout le monde en a un...",
-    "loading": "Analyse en cours...",
-    "start": "Révéler Mon Trait",
-    "warning": "Résultats brutalement honnêtes !"
-  },
-  "question": {
-    "progress": "{current} / {total}"
-  },
-  "questions": {
-    "q1": {
-      "text": "Ton ami(e) obtient une promotion. Ta première pensée...",
-      "a": "\"Je suis trop content(e) pour lui/elle !\" (vraiment ému(e))",
-      "b": "\"Pourquoi pas moi...?\"",
-      "c": "\"Je dois travailler plus dur\" (cherche déjà du développement perso)",
-      "d": "\"Bof, les promotions c'est surcôté\""
-    },
-    "q2": {
-      "text": "Tu reçois un message flou de ton crush. Tu...",
-      "a": "Analyses chaque mot pendant 30 minutes",
-      "b": "Réponds \"ok.\"",
-      "c": "Screenshot pour l'analyse collective du groupe",
-      "d": "Réponds normalement et passes à autre chose"
-    },
-    "q3": {
-      "text": "Les plans changent à la dernière minute. Tu...",
-      "a": "Fais un effondrement mental complet",
-      "b": "Dis \"pas de souci !\" (en mourant à l'intérieur)",
-      "c": "Disparais et ne réponds plus",
-      "d": "T'en fiches vraiment"
-    },
-    "q4": {
-      "text": "Un(e) ami(e) se confie sur ses problèmes. Tu...",
-      "a": "Absorbes toutes ses émotions comme une éponge",
-      "b": "Penses secrètement que tes problèmes sont plus graves",
-      "c": "Donnes des conseils non sollicités et un plan en 5 étapes",
-      "d": "Écoutes en posant des limites"
-    },
-    "q5": {
-      "text": "Tu as fait une petite erreur au travail. Tu...",
-      "a": "La rejoues dans ta tête pendant 3 semaines",
-      "b": "Rejettes subtilement la faute sur quelqu'un d'autre",
-      "c": "Ne réalises même pas que c'était une erreur (personnage principal)",
-      "d": "Corriges et passes à autre chose"
-    },
-    "q6": {
-      "text": "Quelqu'un n'est pas d'accord avec toi dans le groupe. Tu...",
-      "a": "Écris une réponse de 3 paragraphes",
-      "b": "Le/la laisses en vu pendant des jours",
-      "c": "\"Ouais... comme tu veux 🙃\"",
-      "d": "As une discussion respectueuse"
-    },
-    "q7": {
-      "text": "Ton/ta partenaire sort avec quelqu'un d'attirant. Tu...",
-      "a": "Vérifies ses réseaux sociaux 47 fois",
-      "b": "\"Amuse-toi bien ! 😊\" (traque sa localisation)",
-      "c": "Ne ressens rien, tu es le personnage principal",
-      "d": "Fais entièrement confiance"
-    },
-    "q8": {
-      "text": "Un(e) ami(e) demande ton avis honnête. Tu...",
-      "a": "Enrobes tout de sucre",
-      "b": "Donnes un avis brutalement honnête",
-      "c": "\"Hmm c'est... intéressant\"",
-      "d": "Donnes un avis réfléchi et honnête"
-    },
-    "q9": {
-      "text": "Tu organises un voyage de groupe. Tu...",
-      "a": "Crées une présentation de 47 diapositives",
-      "b": "Laisses les autres décider (puis te plains)",
-      "c": "Ne planifies que ce que tu veux faire",
-      "d": "Collabores sur l'organisation"
-    },
-    "q10": {
-      "text": "Quelqu'un te laisse en vu. Tu...",
-      "a": "Supposes qu'il/elle te déteste",
-      "b": "Le/la laisses en vu deux fois plus longtemps",
-      "c": "Supprimes la conversation",
-      "d": "Supposes qu'il/elle est juste occupé(e)"
-    },
-    "q11": {
-      "text": "Ton ami(e) réussit là où tu as échoué. Tu...",
-      "a": "Es vraiment content(e) (après une brève période de deuil)",
-      "b": "Absorbes son bonheur pour te sentir mieux",
-      "c": "Penses \"mon tour viendra, je suis différent(e)\"",
-      "d": "Es inspiré(e) pour réessayer"
-    },
-    "q12": {
-      "text": "Une relation devient sérieuse. Tu...",
-      "a": "Commences à planifier le mariage dans ta tête",
-      "b": "Deviens soudainement très occupé(e)",
-      "c": "Dois contrôler chaque aspect",
-      "d": "Te laisses porter"
-    }
-  },
+  "dimensions": { "manipulation": "Manipulation", "passive_aggression": "Agressivit\u00e9 Passive", "deflection": "D\u00e9viation", "avoidance": "\u00c9vitement", "jealousy": "Jalousie", "volatility": "Volatilit\u00e9 \u00c9motionnelle", "projection": "Projection", "surveillance": "Surveillance" },
   "archetypes": {
-    "overthinker": {
-      "emoji": "🧠",
-      "title": "L'Overthinker Chronique",
-      "desc": "Tu as déjà imaginé 47 scénarios catastrophe avant de finir cette phrase."
-    },
-    "passive": {
-      "emoji": "😏",
-      "title": "Le/La Passif(ve)-Agressif(ve)",
-      "desc": "Ton 'ça va.' a causé plus de dégâts que la plupart des catastrophes naturelles."
-    },
-    "mainchar": {
-      "emoji": "👑",
-      "title": "Le/La Personnage Principal",
-      "desc": "Les autres sont des PNJ dans ton film et ça te convient parfaitement."
-    },
-    "sponge": {
-      "emoji": "🧽",
-      "title": "L'Éponge Émotionnelle",
-      "desc": "Tu absorbes les sentiments de tout le monde comme un routeur WiFi humain pour les émotions."
-    },
-    "control": {
-      "emoji": "🎮",
-      "title": "Le/La Control Freak",
-      "desc": "Ton calendrier à code couleur a un calendrier de secours au cas où."
-    },
-    "ghost": {
-      "emoji": "👻",
-      "title": "Le/La Fantôme",
-      "desc": "Tu as perfectionné l'art de disparaître pile quand les choses deviennent sérieuses."
-    },
-    "jealous": {
-      "emoji": "👀",
-      "title": "L'Ami(e) Jaloux(se)",
-      "desc": "Tu soutiens le succès de tes amis... après une brève période de deuil."
-    },
-    "pleaser": {
-      "emoji": "🤝",
-      "title": "Le/La People Pleaser",
-      "desc": "Tu t'excuserais de te faire poignarder parce que le couteau pourrait être mal à l'aise."
-    }
+    "puppeteer": { "title": "Le/La Marionnettiste", "desc": "Tu tires des ficelles invisibles dans chaque conversation. Culpabilit\u00e9, manipulation subtile, vuln\u00e9rabilit\u00e9 strat\u00e9gique \u2014 tout est ma\u00eetris\u00e9.", "defense": "Ton intelligence \u00e9motionnelle est exceptionnelle. Utilise ce pouvoir pour connecter, pas contr\u00f4ler." },
+    "ghost": { "title": "Le/La Fant\u00f4me", "desc": "Quand \u00e7a devient inconfortable, tu disparais comme si tu n'avais jamais exist\u00e9.", "defense": "Tu es ma\u00eetre/sse dans la protection de ta paix. N'oublie juste pas ceux que tu laisses derri\u00e8re." },
+    "victim": { "title": "La Victime", "desc": "Tout t'arrive \u00c0 toi, jamais \u00e0 cause de toi. Le monde conspire contre toi et tu as les preuves.", "defense": "Ta sensibilit\u00e9 \u00e0 l'injustice est un superpouvoir. Canalise-la en action plut\u00f4t qu'en apitoiement." },
+    "prosecutor": { "title": "Le/La Procureur/e", "desc": "Tu te souviens de chaque affront, chaque promesse bris\u00e9e, chaque message sans r\u00e9ponse.", "defense": "Ton attention aux d\u00e9tails et ton sens de la responsabilit\u00e9 sont de vraies forces." },
+    "spy": { "title": "L'Espion/ne", "desc": "Tu as v\u00e9rifi\u00e9 leurs abonn\u00e9s, abonnements, photos tagu\u00e9es et stories d'amis. Tu appelles \u00e7a '\u00eatre attentif/ve.' Nous appelons \u00e7a surveillance.", "defense": "Tes capacit\u00e9s d'investigation sont in\u00e9gal\u00e9es. Redirige cette hypervigilance vers la curiosit\u00e9." },
+    "saboteur": { "title": "Le/La Saboteur/se", "desc": "Quand tout va bien, tu trouves comment tout ruiner. La proph\u00e9tie auto-r\u00e9alisatrice est ton art.", "defense": "Ta conscience de l'imperfection est rare et pr\u00e9cieuse. Apprends \u00e0 faire confiance aux bonnes choses." },
+    "mirror": { "title": "Le/La Miroir", "desc": "Quoi qu'on t'accuse, tu renvoies. 'Tu es sur la d\u00e9fensive !' 'Non, TOI !' \u2014 toi, toujours.", "defense": "Ta capacit\u00e9 \u00e0 voir d'autres perspectives est puissante. Utilise cette perspicacit\u00e9 avec compassion." },
+    "thermometer": { "title": "Le/La Thermom\u00e8tre", "desc": "Tes \u00e9motions contr\u00f4lent la pi\u00e8ce. Un message te fait passer de la joie \u00e0 la rage \u00e0 la crise en 30 secondes.", "defense": "Ta profondeur \u00e9motionnelle est extraordinaire. Cette passion te rend incroyablement vivant/e et authentique." }
   },
-  "result": {
-    "title": "Ton Trait Toxique",
-    "toxicityLevel": "Niveau de Toxicité",
-    "secondary": "Trait secondaire : {trait}",
-    "badge": "Je me sens tellement attaqué(e) !",
-    "retake": "Refaire le Test"
-  },
-  "share": {
-    "title": "Détecteur de Trait Toxique",
-    "text": "Mon trait toxique : {trait} {emoji} ☠️ Et toi c'est quoi ?",
-    "copied": "Copié !",
-    "twitter": "Partager sur Twitter",
-    "copyUrl": "Copier le Lien"
-  },
-  "nav": {
-    "back": "DopaBrain Accueil"
-  }
+  "verdict": { "intro": "Le Tribunal a rendu son verdict...", "guilty": "COUPABLE" },
+  "result": { "toxicityLevel": "NIVEAU DE TOXICIT\u00c9", "breakdownTitle": "D\u00c9COMPOSITION DE TOXICIT\u00c9", "defenseTitle": "R\u00c9SUM\u00c9 DE D\u00c9FENSE", "retake": "Nouveau Proc\u00e8s" },
+  "share": { "text": "Le Tribunal m'a d\u00e9clar\u00e9/e coupable : {trait} {emoji} Quel est ton verdict ?", "copied": "Copi\u00e9 !", "twitter": "Partager sur X", "copyUrl": "Copier le lien" },
+  "nav": { "back": "DopaBrain Accueil" }
 }

@@ -1,164 +1,40 @@
 {
-  "meta": {
-    "title": "Detector de Traço Tóxico | DopaBrain",
-    "description": "Descubra seu traço tóxico escondido com 12 perguntas situacionais brutalmente honestas. Todo mundo tem um."
+  "meta": { "title": "Tribunal de Tra\u00e7o T\u00f3xico | DopaBrain", "description": "Suas mensagens foram intimadas. O Tribunal examinar\u00e1 seu comportamento em mensagens para revelar seu tra\u00e7o t\u00f3xico." },
+  "a11y": { "skip": "Ir para o conte\u00fado" },
+  "app": { "title": "Tribunal de Tra\u00e7o T\u00f3xico", "subtitle": "Suas mensagens foram intimadas.", "loading": "CARREGANDO TRIBUNAL..." },
+  "start": { "notifApp": "TRIBUNAL", "notifTitle": "Suas mensagens foram intimadas", "notifBody": "O Tribunal examinar\u00e1 seu comportamento em mensagens.", "notifTime": "agora", "desc": "8 conversas de texto + 4 rea\u00e7\u00f5es em redes sociais. O Tribunal dar\u00e1 seu veredicto.", "btn": "Iniciar Tribunal" },
+  "meter": { "label": "TOXICIDADE DETECTADA", "count": "{current} / {total}" },
+  "phase": { "messages": "MENSAGENS DE TEXTO", "social": "AUDITORIA DE REDES" },
+  "chat": { "online": "online", "today": "Hoje" },
+  "stamp": { "toxic": "TOXICIDADE DETECTADA", "clean": "LIMPO" },
+  "scenarios": {
+    "msg1": { "name": "Melhor Amigo/a", "messages": ["Ei, desculpa mas vou ter que cancelar hoje \u00e0 noite", "Surgiu um imprevisto \uD83D\uDE14"], "options": ["De boa! Essas coisas acontecem, a gente remarca \uD83D\uDE0A", "Nossa, de novo? Eu sempre arrumo tempo pra voc\u00ea...", "..."] },
+    "msg2": { "name": "Parceiro/a", "messages": ["Com quem voc\u00ea tava conversando agora?", "Voc\u00ea tava sorrindo muito olhando o celular"], "options": ["Ah, era [nome]! Olha, a gente tava falando sobre...", "Por que voc\u00ea precisa saber tudo que eu fa\u00e7o?", "Interessante. E voc\u00ea tava conversando com quem ontem? \uD83E\uDD14"] },
+    "msg3": { "name": "Colega", "messages": ["Boas not\u00edcias! A chefe amou a ideia do projeto", "Ela quer que eu lidere daqui pra frente \uD83D\uDE04"], "options": ["Espera, essa ideia foi minha. Precisamos conversar.", "Parab\u00e9ns... *print pro grupo* voc\u00eas acreditam??", "Como mencionei no meu \u00faltimo e-mail, o conceito original foi colaborativo \uD83D\uDE42"] },
+    "msg4": { "name": "Ex", "messages": ["Oi...", "Sinto sua falta"], "options": ["*visualiza e n\u00e3o responde*", "Haha eu tamb\u00e9m... o que voc\u00ea tem feito? \uD83D\uDE0F", "*print pros amigos* OLHA QUEM VOLTOU RASTEJANDO"] },
+    "msg5": { "name": "Amigo/a Pr\u00f3ximo/a", "messages": ["PASSEI!!! \uD83C\uDF89\uD83C\uDF89\uD83C\uDF89", "Fui aceito no programa que n\u00f3s dois nos inscrevemos!"], "options": ["PARAB\u00c9NS!! To t\u00e3o orgulhoso/a de voc\u00ea!! \uD83E\uDD73", "Ah legal... eu na real nem queria tanto", "\u00c9 legal. Ouvi dizer que n\u00e3o \u00e9 t\u00e3o bom quanto falam"] },
+    "msg6": { "name": "Crush", "messages": ["*Visualizado h\u00e1 2 horas*"], "options": ["*larga o celular e continua o dia*", "Voc\u00ea viu minha mensagem?\nOi?\nT\u00e1 tudo bem?", "Tem tempo pra postar stories mas n\u00e3o pra responder? \uD83D\uDE10"] },
+    "msg7": { "name": "Grupo de Amigos", "messages": ["[Voc\u00ea percebe que criaram um grupo novo sem voc\u00ea]", "Postaram fotos de um rolê que n\u00e3o te convidaram"], "options": ["Ei, vi que sa\u00edram! Quero ir na pr\u00f3xima \uD83D\uDE0A", "*Cria grupo novo sem eles* \"Quem quer fazer algo REALMENTE legal?\"", "Acho que ningu\u00e9m se importa comigo... sempre fico de fora \uD83D\uDE22"] },
+    "msg8": { "name": "Parceiro/a", "messages": ["Precisamos conversar.", "Pode me ligar quando tiver tempo?"], "options": ["Claro, to livre agora. O que houve?", "MEU DEUS o que eu fiz?? \u00c9 por causa de ter\u00e7a? VOC\u00ca VAI TERMINAR COMIGO?!", "Desculpa, to super ocupado/a. *desliga o celular por 3 dias*"] }
+  ,
+    "social1": { "username": "Seu Ex", "handle": "@vivendo_minha_melhor_vida", "image": "\uD83C\uDFD6\uFE0F\u2728", "content": "Melhores f\u00e9rias da vida! Finalmente vivendo a vida que mere\u00e7o \u2728\uD83C\uDF34 #aben\u00e7oado #novocap\u00edtulo", "engagement": "847 curtidas \u00B7 62 coment\u00e1rios" },
+    "social2": { "username": "Conhecido", "handle": "@humilde_esfor\u00e7ado", "image": "\uD83D\uDCAA\u2728", "content": "Que humilde me sinto em anunciar outra promo\u00e7\u00e3o \uD83D\uDE07 Esfor\u00e7o compensa! (comemorando no meu BMW novo kkk) #grato", "engagement": "1.2K curtidas \u00B7 89 coment\u00e1rios" },
+    "social3": { "username": "Amigo/a Misterioso/a", "handle": "@cr\u00edptico", "content": "Tem gente que mostra a verdadeira face quando voc\u00ea mais precisa \uD83D\uDE12 Voc\u00ea sabe quem \u00e9. #amigofalso", "engagement": "234 curtidas \u00B7 47 coment\u00e1rios" },
+    "social4": { "username": "Seu Amigo/a", "handle": "@borboleta_social", "image": "\uD83D\uDC6B\uD83C\uDF89", "content": "Melhor noite com minha gente FAVORITA!! \uD83E\uDD70 T\u00e3o grato/a por esse grupo \u2764\uFE0F #squad #aben\u00e7oado", "engagement": "562 curtidas \u00B7 38 coment\u00e1rios" }
   },
-  "a11y": {
-    "skip": "Ir para o conteúdo"
-  },
-  "app": {
-    "title": "☠️ Detector de Traço Tóxico",
-    "subtitle": "Todo mundo tem um...",
-    "loading": "Analisando...",
-    "start": "Revelar Meu Traço",
-    "warning": "Resultados brutalmente honestos à frente!"
-  },
-  "question": {
-    "progress": "{current} / {total}"
-  },
-  "questions": {
-    "q1": {
-      "text": "Seu amigo foi promovido no trabalho. Seu primeiro pensamento é...",
-      "a": "\"Fico tão feliz por ele/a!\" (emocionado de verdade)",
-      "b": "\"Por que não eu...?\"",
-      "c": "\"Preciso me esforçar mais\" (já pesquisando cursos)",
-      "d": "\"Ah, promoção é superestimada\""
-    },
-    "q2": {
-      "text": "Você recebe uma mensagem vaga do seu crush. Você...",
-      "a": "Analisa cada palavra por 30 minutos",
-      "b": "Responde \"ok.\"",
-      "c": "Printa e manda no grupo pra análise coletiva",
-      "d": "Responde normalmente e segue a vida"
-    },
-    "q3": {
-      "text": "Os planos mudam de última hora. Você...",
-      "a": "Tem um colapso mental completo",
-      "b": "Diz \"tudo bem!\" (morrendo por dentro)",
-      "c": "Some e não responde ninguém",
-      "d": "Realmente não liga"
-    },
-    "q4": {
-      "text": "Um amigo desabafa sobre os problemas dele. Você...",
-      "a": "Absorve todas as emoções como uma esponja",
-      "b": "Secretamente pensa que seus problemas são maiores",
-      "c": "Dá conselhos não pedidos e um plano de 5 etapas",
-      "d": "Escuta mas mantém limites"
-    },
-    "q5": {
-      "text": "Você cometeu um pequeno erro no trabalho. Você...",
-      "a": "Repassa mentalmente por 3 semanas",
-      "b": "Sutilmente coloca a culpa em outra pessoa",
-      "c": "Nem percebeu que foi um erro (protagonista vibe)",
-      "d": "Corrige e segue em frente"
-    },
-    "q6": {
-      "text": "Alguém discorda de você no grupo. Você...",
-      "a": "Escreve uma resposta de 3 parágrafos",
-      "b": "Deixa no vácuo por dias",
-      "c": "\"Tá bom... você que sabe 🙃\"",
-      "d": "Tem uma discussão respeitosa"
-    },
-    "q7": {
-      "text": "Seu/sua parceiro/a sai com alguém atraente. Você...",
-      "a": "Checa as redes sociais 47 vezes",
-      "b": "\"Diverte-se! 😊\" (rastreando a localização)",
-      "c": "Não sente nada, você é o/a protagonista",
-      "d": "Confia completamente"
-    },
-    "q8": {
-      "text": "Um amigo pede sua opinião sincera. Você...",
-      "a": "Adoça tudo",
-      "b": "É brutalmente honesto/a",
-      "c": "\"Hmm é... interessante\"",
-      "d": "Dá um feedback honesto e cuidadoso"
-    },
-    "q9": {
-      "text": "Você está organizando uma viagem em grupo. Você...",
-      "a": "Cria uma apresentação de 47 slides",
-      "b": "Deixa todo mundo decidir (e reclama depois)",
-      "c": "Só planeja o que você quer fazer",
-      "d": "Colabora no planejamento"
-    },
-    "q10": {
-      "text": "Alguém te deixa no vácuo. Você...",
-      "a": "Assume que te odeiam",
-      "b": "Deixa no vácuo pelo dobro do tempo",
-      "c": "Deleta a conversa",
-      "d": "Assume que está ocupado/a"
-    },
-    "q11": {
-      "text": "Seu amigo consegue algo que você fracassou. Você...",
-      "a": "Fica genuinamente feliz (depois de um breve luto)",
-      "b": "Absorve a felicidade dele e se sente melhor",
-      "c": "Pensa \"minha hora vai chegar, eu sou diferente\"",
-      "d": "Se inspira pra tentar de novo"
-    },
-    "q12": {
-      "text": "Um relacionamento fica sério. Você...",
-      "a": "Começa a planejar o casamento na cabeça",
-      "b": "De repente fica muito ocupado/a",
-      "c": "Precisa controlar cada detalhe",
-      "d": "Deixa rolar naturalmente"
-    }
-  },
+  "dimensions": { "manipulation": "Manipula\u00e7\u00e3o", "passive_aggression": "Agressividade Passiva", "deflection": "Desvio", "avoidance": "Evita\u00e7\u00e3o", "jealousy": "Ci\u00fame", "volatility": "Volatilidade Emocional", "projection": "Proje\u00e7\u00e3o", "surveillance": "Vigil\u00e2ncia" },
   "archetypes": {
-    "overthinker": {
-      "emoji": "🧠",
-      "title": "O/A Pensador(a) Crônico/a",
-      "desc": "Você já imaginou 47 cenários de catástrofe antes de terminar esta frase."
-    },
-    "passive": {
-      "emoji": "😏",
-      "title": "O/A Passivo-Agressivo/a",
-      "desc": "Seu 'tô bem.' já causou mais estrago que a maioria dos desastres naturais."
-    },
-    "mainchar": {
-      "emoji": "👑",
-      "title": "O/A Protagonista",
-      "desc": "Todos os outros são NPCs no seu filme e você está de boa com isso."
-    },
-    "sponge": {
-      "emoji": "🧽",
-      "title": "A Esponja Emocional",
-      "desc": "Você absorve os sentimentos de todo mundo como um roteador WiFi humano de emoções."
-    },
-    "control": {
-      "emoji": "🎮",
-      "title": "O/A Controlador(a)",
-      "desc": "Sua agenda colorida tem uma agenda reserva por precaução."
-    },
-    "ghost": {
-      "emoji": "👻",
-      "title": "O/A Fantasma",
-      "desc": "Você aperfeiçoou a arte de sumir justo quando as coisas ficam sérias."
-    },
-    "jealous": {
-      "emoji": "👀",
-      "title": "O/A Amigo/a Ciumento/a",
-      "desc": "Você apoia o sucesso dos amigos... depois de um breve período de luto."
-    },
-    "pleaser": {
-      "emoji": "🤝",
-      "title": "O/A Agradador(a)",
-      "desc": "Você pediria desculpas por levar uma facada porque a faca pode estar desconfortável."
-    }
+    "puppeteer": { "title": "O/A Titereiro/a", "desc": "Voc\u00ea puxa fios invis\u00edveis em cada conversa. Culpa, manipula\u00e7\u00e3o sutil, vulnerabilidade estrat\u00e9gica \u2014 domina tudo.", "defense": "Sua intelig\u00eancia emocional \u00e9 extraordin\u00e1ria. Use esse poder para conectar, n\u00e3o controlar." },
+    "ghost": { "title": "O/A Fantasma", "desc": "Quando as coisas ficam desconfort\u00e1veis, voc\u00ea desaparece como se nunca tivesse existido.", "defense": "Voc\u00ea \u00e9 mestre em proteger sua paz. S\u00f3 n\u00e3o esque\u00e7a quem voc\u00ea deixa pra tr\u00e1s." },
+    "victim": { "title": "A V\u00edtima", "desc": "Tudo acontece COM voc\u00ea, nunca por sua causa. O mundo conspira contra voc\u00ea e voc\u00ea tem provas.", "defense": "Sua sensibilidade \u00e0 injusti\u00e7a \u00e9 um superpoder. Canalize em defesa ao inv\u00e9s de autopiedade." },
+    "prosecutor": { "title": "O/A Promotor/a", "desc": "Voc\u00ea lembra de cada desfeita, cada promessa quebrada, cada mensagem sem resposta.", "defense": "Sua aten\u00e7\u00e3o aos detalhes e senso de responsabilidade s\u00e3o for\u00e7as genuinas." },
+    "spy": { "title": "O/A Espi\u00e3o/\u00e3", "desc": "Voc\u00ea checou seguidores, seguindo, fotos marcadas e stories dos amigos. Voc\u00ea chama de 'interesse.' N\u00f3s chamamos de vigil\u00e2ncia.", "defense": "Suas habilidades de pesquisa s\u00e3o incompar\u00e1veis. Redirecione para curiosidade." },
+    "saboteur": { "title": "O/A Sabotador/a", "desc": "Quando as coisas v\u00e3o bem, voc\u00ea encontra como estragar. Profecia autorrealiz\u00e1vel \u00e9 sua arte.", "defense": "Sua autoconsci\u00eancia \u00e9 rara e valiosa. Aprenda a confiar nas coisas boas." },
+    "mirror": { "title": "O/A Espelho", "desc": "O que quer que te acusem, voc\u00ea reflete de volta. 'Voc\u00ea t\u00e1 na defensiva!' 'N\u00e3o, VOC\u00ca t\u00e1!' \u2014 voc\u00ea, sempre.", "defense": "Sua capacidade de ver outras perspectivas \u00e9 poderosa. Use com compaix\u00e3o." },
+    "thermometer": { "title": "O/A Term\u00f4metro", "desc": "Suas emo\u00e7\u00f5es controlam o ambiente. Uma mensagem te leva de alegria a furia a crise em 30 segundos.", "defense": "Sua profundidade emocional \u00e9 extraordin\u00e1ria. Essa paix\u00e3o te faz incrivelmente aut\u00eantico/a." }
   },
-  "result": {
-    "title": "Seu Traço Tóxico",
-    "toxicityLevel": "Nível de Toxicidade",
-    "secondary": "Traço secundário: {trait}",
-    "badge": "Me senti muito atacado/a!",
-    "retake": "Refazer Teste"
-  },
-  "share": {
-    "title": "Detector de Traço Tóxico",
-    "text": "Meu traço tóxico: {trait} {emoji} ☠️ E o seu?",
-    "copied": "Copiado!",
-    "twitter": "Compartilhar no Twitter",
-    "copyUrl": "Copiar Link"
-  },
-  "nav": {
-    "back": "DopaBrain Início"
-  }
+  "verdict": { "intro": "O Tribunal chegou a um veredicto...", "guilty": "CULPADO" },
+  "result": { "toxicityLevel": "N\u00cdVEL DE TOXICIDADE", "breakdownTitle": "AN\u00c1LISE DE TOXICIDADE", "defenseTitle": "RESUMO DA DEFESA", "retake": "Novo Julgamento" },
+  "share": { "text": "O Tribunal me declarou culpado: {trait} {emoji} Qual seu veredicto?", "copied": "Copiado!", "twitter": "Compartilhar no X", "copyUrl": "Copiar link" },
+  "nav": { "back": "DopaBrain In\u00edcio" }
 }

@@ -1,164 +1,39 @@
 {
-  "meta": {
-    "title": "Toxischer-Eigenschaft-Detektor | DopaBrain",
-    "description": "Entdecke deine verborgene toxische Eigenschaft mit 12 brutal ehrlichen Situationsfragen. Jeder hat eine."
+  "meta": { "title": "Toxisches-Merkmal-Tribunal | DopaBrain", "description": "Deine Nachrichten wurden vorgeladen. Das Tribunal pr\u00fcft dein Messaging-Verhalten und verk\u00fcndet das Urteil." },
+  "a11y": { "skip": "Zum Inhalt springen" },
+  "app": { "title": "Toxisches-Merkmal-Tribunal", "subtitle": "Deine Nachrichten wurden vorgeladen.", "loading": "TRIBUNAL L\u00c4DT..." },
+  "start": { "notifApp": "TRIBUNAL", "notifTitle": "Deine Nachrichten wurden vorgeladen", "notifBody": "Das Tribunal wird dein Messaging-Verhalten pr\u00fcfen.", "notifTime": "jetzt", "desc": "8 Textnachrichten-Gespr\u00e4che + 4 Social-Media-Reaktionen. Das Tribunal f\u00e4llt sein Urteil.", "btn": "Tribunal starten" },
+  "meter": { "label": "TOXIZIT\u00c4T ERKANNT", "count": "{current} / {total}" },
+  "phase": { "messages": "TEXTNACHRICHTEN", "social": "SOCIAL-MEDIA-PR\u00dcFUNG" },
+  "chat": { "online": "online", "today": "Heute" },
+  "stamp": { "toxic": "TOXIZIT\u00c4T ERKANNT", "clean": "SAUBER" },
+  "scenarios": {
+    "msg1": { "name": "Beste/r Freund/in", "messages": ["Hey, tut mir echt leid, aber ich muss heute Abend absagen", "Mir ist was dazwischengekommen \uD83D\uDE14"], "options": ["Kein Problem! So was passiert, wir holen das nach \uD83D\uDE0A", "Wow, schon wieder? Ich mache mir immer Zeit f\u00fcr dich...", "..."] },
+    "msg2": { "name": "Partner/in", "messages": ["Mit wem hast du gerade geschrieben?", "Du hast voll gegrinst auf dein Handy"], "options": ["Ach, das war [Name]! Guck mal, wir haben \u00fcber...", "Warum musst du alles wissen, was ich mache?", "Interessant. Mit wem hast DU gestern geschrieben? \uD83E\uDD14"] },
+    "msg3": { "name": "Kolleg/in", "messages": ["Gute Nachrichten! Die Chefin fand die Projektidee super", "Sie will, dass ich es ab jetzt leite \uD83D\uDE04"], "options": ["Moment, das war meine Idee. Wir m\u00fcssen dar\u00fcber reden.", "Gl\u00fcckwunsch... *Screenshot an die Gruppe* K\u00f6nnt ihr das glauben??", "Wie in meiner letzten Mail erw\u00e4hnt, war das urspr\u00fcngliche Konzept Teamarbeit \uD83D\uDE42"] },
+    "msg4": { "name": "Ex", "messages": ["Hey...", "Ich vermisse dich"], "options": ["*antwortet nicht*", "Haha ich dich auch... was machst du so? \uD83D\uDE0F", "*Screenshot an Freunde* GUCKT WER ANGEKROCHEN KOMMT"] },
+    "msg5": { "name": "Enge/r Freund/in", "messages": ["ICH BIN DRIN!!! \uD83C\uDF89\uD83C\uDF89\uD83C\uDF89", "Ich wurde in das Programm aufgenommen, f\u00fcr das wir uns beide beworben haben!"], "options": ["HERZLICHEN GL\u00dcCKWUNSCH!! Ich bin so stolz!! \uD83E\uDD73", "Ah sch\u00f6n... ich wollte das eh nicht so sehr", "Cool. Ich h\u00f6rte, es ist nicht so gut wie alle sagen"] },
+    "msg6": { "name": "Schwarm", "messages": ["*Vor 2 Stunden gelesen*"], "options": ["*Legt das Handy weg, macht weiter*", "Hast du meine Nachricht gesehen?\nHallo?\nAlles ok?", "F\u00fcr Stories hast du Zeit aber nicht zum Antworten? \uD83D\uDE10"] },
+    "msg7": { "name": "Freundesgruppe", "messages": ["[Du merkst, dass eine neue Gruppe ohne dich erstellt wurde]", "Sie haben Fotos von einem Treffen gepostet, zu dem du nicht eingeladen warst"], "options": ["Hey, ihr habt euch getroffen! N\u00e4chstes Mal bin ich dabei \uD83D\uDE0A", "*Erstellt neue Gruppe ohne sie* \"Wer will was WIRKLICH Cooles machen?\"", "Anscheinend ist niemandem was an mir gelegen... ich werde immer ausgeschlossen \uD83D\uDE22"] },
+    "msg8": { "name": "Partner/in", "messages": ["Wir m\u00fcssen reden.", "Kannst du mich anrufen, wenn du Zeit hast?"], "options": ["Klar, ich hab jetzt Zeit. Was gibt's?", "Oh Gott was hab ich getan?? Ist es wegen Dienstag? MACHST DU SCHLUSS?!", "Sorry, bin gerade super besch\u00e4ftigt. *Schaltet Handy 3 Tage aus*"] },
+    "social1": { "username": "Dein/e Ex", "handle": "@lebe_mein_bestes_leben", "image": "\uD83C\uDFD6\uFE0F\u2728", "content": "Bester Urlaub ever! Endlich das Leben, das ich verdiene \u2728\uD83C\uDF34 #gesegnet #neueskapitel", "engagement": "847 Likes \u00B7 62 Kommentare" },
+    "social2": { "username": "Bekannte/r", "handle": "@demuetig_fleissig", "image": "\uD83D\uDCAA\u2728", "content": "So demuetig, wieder bef\u00f6rdert worden zu sein \uD83D\uDE07 Harte Arbeit zahlt sich aus! (feiere im neuen BMW lol) #dankbar", "engagement": "1.2K Likes \u00B7 89 Kommentare" },
+    "social3": { "username": "Mysteri\u00f6se/r Freund/in", "handle": "@kryptisch_poster", "content": "Manche Leute zeigen ihr wahres Gesicht, wenn man sie am meisten braucht \uD83D\uDE12 Du wei\u00dft, wer du bist. #fakefreunde", "engagement": "234 Likes \u00B7 47 Kommentare" },
+    "social4": { "username": "Dein/e Freund/in", "handle": "@sozialer_schmetterling", "image": "\uD83D\uDC6B\uD83C\uDF89", "content": "Beste Nacht mit meinen LIEBLINGSMENSCHEN!! \uD83E\uDD70 So dankbar f\u00fcr diese Freunde \u2764\uFE0F #squad #gesegnet", "engagement": "562 Likes \u00B7 38 Kommentare" }
   },
-  "a11y": {
-    "skip": "Zum Inhalt springen"
-  },
-  "app": {
-    "title": "☠️ Toxischer-Eigenschaft-Detektor",
-    "subtitle": "Jeder hat eine...",
-    "loading": "Analysiere...",
-    "start": "Meine Eigenschaft aufdecken",
-    "warning": "Brutal ehrliche Ergebnisse voraus!"
-  },
-  "question": {
-    "progress": "{current} / {total}"
-  },
-  "questions": {
-    "q1": {
-      "text": "Dein Freund wurde befördert. Dein erster Gedanke ist...",
-      "a": "\"Ich freue mich so für dich!\" (echt gerührt)",
-      "b": "\"Warum nicht ich...?\"",
-      "c": "\"Ich muss härter arbeiten\" (googelt sofort Selbsthilfe)",
-      "d": "\"Beförderungen sind überbewertet\""
-    },
-    "q2": {
-      "text": "Du bekommst eine vage Nachricht von deinem Schwarm. Du...",
-      "a": "Analysierst jedes Wort 30 Minuten lang",
-      "b": "Antwortest \"ok.\"",
-      "c": "Machst einen Screenshot für die Gruppenanalyse",
-      "d": "Antwortest normal und machst weiter"
-    },
-    "q3": {
-      "text": "Pläne ändern sich in letzter Minute. Du...",
-      "a": "Hast einen kompletten Nervenzusammenbruch",
-      "b": "Sagst \"klar, kein Problem!\" (stirbst innerlich)",
-      "c": "Verschwindest und antwortest nicht",
-      "d": "Findest es wirklich nicht schlimm"
-    },
-    "q4": {
-      "text": "Ein Freund erzählt dir von seinen Problemen. Du...",
-      "a": "Saugst alle Emotionen wie ein Schwamm auf",
-      "b": "Denkst heimlich, deine Probleme sind größer",
-      "c": "Gibst ungebetene Ratschläge und einen 5-Schritte-Plan",
-      "d": "Hörst zu, aber setzt Grenzen"
-    },
-    "q5": {
-      "text": "Du hast einen kleinen Fehler bei der Arbeit gemacht. Du...",
-      "a": "Spielst ihn 3 Wochen im Kopf ab",
-      "b": "Schiebst es subtil auf jemand anderen",
-      "c": "Merkst nicht mal, dass es ein Fehler war (Hauptcharakter-Energie)",
-      "d": "Behebst ihn und machst weiter"
-    },
-    "q6": {
-      "text": "Jemand widerspricht dir im Gruppenchat. Du...",
-      "a": "Schreibst eine 3-Absatz-Antwort",
-      "b": "Lässt sie tagelang auf gelesen",
-      "c": "\"Klar... was du sagst 🙃\"",
-      "d": "Führst eine respektvolle Diskussion"
-    },
-    "q7": {
-      "text": "Dein Partner trifft sich mit jemandem Attraktivem. Du...",
-      "a": "Checkst deren Social Media 47 Mal",
-      "b": "\"Viel Spaß! 😊\" (trackst den Standort)",
-      "c": "Fühlst nichts, du bist der Hauptcharakter",
-      "d": "Vertraust vollkommen"
-    },
-    "q8": {
-      "text": "Ein Freund bittet um ehrliches Feedback. Du...",
-      "a": "Verpackst alles in Watte",
-      "b": "Gibst brutal ehrliches Feedback",
-      "c": "\"Hmm, es ist... interessant\"",
-      "d": "Gibst durchdachtes ehrliches Feedback"
-    },
-    "q9": {
-      "text": "Du organisierst eine Gruppenreise. Du...",
-      "a": "Erstellst eine 47-Folien-Präsentation",
-      "b": "Lässt alle anderen entscheiden (beschwerst dich dann)",
-      "c": "Planst nur Aktivitäten, die du willst",
-      "d": "Planst gemeinsam"
-    },
-    "q10": {
-      "text": "Jemand lässt dich auf gelesen. Du...",
-      "a": "Nimmst an, sie hassen dich",
-      "b": "Lässt sie doppelt so lange auf gelesen",
-      "c": "Löschst die Konversation",
-      "d": "Nimmst an, sie sind einfach beschäftigt"
-    },
-    "q11": {
-      "text": "Dein Freund schafft, woran du gescheitert bist. Du...",
-      "a": "Freust dich echt (nach einer kurzen Trauerphase)",
-      "b": "Saugst deren Glück auf und fühlst dich besser",
-      "c": "Denkst \"meine Zeit kommt, ich bin anders\"",
-      "d": "Bist inspiriert, es nochmal zu versuchen"
-    },
-    "q12": {
-      "text": "Eine Beziehung wird ernst. Du...",
-      "a": "Fängst im Kopf an, die Hochzeit zu planen",
-      "b": "Bist plötzlich sehr beschäftigt",
-      "c": "Musst jeden Aspekt kontrollieren",
-      "d": "Lässt es auf dich zukommen"
-    }
-  },
+  "dimensions": { "manipulation": "Manipulation", "passive_aggression": "Passive Aggression", "deflection": "Ablenkung", "avoidance": "Vermeidung", "jealousy": "Eifersucht", "volatility": "Emotionale Volatilit\u00e4t", "projection": "Projektion", "surveillance": "\u00dcberwachung" },
   "archetypes": {
-    "overthinker": {
-      "emoji": "🧠",
-      "title": "Der/Die Chronische Überdenker/in",
-      "desc": "Du hast dir bereits 47 Worst-Case-Szenarien vorgestellt, bevor du diesen Satz zu Ende gelesen hast."
-    },
-    "passive": {
-      "emoji": "😏",
-      "title": "Der/Die Passiv-Aggressive Texter/in",
-      "desc": "Dein 'Mir geht's gut.' hat mehr Schaden angerichtet als die meisten Naturkatastrophen."
-    },
-    "mainchar": {
-      "emoji": "👑",
-      "title": "Der/Die Hauptcharakter",
-      "desc": "Alle anderen sind NPCs in deinem Film und du findest das völlig okay."
-    },
-    "sponge": {
-      "emoji": "🧽",
-      "title": "Der/Die Emotionale Schwamm",
-      "desc": "Du saugst die Gefühle aller auf wie ein menschlicher WiFi-Router für Emotionen."
-    },
-    "control": {
-      "emoji": "🎮",
-      "title": "Der/Die Kontrollfreak",
-      "desc": "Dein farbcodierter Kalender hat einen Backup-Kalender für alle Fälle."
-    },
-    "ghost": {
-      "emoji": "👻",
-      "title": "Der/Die Geist",
-      "desc": "Du hast die Kunst perfektioniert, genau dann zu verschwinden, wenn es ernst wird."
-    },
-    "jealous": {
-      "emoji": "👀",
-      "title": "Der/Die Eifersüchtige Freund/in",
-      "desc": "Du unterstützt den Erfolg deiner Freunde... nach einer kurzen Trauerphase."
-    },
-    "pleaser": {
-      "emoji": "🤝",
-      "title": "Der/Die People Pleaser",
-      "desc": "Du würdest dich dafür entschuldigen, erstochen zu werden, weil das Messer sich unwohl fühlen könnte."
-    }
+    "puppeteer": { "title": "Der/Die Puppenspieler/in", "desc": "Du ziehst unsichtbare F\u00e4den in jedem Gespr\u00e4ch. Schuldgef\u00fchle, subtile Manipulation, strategische Verletzlichkeit \u2014 alles gemeistert.", "defense": "Deine emotionale Intelligenz ist au\u00dfergew\u00f6hnlich. Nutze sie f\u00fcr Verbindung statt Kontrolle." },
+    "ghost": { "title": "Der/Die Geist", "desc": "Wenn es unangenehm wird, verschwindest du, als h\u00e4ttest du nie existiert.", "defense": "Du bist Meister/in darin, deinen Frieden zu sch\u00fctzen. Vergiss nur nicht die Menschen, die du zur\u00fckl\u00e4sst." },
+    "victim": { "title": "Das Opfer", "desc": "Alles passiert DIR, nie wegen dir. Die Welt ist eine Verschw\u00f6rung und du hast Beweise.", "defense": "Deine Empfindlichkeit gegen\u00fcber Ungerechtigkeit ist eine Superkraft. Wandle sie in Engagement statt Selbstmitleid um." },
+    "prosecutor": { "title": "Der/Die Staatsanwalt/\u00e4ltin", "desc": "Du erinnerst dich an jede Kr\u00e4nkung, jedes gebrochene Versprechen, jede unbeantwortete Nachricht.", "defense": "Deine Detailgenauigkeit und dein starkes Verantwortungsbewusstsein sind echte St\u00e4rken." },
+    "spy": { "title": "Der/Die Spion/in", "desc": "Du hast Follower, Following, markierte Fotos und Freundes-Stories gecheckt. Du nennst es 'Interesse.' Wir nennen es \u00dcberwachung.", "defense": "Deine Recherchef\u00e4higkeiten sind unerreicht. Lenke die Hypervigilanz in Neugier um." },
+    "saboteur": { "title": "Der/Die Saboteur/in", "desc": "Gerade wenn es gut l\u00e4uft, findest du einen Weg es zu zerst\u00f6ren. Self-fulfilling Prophecy ist deine Kunst.", "defense": "Dein Selbstbewusstsein \u00fcber Unvollkommenheit ist selten und wertvoll. Lerne den guten Dingen zu vertrauen." },
+    "mirror": { "title": "Der/Die Spiegel", "desc": "Was auch immer man dir vorwirft, du reflektierst es zur\u00fcck. 'Du bist defensiv!' 'Nein, DU bist defensiv!' \u2014 du, immer.", "defense": "Deine F\u00e4higkeit, andere Perspektiven zu sehen, ist m\u00e4chtig. Nutze sie mitf\u00fchlend." },
+    "thermometer": { "title": "Das Thermometer", "desc": "Deine Emotionen bestimmen den Raum. Eine Nachricht bringt dich in 30 Sekunden von Freude \u00fcber Wut zur Existenzkrise.", "defense": "Deine emotionale Tiefe ist au\u00dfergew\u00f6hnlich. Diese Leidenschaft macht dich unglaublich lebendig und authentisch." }
   },
-  "result": {
-    "title": "Deine Toxische Eigenschaft",
-    "toxicityLevel": "Toxizitätslevel",
-    "secondary": "Sekundäre Eigenschaft: {trait}",
-    "badge": "Ich fühle mich so angegriffen!",
-    "retake": "Nochmal testen"
-  },
-  "share": {
-    "title": "Toxischer-Eigenschaft-Detektor",
-    "text": "Meine toxische Eigenschaft: {trait} {emoji} ☠️ Was ist deine?",
-    "copied": "Kopiert!",
-    "twitter": "Auf Twitter teilen",
-    "copyUrl": "Link kopieren"
-  },
-  "nav": {
-    "back": "DopaBrain Startseite"
-  }
+  "verdict": { "intro": "Das Tribunal hat ein Urteil gef\u00e4llt...", "guilty": "SCHULDIG" },
+  "result": { "toxicityLevel": "TOXIZIT\u00c4TSLEVEL", "breakdownTitle": "TOXIZIT\u00c4TS-AUFSCHL\u00dcSSELUNG", "defenseTitle": "ZUSAMMENFASSUNG DER VERTEIDIGUNG", "retake": "Neues Verfahren" },
+  "share": { "text": "Das Tribunal hat mich schuldig gesprochen: {trait} {emoji} Was ist dein Urteil?", "copied": "Kopiert!", "twitter": "Auf X teilen", "copyUrl": "Link kopieren" },
+  "nav": { "back": "DopaBrain Startseite" }
 }

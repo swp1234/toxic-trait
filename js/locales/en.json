@@ -1,161 +1,175 @@
 {
   "meta": {
-    "title": "Toxic Trait Detector | DopaBrain",
-    "description": "Discover your hidden toxic trait with 12 brutally honest situational questions. Everyone has one."
+    "title": "Toxic Trait Tribunal | DopaBrain",
+    "description": "Your texts have been subpoenaed. The Tribunal examines your messaging behavior to expose your toxic trait verdict."
   },
   "a11y": {
     "skip": "Skip to content"
   },
   "app": {
-    "title": "☠️ Toxic Trait Detector",
-    "subtitle": "Everyone has one...",
-    "loading": "Analyzing...",
-    "start": "Expose My Trait",
-    "warning": "Brutally honest results ahead!"
+    "title": "Toxic Trait Tribunal",
+    "subtitle": "Your texts have been subpoenaed.",
+    "loading": "TRIBUNAL LOADING..."
   },
-  "question": {
-    "progress": "{current} / {total}"
+  "start": {
+    "notifApp": "TRIBUNAL COURT",
+    "notifTitle": "Your texts have been subpoenaed",
+    "notifBody": "The Tribunal will now examine your messaging behavior.",
+    "notifTime": "now",
+    "desc": "8 text message conversations + 4 social media reactions. The Tribunal will deliver its verdict.",
+    "btn": "Begin Tribunal"
   },
-  "questions": {
-    "q1": {
-      "text": "Your friend gets promoted at work. Your first thought is...",
-      "a": "\"I'm so happy for them!\" (genuinely moved)",
-      "b": "\"Why not me though?\"",
-      "c": "\"I need to work harder now\" (immediately googles self-help)",
-      "d": "\"Meh, promotions are overrated\""
+  "meter": {
+    "label": "TOXICITY DETECTED",
+    "count": "{current} / {total}"
+  },
+  "phase": {
+    "messages": "TEXT MESSAGES",
+    "social": "SOCIAL MEDIA AUDIT"
+  },
+  "chat": {
+    "online": "online",
+    "today": "Today"
+  },
+  "stamp": {
+    "toxic": "TOXICITY DETECTED",
+    "clean": "CLEAN"
+  },
+  "scenarios": {
+    "msg1": {
+      "name": "Best Friend",
+      "messages": ["Hey, I'm really sorry but I have to cancel tonight", "Something came up last minute \uD83D\uDE14"],
+      "options": ["No worries! Things happen, we'll reschedule \uD83D\uDE0A", "Wow, again? I always make time for you though...", "..."]
     },
-    "q2": {
-      "text": "You receive a vague text from your crush. You...",
-      "a": "Analyze every word for 30 minutes",
-      "b": "Reply \"k.\"",
-      "c": "Screenshot it for your group chat analysis",
-      "d": "Reply normally and move on"
+    "msg2": {
+      "name": "Partner",
+      "messages": ["Hey, who were you texting just now?", "You were smiling a lot at your phone"],
+      "options": ["Oh, it was [name]! Look, we were talking about...", "Why do you need to know everything I do?", "Interesting. Who were YOU texting yesterday? \uD83E\uDD14"]
     },
-    "q3": {
-      "text": "Plans change last minute. You...",
-      "a": "Have a full mental breakdown",
-      "b": "Say \"sure, no problem!\" while dying inside",
-      "c": "Disappear and don't respond",
-      "d": "Actually don't mind"
+    "msg3": {
+      "name": "Colleague",
+      "messages": ["Great news! The boss loved the project idea", "She wants me to lead it going forward \uD83D\uDE04"],
+      "options": ["Wait, that was my idea. We need to talk about this.", "Omg congrats... *screenshots to group chat* can you believe this??", "Per my last email, I believe the original concept was a collaborative effort \uD83D\uDE42"]
     },
-    "q4": {
-      "text": "A friend vents about their problems. You...",
-      "a": "Absorb all their emotions like a sponge",
-      "b": "Secretly think your problems are bigger",
-      "c": "Give unsolicited advice and a 5-step plan",
-      "d": "Listen but set boundaries"
+    "msg4": {
+      "name": "Ex",
+      "messages": ["Hey...", "I miss you"],
+      "options": ["*does not respond*", "Haha I miss you too... so what have you been up to? \uD83D\uDE0F", "*screenshots to friends* LOOK WHO CRAWLED BACK"]
     },
-    "q5": {
-      "text": "You made a small mistake at work. You...",
-      "a": "Replay it in your head for 3 weeks",
-      "b": "Blame it on someone else subtly",
-      "c": "Don't even realize it was a mistake",
-      "d": "Fix it and move on"
+    "msg5": {
+      "name": "Close Friend",
+      "messages": ["I GOT IN!!! \uD83C\uDF89\uD83C\uDF89\uD83C\uDF89", "I got accepted into the program we both applied to!"],
+      "options": ["OMG CONGRATULATIONS!! I'm so proud of you!! \uD83E\uDD73", "Oh nice... I mean I didn't really want it that bad anyway", "That's cool. I heard it's not as good as people say though"]
     },
-    "q6": {
-      "text": "Someone disagrees with you in a group chat. You...",
-      "a": "Write a 3-paragraph response",
-      "b": "Leave them on read for days",
-      "c": "\"Sure... whatever you say 🙃\"",
-      "d": "Have a respectful discussion"
+    "msg6": {
+      "name": "Crush",
+      "messages": ["*Read 2 hours ago*"],
+      "options": ["*puts phone down, continues with day*", "Hey did you see my message?\nHello?\nAre you okay?", "So you have time to post stories but not reply to me? \uD83D\uDE10"]
     },
-    "q7": {
-      "text": "Your partner hangs out with someone attractive. You...",
-      "a": "Check their social media 47 times",
-      "b": "\"Have fun! 😊\" (tracks their location)",
-      "c": "Feel nothing, you're the main character",
-      "d": "Trust them completely"
+    "msg7": {
+      "name": "Friend Group",
+      "messages": ["[You notice a new group chat was created without you]", "They posted photos from a hangout you weren't invited to"],
+      "options": ["Hey, I noticed you guys hung out! Would love to join next time \uD83D\uDE0A", "*Creates new group chat without them* \"Who wants to do something ACTUALLY fun?\"", "I guess no one actually cares about me... I'm always the one left out \uD83D\uDE22"]
     },
-    "q8": {
-      "text": "A friend asks for honest feedback. You...",
-      "a": "Sugarcoat everything",
-      "b": "Give brutally honest feedback",
-      "c": "\"Hmm it's... interesting\"",
-      "d": "Give thoughtful honest feedback"
+    "msg8": {
+      "name": "Partner",
+      "messages": ["We need to talk.", "Can you call me when you're free?"],
+      "options": ["Sure, I'm free now. What's on your mind?", "Oh god what did I do?? Is it about last Tuesday? Or was it what I said on Saturday? ARE YOU BREAKING UP WITH ME?!", "Sorry, super busy right now. *turns off phone for 3 days*"]
     },
-    "q9": {
-      "text": "You're organizing a group trip. You...",
-      "a": "Create a 47-slide presentation",
-      "b": "Let everyone else decide (then complain)",
-      "c": "Only plan activities you want",
-      "d": "Collaborate on planning"
+    "social1": {
+      "username": "Your Ex",
+      "handle": "@living_my_best_life",
+      "image": "\uD83C\uDFD6\uFE0F\u2728",
+      "content": "Best vacation ever! Finally living the life I deserve \u2728\uD83C\uDF34 #blessed #newchapter",
+      "engagement": "847 likes \u00B7 62 comments"
     },
-    "q10": {
-      "text": "Someone leaves you on read. You...",
-      "a": "Assume they hate you",
-      "b": "Leave them on read for twice as long",
-      "c": "Delete the conversation",
-      "d": "Assume they're just busy"
+    "social2": {
+      "username": "That Acquaintance",
+      "handle": "@humble_grind",
+      "image": "\uD83D\uDCAA\u2728",
+      "content": "So humbled to announce I just got promoted AGAIN \uD83D\uDE07 Hard work pays off! (driving my new BMW to celebrate lol) #grateful #hustle",
+      "engagement": "1.2K likes \u00B7 89 comments"
     },
-    "q11": {
-      "text": "Your friend succeeds at something you failed at. You...",
-      "a": "Feel genuinely happy (after a brief mourning period)",
-      "b": "Absorb their happiness and feel better",
-      "c": "Think \"my time will come, I'm different\"",
-      "d": "Feel inspired to try again"
+    "social3": {
+      "username": "Mysterious Friend",
+      "handle": "@cryptic_poster",
+      "content": "Some people really show their true colors when you need them most \uD83D\uDE12 You know who you are. #fakefriends #overit",
+      "engagement": "234 likes \u00B7 47 comments"
     },
-    "q12": {
-      "text": "A relationship gets serious. You...",
-      "a": "Start planning the wedding in your head",
-      "b": "Suddenly become very busy",
-      "c": "Need to control every aspect",
-      "d": "Go with the flow"
+    "social4": {
+      "username": "Your Friend",
+      "handle": "@social_butterfly",
+      "image": "\uD83D\uDC6B\uD83C\uDF89",
+      "content": "Best night ever with my FAVORITE people!! \uD83E\uDD70 So grateful for this friend group \u2764\uFE0F #squad #blessed",
+      "engagement": "562 likes \u00B7 38 comments"
     }
+  },
+  "dimensions": {
+    "manipulation": "Manipulation",
+    "passive_aggression": "Passive Aggression",
+    "deflection": "Deflection",
+    "avoidance": "Avoidance",
+    "jealousy": "Jealousy",
+    "volatility": "Emotional Volatility",
+    "projection": "Projection",
+    "surveillance": "Surveillance"
   },
   "archetypes": {
-    "overthinker": {
-      "emoji": "🧠",
-      "title": "The Chronic Overthinker",
-      "desc": "You've already imagined 47 worst-case scenarios before finishing this sentence."
-    },
-    "passive": {
-      "emoji": "😏",
-      "title": "The Passive-Aggressive Texter",
-      "desc": "Your 'I'm fine.' has caused more damage than most natural disasters."
-    },
-    "mainchar": {
-      "emoji": "👑",
-      "title": "The Main Character",
-      "desc": "Everyone else is an NPC in your movie and you're fine with that."
-    },
-    "sponge": {
-      "emoji": "🧽",
-      "title": "The Emotional Sponge",
-      "desc": "You absorb everyone's feelings like a human WiFi router for emotions."
-    },
-    "control": {
-      "emoji": "🎮",
-      "title": "The Control Freak",
-      "desc": "Your color-coded calendar has a backup calendar just in case."
+    "puppeteer": {
+      "title": "The Puppeteer",
+      "desc": "You pull invisible strings in every conversation. Guilt trips, subtle manipulation, strategic vulnerability \u2014 you\u2019ve mastered them all.",
+      "defense": "Your emotional intelligence is off the charts. You understand people deeply \u2014 you just need to use that power for connection, not control."
     },
     "ghost": {
-      "emoji": "👻",
       "title": "The Ghost",
-      "desc": "You've perfected the art of disappearing right when things get real."
+      "desc": "When things get uncomfortable, you vanish like you never existed. Read receipts? Never heard of them. Confrontation? You\u2019ve already left the building.",
+      "defense": "You\u2019re a master of protecting your peace. Your ability to detach shows incredible self-preservation instincts \u2014 just don\u2019t forget the people you leave behind."
     },
-    "jealous": {
-      "emoji": "👀",
-      "title": "The Jealous Friend",
-      "desc": "You support your friends' success... after a brief mourning period."
+    "victim": {
+      "title": "The Victim",
+      "desc": "Everything happens TO you, never because of you. The world is a conspiracy designed to make your life harder, and you have the receipts to prove it.",
+      "defense": "Your sensitivity to injustice is actually a superpower. You notice unfairness that others miss \u2014 channel it into advocacy instead of self-pity."
     },
-    "pleaser": {
-      "emoji": "🤝",
-      "title": "The People Pleaser",
-      "desc": "You'd apologize for being stabbed because the knife might be uncomfortable."
+    "prosecutor": {
+      "title": "The Prosecutor",
+      "desc": "You remember every slight, every broken promise, every unanswered text. Your mental filing cabinet of grievances is meticulously organized.",
+      "defense": "Your attention to detail and strong sense of accountability are genuine strengths. You hold people to high standards \u2014 including yourself."
+    },
+    "spy": {
+      "title": "The Spy",
+      "desc": "You\u2019ve checked their followers list, their following list, their tagged photos, and their friends\u2019 stories. You call it \u201Cbeing aware.\u201D We call it surveillance.",
+      "defense": "Your research skills are unmatched. That hypervigilance comes from caring deeply \u2014 redirect it toward curiosity rather than suspicion."
+    },
+    "saboteur": {
+      "title": "The Saboteur",
+      "desc": "Just when things are going well, you find a way to blow it up. Too good to be true? You\u2019ll prove yourself right. Self-fulfilling prophecy is your art form.",
+      "defense": "Your self-awareness about imperfection is rare and valuable. You test boundaries because you want to know what\u2019s real \u2014 learn to trust the good things."
+    },
+    "mirror": {
+      "title": "The Mirror",
+      "desc": "Whatever someone accuses you of, you reflect it right back at them. \u201CYou\u2019re being defensive!\u201D \u201CNo, YOU\u2019re being defensive!\u201D \u2014 you, always.",
+      "defense": "Your ability to see other perspectives is actually powerful. You instinctively understand that criticism often reveals the critic \u2014 use that insight compassionately."
+    },
+    "thermometer": {
+      "title": "The Thermometer",
+      "desc": "Your emotions run the room. One text can send you from joy to rage to existential crisis in 30 seconds. Everyone around you is on constant weather alert.",
+      "defense": "Your emotional depth is extraordinary. You feel everything at full volume \u2014 that passion makes you incredibly alive and authentic when channeled well."
     }
   },
+  "verdict": {
+    "intro": "The Tribunal has reached a verdict...",
+    "guilty": "GUILTY"
+  },
   "result": {
-    "title": "Your Toxic Trait",
-    "toxicityLevel": "Toxicity Level",
-    "secondary": "Secondary trait: {trait}",
-    "badge": "I feel so attacked!",
-    "retake": "Retake Test"
+    "toxicityLevel": "TOXICITY LEVEL",
+    "breakdownTitle": "TOXICITY BREAKDOWN",
+    "defenseTitle": "DEFENSE BRIEF",
+    "retake": "New Trial"
   },
   "share": {
-    "title": "Toxic Trait Detector",
-    "text": "My toxic trait: {trait} {emoji} ☠️ What's yours?",
+    "text": "The Tribunal found me guilty: {trait} {emoji} What's your verdict?",
     "copied": "Copied!",
-    "twitter": "Share on Twitter",
+    "twitter": "Share on X",
     "copyUrl": "Copy Link"
   },
   "nav": {
