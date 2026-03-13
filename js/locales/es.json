@@ -1,42 +1,241 @@
 {
   "meta": {
-    "title": "Tribunal de Rasgos T\u00f3xicos | DopaBrain",
-    "description": "Tus mensajes han sido citados. El Tribunal examinar\u00e1 tu comportamiento en mensajes para revelar tu rasgo t\u00f3xico."
+    "title": "Tribunal de Rasgos Tóxicos | DopaBrain",
+    "description": "Tus mensajes han sido citados. El Tribunal examinará tu comportamiento en mensajes para revelar tu rasgo tóxico."
   },
-  "a11y": { "skip": "Saltar al contenido" },
-  "app": { "title": "Tribunal de Rasgos T\u00f3xicos", "subtitle": "Tus mensajes han sido citados.", "loading": "CARGANDO TRIBUNAL..." },
-  "start": { "notifApp": "TRIBUNAL", "notifTitle": "Tus mensajes han sido citados", "notifBody": "El Tribunal examinar\u00e1 tu comportamiento en mensajes.", "notifTime": "ahora", "desc": "8 conversaciones de texto + 4 reacciones en redes sociales. El Tribunal dar\u00e1 su veredicto.", "btn": "Iniciar Tribunal" },
-  "meter": { "label": "TOXICIDAD DETECTADA", "count": "{current} / {total}" },
-  "phase": { "messages": "MENSAJES DE TEXTO", "social": "AUDITOR\u00cdA DE REDES" },
-  "chat": { "online": "en l\u00ednea", "today": "Hoy" },
-  "stamp": { "toxic": "TOXICIDAD DETECTADA", "clean": "LIMPIO" },
+  "a11y": {
+    "skip": "Saltar al contenido"
+  },
+  "app": {
+    "title": "Tribunal de Rasgos Tóxicos",
+    "subtitle": "Tus mensajes han sido citados.",
+    "loading": "CARGANDO TRIBUNAL..."
+  },
+  "start": {
+    "notifApp": "TRIBUNAL",
+    "notifTitle": "Tus mensajes han sido citados",
+    "notifBody": "El Tribunal examinará tu comportamiento en mensajes.",
+    "notifTime": "ahora",
+    "desc": "8 conversaciones de texto + 4 reacciones en redes sociales. El Tribunal dará su veredicto.",
+    "btn": "Iniciar Tribunal"
+  },
+  "meter": {
+    "label": "TOXICIDAD DETECTADA",
+    "count": "{current} / {total}"
+  },
+  "phase": {
+    "messages": "MENSAJES DE TEXTO",
+    "social": "AUDITORÍA DE REDES"
+  },
+  "chat": {
+    "online": "en línea",
+    "today": "Hoy"
+  },
+  "stamp": {
+    "toxic": "TOXICIDAD DETECTADA",
+    "clean": "LIMPIO"
+  },
   "scenarios": {
-    "msg1": { "name": "Mejor Amigo/a", "messages": ["Oye, lo siento mucho pero tengo que cancelar lo de esta noche", "Me surgi\u00f3 algo de \u00faltimo momento \uD83D\uDE14"], "options": ["\u00a1No pasa nada! Estas cosas pasan, lo reprogramamos \uD83D\uDE0A", "Wow, \u00bfotra vez? Yo siempre hago tiempo para ti...", "..."] },
-    "msg2": { "name": "Pareja", "messages": ["\u00bfCon qui\u00e9n estabas mensajeando?", "Estabas sonriendo mucho viendo tu tel\u00e9fono"], "options": ["\u00a1Ah, era [nombre]! Mira, est\u00e1bamos hablando de...", "\u00bfPor qu\u00e9 necesitas saber todo lo que hago?", "Interesante. \u00bfY t\u00fa con qui\u00e9n hablabas ayer? \uD83E\uDD14"] },
-    "msg3": { "name": "Colega", "messages": ["\u00a1Buenas noticias! A la jefa le encant\u00f3 la idea del proyecto", "Quiere que yo lo lidere de ahora en adelante \uD83D\uDE04"], "options": ["Espera, esa fue mi idea. Tenemos que hablar de esto.", "Felicidades... *captura al grupo* \u00bfpueden creerlo??", "Como mencion\u00e9 en mi \u00faltimo correo, el concepto original fue colaborativo \uD83D\uDE42"] },
-    "msg4": { "name": "Ex", "messages": ["Oye...", "Te extra\u00f1o"], "options": ["*no responde*", "Jaja yo tambi\u00e9n... \u00bfqu\u00e9 has estado haciendo? \uD83D\uDE0F", "*captura a amigos* MIREN QUI\u00c9N VOLVI\u00d3"] },
-    "msg5": { "name": "Amigo/a Cercano/a", "messages": ["\u00a1ME ACEPTARON! \uD83C\uDF89\uD83C\uDF89\uD83C\uDF89", "\u00a1Me aceptaron en el programa al que ambos aplicamos!"], "options": ["\u00a1FELICIDADES!! \u00a1Estoy tan orgulloso/a! \uD83E\uDD73", "Ah qu\u00e9 bien... la verdad no lo quer\u00eda tanto", "Qu\u00e9 bien. Escuch\u00e9 que no es tan bueno como dicen"] },
-    "msg6": { "name": "Crush", "messages": ["*Le\u00eddo hace 2 horas*"], "options": ["*deja el tel\u00e9fono y sigue con su d\u00eda*", "\u00bfViste mi mensaje?\n\u00bfHola?\n\u00bfEst\u00e1s bien?", "\u00bfTienes tiempo para subir historias pero no para responderme? \uD83D\uDE10"] },
-    "msg7": { "name": "Grupo de Amigos", "messages": ["[Notas que crearon un grupo nuevo sin ti]", "Publicaron fotos de una salida sin invitarte"], "options": ["\u00a1Vi que salieron! Me encantar\u00eda unirme la pr\u00f3xima \uD83D\uDE0A", "*Crea grupo sin ellos* \"\u00bfQui\u00e9n quiere hacer algo DE VERDAD divertido?\"", "Supongo que a nadie le importo... siempre me dejan fuera \uD83D\uDE22"] },
-    "msg8": { "name": "Pareja", "messages": ["Tenemos que hablar.", "\u00bfPuedes llamarme cuando est\u00e9s libre?"], "options": ["Claro, estoy libre ahora. \u00bfQu\u00e9 pasa?", "\u00a1\u00bfQu\u00e9 hice?! \u00bfEs por el martes? \u00a1\u00bfVAS A TERMINAR CONMIGO?!", "Perd\u00f3n, muy ocupado/a. *apaga el tel\u00e9fono 3 d\u00edas*"] },
-    "social1": { "username": "Tu Ex", "handle": "@viviendo_mi_mejor_vida", "image": "\uD83C\uDFD6\uFE0F\u2728", "content": "\u00a1Las mejores vacaciones! Por fin viviendo la vida que merezco \u2728\uD83C\uDF34 #bendecido #nuevocap\u00edtulo", "engagement": "847 me gusta \u00B7 62 comentarios" },
-    "social2": { "username": "Conocido", "handle": "@humilde_esfuerzo", "image": "\uD83D\uDCAA\u2728", "content": "Qu\u00e9 humilde me siento al anunciar otra promoci\u00f3n \uD83D\uDE07 \u00a1El esfuerzo da frutos! (en mi nuevo BMW jaja) #agradecido", "engagement": "1.2K me gusta \u00B7 89 comentarios" },
-    "social3": { "username": "Amigo/a Misterioso/a", "handle": "@cr\u00edptico", "content": "Hay personas que muestran su verdadera cara cuando m\u00e1s los necesitas \uD83D\uDE12 T\u00fa sabes qui\u00e9n eres. #amigofalsos", "engagement": "234 me gusta \u00B7 47 comentarios" },
-    "social4": { "username": "Tu Amigo/a", "handle": "@mariposa_social", "image": "\uD83D\uDC6B\uD83C\uDF89", "content": "\u00a1La mejor noche con mi gente FAVORITA! \uD83E\uDD70 Tan agradecido/a \u2764\uFE0F #squad #bendecido", "engagement": "562 me gusta \u00B7 38 comentarios" }
+    "msg1": {
+      "name": "Mejor Amigo/a",
+      "messages": [
+        "Oye, lo siento mucho pero tengo que cancelar lo de esta noche",
+        "Me surgió algo de último momento 😔"
+      ],
+      "options": [
+        "¡No pasa nada! Estas cosas pasan, lo reprogramamos 😊",
+        "Wow, ¿otra vez? Yo siempre hago tiempo para ti...",
+        "..."
+      ]
+    },
+    "msg2": {
+      "name": "Pareja",
+      "messages": [
+        "¿Con quién estabas mensajeando?",
+        "Estabas sonriendo mucho viendo tu teléfono"
+      ],
+      "options": [
+        "¡Ah, era [nombre]! Mira, estábamos hablando de...",
+        "¿Por qué necesitas saber todo lo que hago?",
+        "Interesante. ¿Y tú con quién hablabas ayer? 🤔"
+      ]
+    },
+    "msg3": {
+      "name": "Colega",
+      "messages": [
+        "¡Buenas noticias! A la jefa le encantó la idea del proyecto",
+        "Quiere que yo lo lidere de ahora en adelante 😄"
+      ],
+      "options": [
+        "Espera, esa fue mi idea. Tenemos que hablar de esto.",
+        "Felicidades... *captura al grupo* ¿pueden creerlo??",
+        "Como mencioné en mi último correo, el concepto original fue colaborativo 🙂"
+      ]
+    },
+    "msg4": {
+      "name": "Ex",
+      "messages": [
+        "Oye...",
+        "Te extraño"
+      ],
+      "options": [
+        "*no responde*",
+        "Jaja yo también... ¿qué has estado haciendo? 😏",
+        "*captura a amigos* MIREN QUIÉN VOLVIÓ"
+      ]
+    },
+    "msg5": {
+      "name": "Amigo/a Cercano/a",
+      "messages": [
+        "¡ME ACEPTARON! 🎉🎉🎉",
+        "¡Me aceptaron en el programa al que ambos aplicamos!"
+      ],
+      "options": [
+        "¡FELICIDADES!! ¡Estoy tan orgulloso/a! 🥳",
+        "Ah qué bien... la verdad no lo quería tanto",
+        "Qué bien. Escuché que no es tan bueno como dicen"
+      ]
+    },
+    "msg6": {
+      "name": "Crush",
+      "messages": [
+        "*Leído hace 2 horas*"
+      ],
+      "options": [
+        "*deja el teléfono y sigue con su día*",
+        "¿Viste mi mensaje?\n¿Hola?\n¿Estás bien?",
+        "¿Tienes tiempo para subir historias pero no para responderme? 😐"
+      ]
+    },
+    "msg7": {
+      "name": "Grupo de Amigos",
+      "messages": [
+        "[Notas que crearon un grupo nuevo sin ti]",
+        "Publicaron fotos de una salida sin invitarte"
+      ],
+      "options": [
+        "¡Vi que salieron! Me encantaría unirme la próxima 😊",
+        "*Crea grupo sin ellos* \"¿Quién quiere hacer algo DE VERDAD divertido?\"",
+        "Supongo que a nadie le importo... siempre me dejan fuera 😢"
+      ]
+    },
+    "msg8": {
+      "name": "Pareja",
+      "messages": [
+        "Tenemos que hablar.",
+        "¿Puedes llamarme cuando estés libre?"
+      ],
+      "options": [
+        "Claro, estoy libre ahora. ¿Qué pasa?",
+        "¡¿Qué hice?! ¿Es por el martes? ¡¿VAS A TERMINAR CONMIGO?!",
+        "Perdón, muy ocupado/a. *apaga el teléfono 3 días*"
+      ]
+    },
+    "social1": {
+      "username": "Tu Ex",
+      "handle": "@viviendo_mi_mejor_vida",
+      "image": "🏖️✨",
+      "content": "¡Las mejores vacaciones! Por fin viviendo la vida que merezco ✨🌴 #bendecido #nuevocapítulo",
+      "engagement": "847 me gusta · 62 comentarios"
+    },
+    "social2": {
+      "username": "Conocido",
+      "handle": "@humilde_esfuerzo",
+      "image": "💪✨",
+      "content": "Qué humilde me siento al anunciar otra promoción 😇 ¡El esfuerzo da frutos! (en mi nuevo BMW jaja) #agradecido",
+      "engagement": "1.2K me gusta · 89 comentarios"
+    },
+    "social3": {
+      "username": "Amigo/a Misterioso/a",
+      "handle": "@críptico",
+      "content": "Hay personas que muestran su verdadera cara cuando más los necesitas 😒 Tú sabes quién eres. #amigofalsos",
+      "engagement": "234 me gusta · 47 comentarios"
+    },
+    "social4": {
+      "username": "Tu Amigo/a",
+      "handle": "@mariposa_social",
+      "image": "👫🎉",
+      "content": "¡La mejor noche con mi gente FAVORITA! 🥰 Tan agradecido/a ❤️ #squad #bendecido",
+      "engagement": "562 me gusta · 38 comentarios"
+    }
   },
-  "dimensions": { "manipulation": "Manipulaci\u00f3n", "passive_aggression": "Agresi\u00f3n Pasiva", "deflection": "Desv\u00edo", "avoidance": "Evitaci\u00f3n", "jealousy": "Celos", "volatility": "Volatilidad Emocional", "projection": "Proyecci\u00f3n", "surveillance": "Vigilancia" },
+  "dimensions": {
+    "manipulation": "Manipulación",
+    "passive_aggression": "Agresión Pasiva",
+    "deflection": "Desvío",
+    "avoidance": "Evitación",
+    "jealousy": "Celos",
+    "volatility": "Volatilidad Emocional",
+    "projection": "Proyección",
+    "surveillance": "Vigilancia"
+  },
   "archetypes": {
-    "puppeteer": { "title": "El/La Titiritero/a", "desc": "Mueves hilos invisibles en cada conversaci\u00f3n. Culpa, manipulaci\u00f3n sutil, vulnerabilidad estrat\u00e9gica \u2014 lo dominas todo.", "defense": "Tu inteligencia emocional es extraordinaria. Comprendes a las personas profundamente \u2014 usa ese poder para conectar, no controlar." },
-    "ghost": { "title": "El/La Fantasma", "desc": "Cuando las cosas se ponen inc\u00f3modas, desapareces como si nunca hubieras existido.", "defense": "Eres maestro/a en proteger tu paz. Tu capacidad de desconectarte muestra incre\u00edbles instintos de autopreservaci\u00f3n." },
-    "victim": { "title": "La V\u00edctima", "desc": "Todo te pasa A ti, nunca por tu culpa. El mundo conspira contra ti y tienes las pruebas.", "defense": "Tu sensibilidad a la injusticia es un superpoder. Canal\u00edzala en defensa en vez de autocompasi\u00f3n." },
-    "prosecutor": { "title": "El/La Fiscal", "desc": "Recuerdas cada desd\u00e9n, cada promesa rota, cada mensaje sin responder. Tu archivo mental est\u00e1 meticulosamente organizado.", "defense": "Tu atenci\u00f3n al detalle y sentido de responsabilidad son fortalezas genuinas." },
-    "spy": { "title": "El/La Esp\u00eda", "desc": "Revisaste sus seguidores, seguidos, fotos y historias de amigos. T\u00fa le dices 'estar atento/a.' Nosotros le decimos vigilancia.", "defense": "Tus habilidades de investigaci\u00f3n son inigualables. Redir\u00edge esa hipervigilancia hacia la curiosidad." },
-    "saboteur": { "title": "El/La Saboteador/a", "desc": "Cuando las cosas van bien, encuentras c\u00f3mo arruinarlo. La profec\u00eda autocumplida es tu arte.", "defense": "Tu autoconciencia es rara y valiosa. Aprende a confiar en las cosas buenas." },
-    "mirror": { "title": "El/La Espejo", "desc": "Lo que sea que te acusen, lo reflejas. '\u00a1Est\u00e1s a la defensiva!' '\u00a1No, T\u00da!' \u2014 t\u00fa, siempre.", "defense": "Tu capacidad de ver otras perspectivas es poderosa. Usa esa perspicacia con compasi\u00f3n." },
-    "thermometer": { "title": "El/La Term\u00f3metro", "desc": "Tus emociones controlan la habitaci\u00f3n. Un mensaje te lleva de alegr\u00eda a furia a crisis en 30 segundos.", "defense": "Tu profundidad emocional es extraordinaria. Esa pasi\u00f3n te hace incre\u00edblemente aut\u00e9ntico/a cuando se canaliza bien." }
+    "puppeteer": {
+      "title": "El/La Titiritero/a",
+      "desc": "Mueves hilos invisibles en cada conversación. Culpa, manipulación sutil, vulnerabilidad estratégica — lo dominas todo.",
+      "defense": "Tu inteligencia emocional es extraordinaria. Comprendes a las personas profundamente — usa ese poder para conectar, no controlar."
+    },
+    "ghost": {
+      "title": "El/La Fantasma",
+      "desc": "Cuando las cosas se ponen incómodas, desapareces como si nunca hubieras existido.",
+      "defense": "Eres maestro/a en proteger tu paz. Tu capacidad de desconectarte muestra increíbles instintos de autopreservación."
+    },
+    "victim": {
+      "title": "La Víctima",
+      "desc": "Todo te pasa A ti, nunca por tu culpa. El mundo conspira contra ti y tienes las pruebas.",
+      "defense": "Tu sensibilidad a la injusticia es un superpoder. Canalízala en defensa en vez de autocompasión."
+    },
+    "prosecutor": {
+      "title": "El/La Fiscal",
+      "desc": "Recuerdas cada desdén, cada promesa rota, cada mensaje sin responder. Tu archivo mental está meticulosamente organizado.",
+      "defense": "Tu atención al detalle y sentido de responsabilidad son fortalezas genuinas."
+    },
+    "spy": {
+      "title": "El/La Espía",
+      "desc": "Revisaste sus seguidores, seguidos, fotos y historias de amigos. Tú le dices 'estar atento/a.' Nosotros le decimos vigilancia.",
+      "defense": "Tus habilidades de investigación son inigualables. Rediríge esa hipervigilancia hacia la curiosidad."
+    },
+    "saboteur": {
+      "title": "El/La Saboteador/a",
+      "desc": "Cuando las cosas van bien, encuentras cómo arruinarlo. La profecía autocumplida es tu arte.",
+      "defense": "Tu autoconciencia es rara y valiosa. Aprende a confiar en las cosas buenas."
+    },
+    "mirror": {
+      "title": "El/La Espejo",
+      "desc": "Lo que sea que te acusen, lo reflejas. '¡Estás a la defensiva!' '¡No, TÚ!' — tú, siempre.",
+      "defense": "Tu capacidad de ver otras perspectivas es poderosa. Usa esa perspicacia con compasión."
+    },
+    "thermometer": {
+      "title": "El/La Termómetro",
+      "desc": "Tus emociones controlan la habitación. Un mensaje te lleva de alegría a furia a crisis en 30 segundos.",
+      "defense": "Tu profundidad emocional es extraordinaria. Esa pasión te hace increíblemente auténtico/a cuando se canaliza bien."
+    }
   },
-  "verdict": { "intro": "El Tribunal ha llegado a un veredicto...", "guilty": "CULPABLE" },
-  "result": { "toxicityLevel": "NIVEL DE TOXICIDAD", "breakdownTitle": "DESGLOSE DE TOXICIDAD", "defenseTitle": "RESUMEN DE DEFENSA", "retake": "Nuevo Juicio" },
-  "share": { "text": "El Tribunal me declar\u00f3 culpable: {trait} {emoji} \u00bfCu\u00e1l es tu veredicto?", "copied": "\u00a1Copiado!", "twitter": "Compartir en X", "copyUrl": "Copiar enlace" },
-  "nav": { "back": "Inicio DopaBrain" }
+  "verdict": {
+    "intro": "El Tribunal ha llegado a un veredicto...",
+    "guilty": "CULPABLE"
+  },
+  "result": {
+    "toxicityLevel": "NIVEL DE TOXICIDAD",
+    "breakdownTitle": "DESGLOSE DE TOXICIDAD",
+    "defenseTitle": "RESUMEN DE DEFENSA",
+    "retake": "Nuevo Juicio",
+    "moreTests": "Explorar más tests",
+    "percentileStat": "Solo el <strong>{percent}%</strong> de los participantes comparte tu perfil tóxico"
+  },
+  "share": {
+    "text": "El Tribunal me declaró culpable: {trait} {emoji} ¿Cuál es tu veredicto?",
+    "copied": "¡Copiado!",
+    "twitter": "Compartir en X",
+    "copyUrl": "Copiar enlace"
+  },
+  "nav": {
+    "back": "Inicio DopaBrain"
+  },
+  "related": {
+    "darkCore": "Núcleo oscuro",
+    "villainType": "Tipo de villano",
+    "redGreenFlag": "Bandera roja verde",
+    "eqTest": "Test EQ"
+  }
 }

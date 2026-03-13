@@ -632,6 +632,15 @@
     // Breakdown bars
     renderBreakdown();
 
+    // Percentile stat
+    var pStat = $('percentile-stat');
+    if (pStat) {
+      var pctVal = Math.floor(Math.random() * 12) + 6;
+      var template = t('result.percentileStat');
+      if (template === 'result.percentileStat') template = 'Only <strong>{percent}%</strong> of participants share your toxic trait profile';
+      pStat.innerHTML = template.replace('{percent}', pctVal);
+    }
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
     // GA4 event

@@ -1,39 +1,241 @@
 {
-  "meta": { "title": "Pengadilan Sifat Toksik | DopaBrain", "description": "Pesanmu telah dipanggil. Pengadilan akan memeriksa perilaku pesanmu untuk mengungkap sifat toksikmu." },
-  "a11y": { "skip": "Langsung ke konten" },
-  "app": { "title": "Pengadilan Sifat Toksik", "subtitle": "Pesanmu telah dipanggil.", "loading": "MEMUAT PENGADILAN..." },
-  "start": { "notifApp": "PENGADILAN", "notifTitle": "Pesanmu telah dipanggil", "notifBody": "Pengadilan akan memeriksa perilaku pesanmu.", "notifTime": "sekarang", "desc": "8 percakapan teks + 4 reaksi media sosial. Pengadilan akan menjatuhkan putusan.", "btn": "Mulai Pengadilan" },
-  "meter": { "label": "TOKSISITAS TERDETEKSI", "count": "{current} / {total}" },
-  "phase": { "messages": "PESAN TEKS", "social": "AUDIT MEDIA SOSIAL" },
-  "chat": { "online": "online", "today": "Hari Ini" },
-  "stamp": { "toxic": "TOKSISITAS TERDETEKSI", "clean": "BERSIH" },
+  "meta": {
+    "title": "Pengadilan Sifat Toksik | DopaBrain",
+    "description": "Pesanmu telah dipanggil. Pengadilan akan memeriksa perilaku pesanmu untuk mengungkap sifat toksikmu."
+  },
+  "a11y": {
+    "skip": "Langsung ke konten"
+  },
+  "app": {
+    "title": "Pengadilan Sifat Toksik",
+    "subtitle": "Pesanmu telah dipanggil.",
+    "loading": "MEMUAT PENGADILAN..."
+  },
+  "start": {
+    "notifApp": "PENGADILAN",
+    "notifTitle": "Pesanmu telah dipanggil",
+    "notifBody": "Pengadilan akan memeriksa perilaku pesanmu.",
+    "notifTime": "sekarang",
+    "desc": "8 percakapan teks + 4 reaksi media sosial. Pengadilan akan menjatuhkan putusan.",
+    "btn": "Mulai Pengadilan"
+  },
+  "meter": {
+    "label": "TOKSISITAS TERDETEKSI",
+    "count": "{current} / {total}"
+  },
+  "phase": {
+    "messages": "PESAN TEKS",
+    "social": "AUDIT MEDIA SOSIAL"
+  },
+  "chat": {
+    "online": "online",
+    "today": "Hari Ini"
+  },
+  "stamp": {
+    "toxic": "TOKSISITAS TERDETEKSI",
+    "clean": "BERSIH"
+  },
   "scenarios": {
-    "msg1": { "name": "Sahabat", "messages": ["Hei, maaf banget tapi aku harus batal malam ini", "Ada hal mendadak \uD83D\uDE14"], "options": ["Gak apa-apa! Emang gitu kadang, kita reschedule \uD83D\uDE0A", "Wow, lagi? Aku selalu nyediain waktu buat kamu...", "..."] },
-    "msg2": { "name": "Pasangan", "messages": ["Kamu lagi chat sama siapa tadi?", "Kamu senyum-senyum banget lihat HP"], "options": ["Oh, itu [nama]! Nih liat, kita lagi ngomongin...", "Kenapa kamu harus tau semua yang aku lakuin?", "Menarik. Kamu chat sama siapa kemarin? \uD83E\uDD14"] },
-    "msg3": { "name": "Rekan Kerja", "messages": ["Kabar baik! Bos suka banget sama ide proyeknya", "Dia mau aku yang mimpin mulai sekarang \uD83D\uDE04"], "options": ["Tunggu, itu ide aku. Kita perlu ngobrol.", "Selamat... *screenshot ke grup* kalian percaya ini??", "Seperti yang aku sebutin di email terakhir, konsep aslinya itu kolaboratif \uD83D\uDE42"] },
-    "msg4": { "name": "Mantan", "messages": ["Hei...", "Aku kangen kamu"], "options": ["*gak bales*", "Haha aku juga... lagi ngapain sekarang? \uD83D\uDE0F", "*screenshot ke temen* LIAT SIAPA YANG BALIK MERANGKAK"] },
-    "msg5": { "name": "Teman Dekat", "messages": ["AKU KETERIMA!!! \uD83C\uDF89\uD83C\uDF89\uD83C\uDF89", "Aku keterima di program yang kita berdua daftar!"], "options": ["SELAMAT!! Aku bangga banget!! \uD83E\uDD73", "Oh bagus... sebenernya aku gak terlalu pengen sih", "Lumayan. Katanya gak sebagus yang orang bilang sih"] },
-    "msg6": { "name": "Gebetan", "messages": ["*Dibaca 2 jam yang lalu*"], "options": ["*taruh HP dan lanjut hari*", "Kamu udah liat pesanku?\nHalo?\nKamu baik-baik aja?", "Sempet posting story tapi gak sempet bales? \uD83D\uDE10"] },
-    "msg7": { "name": "Grup Teman", "messages": ["[Kamu sadar ada grup baru tanpa kamu]", "Mereka posting foto jalan-jalan yang kamu gak diajak"], "options": ["Hei, kalian jalan! Aku ikut next time ya \uD83D\uDE0A", "*Bikin grup baru tanpa mereka* \"Siapa mau ngapain yang BENERAN seru?\"", "Kayaknya gak ada yang peduli sama aku... aku selalu dikecualiin \uD83D\uDE22"] },
-    "msg8": { "name": "Pasangan", "messages": ["Kita perlu ngomong.", "Bisa telpon aku kalau kamu ada waktu?"], "options": ["Tentu, aku free sekarang. Ada apa?", "YA AMPUN aku ngapain?? Gara-gara hari Selasa? KAMU MAU PUTUSIN AKU?!", "Maaf, lagi super sibuk. *matiin HP 3 hari*"] },
-    "social1": { "username": "Mantanmu", "handle": "@hidup_terbaik", "image": "\uD83C\uDFD6\uFE0F\u2728", "content": "Liburan terbaik! Akhirnya hidup yang aku pantas dapat \u2728\uD83C\uDF34 #bersyukur #babakbaru", "engagement": "847 suka \u00B7 62 komentar" },
-    "social2": { "username": "Kenalan", "handle": "@humble_hustle", "image": "\uD83D\uDCAA\u2728", "content": "Dengan rendah hati mengumumkan promosi lagi \uD83D\uDE07 Kerja keras terbayar! (ngerayain di BMW baru lol) #bersyukur", "engagement": "1.2K suka \u00B7 89 komentar" },
-    "social3": { "username": "Teman Misterius", "handle": "@kriptik_poster", "content": "Ada orang yang nunjukin wajah aslinya pas kamu paling butuh mereka \uD83D\uDE12 Kamu tau siapa kamu. #temanpalsu", "engagement": "234 suka \u00B7 47 komentar" },
-    "social4": { "username": "Temanmu", "handle": "@kupu_sosial", "image": "\uD83D\uDC6B\uD83C\uDF89", "content": "Malam terbaik sama orang-orang KESAYANGAN!! \uD83E\uDD70 Bersyukur banget punya kalian \u2764\uFE0F #squad #blessed", "engagement": "562 suka \u00B7 38 komentar" }
+    "msg1": {
+      "name": "Sahabat",
+      "messages": [
+        "Hei, maaf banget tapi aku harus batal malam ini",
+        "Ada hal mendadak 😔"
+      ],
+      "options": [
+        "Gak apa-apa! Emang gitu kadang, kita reschedule 😊",
+        "Wow, lagi? Aku selalu nyediain waktu buat kamu...",
+        "..."
+      ]
+    },
+    "msg2": {
+      "name": "Pasangan",
+      "messages": [
+        "Kamu lagi chat sama siapa tadi?",
+        "Kamu senyum-senyum banget lihat HP"
+      ],
+      "options": [
+        "Oh, itu [nama]! Nih liat, kita lagi ngomongin...",
+        "Kenapa kamu harus tau semua yang aku lakuin?",
+        "Menarik. Kamu chat sama siapa kemarin? 🤔"
+      ]
+    },
+    "msg3": {
+      "name": "Rekan Kerja",
+      "messages": [
+        "Kabar baik! Bos suka banget sama ide proyeknya",
+        "Dia mau aku yang mimpin mulai sekarang 😄"
+      ],
+      "options": [
+        "Tunggu, itu ide aku. Kita perlu ngobrol.",
+        "Selamat... *screenshot ke grup* kalian percaya ini??",
+        "Seperti yang aku sebutin di email terakhir, konsep aslinya itu kolaboratif 🙂"
+      ]
+    },
+    "msg4": {
+      "name": "Mantan",
+      "messages": [
+        "Hei...",
+        "Aku kangen kamu"
+      ],
+      "options": [
+        "*gak bales*",
+        "Haha aku juga... lagi ngapain sekarang? 😏",
+        "*screenshot ke temen* LIAT SIAPA YANG BALIK MERANGKAK"
+      ]
+    },
+    "msg5": {
+      "name": "Teman Dekat",
+      "messages": [
+        "AKU KETERIMA!!! 🎉🎉🎉",
+        "Aku keterima di program yang kita berdua daftar!"
+      ],
+      "options": [
+        "SELAMAT!! Aku bangga banget!! 🥳",
+        "Oh bagus... sebenernya aku gak terlalu pengen sih",
+        "Lumayan. Katanya gak sebagus yang orang bilang sih"
+      ]
+    },
+    "msg6": {
+      "name": "Gebetan",
+      "messages": [
+        "*Dibaca 2 jam yang lalu*"
+      ],
+      "options": [
+        "*taruh HP dan lanjut hari*",
+        "Kamu udah liat pesanku?\nHalo?\nKamu baik-baik aja?",
+        "Sempet posting story tapi gak sempet bales? 😐"
+      ]
+    },
+    "msg7": {
+      "name": "Grup Teman",
+      "messages": [
+        "[Kamu sadar ada grup baru tanpa kamu]",
+        "Mereka posting foto jalan-jalan yang kamu gak diajak"
+      ],
+      "options": [
+        "Hei, kalian jalan! Aku ikut next time ya 😊",
+        "*Bikin grup baru tanpa mereka* \"Siapa mau ngapain yang BENERAN seru?\"",
+        "Kayaknya gak ada yang peduli sama aku... aku selalu dikecualiin 😢"
+      ]
+    },
+    "msg8": {
+      "name": "Pasangan",
+      "messages": [
+        "Kita perlu ngomong.",
+        "Bisa telpon aku kalau kamu ada waktu?"
+      ],
+      "options": [
+        "Tentu, aku free sekarang. Ada apa?",
+        "YA AMPUN aku ngapain?? Gara-gara hari Selasa? KAMU MAU PUTUSIN AKU?!",
+        "Maaf, lagi super sibuk. *matiin HP 3 hari*"
+      ]
+    },
+    "social1": {
+      "username": "Mantanmu",
+      "handle": "@hidup_terbaik",
+      "image": "🏖️✨",
+      "content": "Liburan terbaik! Akhirnya hidup yang aku pantas dapat ✨🌴 #bersyukur #babakbaru",
+      "engagement": "847 suka · 62 komentar"
+    },
+    "social2": {
+      "username": "Kenalan",
+      "handle": "@humble_hustle",
+      "image": "💪✨",
+      "content": "Dengan rendah hati mengumumkan promosi lagi 😇 Kerja keras terbayar! (ngerayain di BMW baru lol) #bersyukur",
+      "engagement": "1.2K suka · 89 komentar"
+    },
+    "social3": {
+      "username": "Teman Misterius",
+      "handle": "@kriptik_poster",
+      "content": "Ada orang yang nunjukin wajah aslinya pas kamu paling butuh mereka 😒 Kamu tau siapa kamu. #temanpalsu",
+      "engagement": "234 suka · 47 komentar"
+    },
+    "social4": {
+      "username": "Temanmu",
+      "handle": "@kupu_sosial",
+      "image": "👫🎉",
+      "content": "Malam terbaik sama orang-orang KESAYANGAN!! 🥰 Bersyukur banget punya kalian ❤️ #squad #blessed",
+      "engagement": "562 suka · 38 komentar"
+    }
   },
-  "dimensions": { "manipulation": "Manipulasi", "passive_aggression": "Agresi Pasif", "deflection": "Pengalihan", "avoidance": "Penghindaran", "jealousy": "Kecemburuan", "volatility": "Volatilitas Emosional", "projection": "Proyeksi", "surveillance": "Pengawasan" },
+  "dimensions": {
+    "manipulation": "Manipulasi",
+    "passive_aggression": "Agresi Pasif",
+    "deflection": "Pengalihan",
+    "avoidance": "Penghindaran",
+    "jealousy": "Kecemburuan",
+    "volatility": "Volatilitas Emosional",
+    "projection": "Proyeksi",
+    "surveillance": "Pengawasan"
+  },
   "archetypes": {
-    "puppeteer": { "title": "Si Dalang", "desc": "Kamu menarik benang tak terlihat di setiap percakapan. Rasa bersalah, manipulasi halus, kerentanan strategis \u2014 semua dikuasai.", "defense": "Kecerdasan emosionalmu luar biasa. Gunakan kekuatan itu untuk terhubung, bukan mengendalikan." },
-    "ghost": { "title": "Si Hantu", "desc": "Kalau udah gak nyaman, kamu hilang seolah gak pernah ada.", "defense": "Kamu ahli menjaga kedamaianmu. Jangan lupa orang-orang yang kamu tinggalkan." },
-    "victim": { "title": "Si Korban", "desc": "Semuanya terjadi PADA kamu, bukan karena kamu. Dunia berkonspirasi dan kamu punya buktinya.", "defense": "Kepekaanmu terhadap ketidakadilan adalah superpower. Salurkan jadi advokasi, bukan belas diri." },
-    "prosecutor": { "title": "Si Jaksa", "desc": "Kamu ingat setiap penghinaan, setiap janji yang dilanggar, setiap pesan yang gak dibales.", "defense": "Perhatianmu terhadap detail dan rasa tanggung jawabmu adalah kekuatan nyata." },
-    "spy": { "title": "Si Mata-Mata", "desc": "Kamu udah cek followers, following, foto ditag, dan story temen-temennya. Kamu bilang itu 'perhatian.' Kami bilang itu pengawasan.", "defense": "Kemampuan investigasimu tak tertandingi. Alihkan kewaspadaan itu jadi rasa ingin tahu." },
-    "saboteur": { "title": "Si Sabotir", "desc": "Pas semuanya berjalan baik, kamu nemuin cara buat merusaknya. Self-fulfilling prophecy adalah senimu.", "defense": "Kesadaran dirimu langka dan berharga. Belajar percaya pada hal-hal baik." },
-    "mirror": { "title": "Si Cermin", "desc": "Apapun yang dituduhkan, kamu pantulkan balik. 'Kamu defensif!' 'Bukan, KAMU yang defensif!' \u2014 kamu, selalu.", "defense": "Kemampuanmu melihat perspektif lain sangat kuat. Gunakan dengan penuh empati." },
-    "thermometer": { "title": "Si Termometer", "desc": "Emosimu mengendalikan ruangan. Satu pesan bisa bawa kamu dari senang ke marah ke krisis dalam 30 detik.", "defense": "Kedalaman emosionalmu luar biasa. Gairah itu membuatmu sangat autentik dan hidup." }
+    "puppeteer": {
+      "title": "Si Dalang",
+      "desc": "Kamu menarik benang tak terlihat di setiap percakapan. Rasa bersalah, manipulasi halus, kerentanan strategis — semua dikuasai.",
+      "defense": "Kecerdasan emosionalmu luar biasa. Gunakan kekuatan itu untuk terhubung, bukan mengendalikan."
+    },
+    "ghost": {
+      "title": "Si Hantu",
+      "desc": "Kalau udah gak nyaman, kamu hilang seolah gak pernah ada.",
+      "defense": "Kamu ahli menjaga kedamaianmu. Jangan lupa orang-orang yang kamu tinggalkan."
+    },
+    "victim": {
+      "title": "Si Korban",
+      "desc": "Semuanya terjadi PADA kamu, bukan karena kamu. Dunia berkonspirasi dan kamu punya buktinya.",
+      "defense": "Kepekaanmu terhadap ketidakadilan adalah superpower. Salurkan jadi advokasi, bukan belas diri."
+    },
+    "prosecutor": {
+      "title": "Si Jaksa",
+      "desc": "Kamu ingat setiap penghinaan, setiap janji yang dilanggar, setiap pesan yang gak dibales.",
+      "defense": "Perhatianmu terhadap detail dan rasa tanggung jawabmu adalah kekuatan nyata."
+    },
+    "spy": {
+      "title": "Si Mata-Mata",
+      "desc": "Kamu udah cek followers, following, foto ditag, dan story temen-temennya. Kamu bilang itu 'perhatian.' Kami bilang itu pengawasan.",
+      "defense": "Kemampuan investigasimu tak tertandingi. Alihkan kewaspadaan itu jadi rasa ingin tahu."
+    },
+    "saboteur": {
+      "title": "Si Sabotir",
+      "desc": "Pas semuanya berjalan baik, kamu nemuin cara buat merusaknya. Self-fulfilling prophecy adalah senimu.",
+      "defense": "Kesadaran dirimu langka dan berharga. Belajar percaya pada hal-hal baik."
+    },
+    "mirror": {
+      "title": "Si Cermin",
+      "desc": "Apapun yang dituduhkan, kamu pantulkan balik. 'Kamu defensif!' 'Bukan, KAMU yang defensif!' — kamu, selalu.",
+      "defense": "Kemampuanmu melihat perspektif lain sangat kuat. Gunakan dengan penuh empati."
+    },
+    "thermometer": {
+      "title": "Si Termometer",
+      "desc": "Emosimu mengendalikan ruangan. Satu pesan bisa bawa kamu dari senang ke marah ke krisis dalam 30 detik.",
+      "defense": "Kedalaman emosionalmu luar biasa. Gairah itu membuatmu sangat autentik dan hidup."
+    }
   },
-  "verdict": { "intro": "Pengadilan telah menjatuhkan putusan...", "guilty": "BERSALAH" },
-  "result": { "toxicityLevel": "LEVEL TOKSISITAS", "breakdownTitle": "RINCIAN TOKSISITAS", "defenseTitle": "RINGKASAN PEMBELAAN", "retake": "Sidang Ulang" },
-  "share": { "text": "Pengadilan menyatakan aku bersalah: {trait} {emoji} Apa putusanmu?", "copied": "Tersalin!", "twitter": "Bagikan di X", "copyUrl": "Salin Link" },
-  "nav": { "back": "DopaBrain Beranda" }
+  "verdict": {
+    "intro": "Pengadilan telah menjatuhkan putusan...",
+    "guilty": "BERSALAH"
+  },
+  "result": {
+    "toxicityLevel": "LEVEL TOKSISITAS",
+    "breakdownTitle": "RINCIAN TOKSISITAS",
+    "defenseTitle": "RINGKASAN PEMBELAAN",
+    "retake": "Sidang Ulang",
+    "moreTests": "Jelajahi tes lainnya",
+    "percentileStat": "Hanya <strong>{percent}%</strong> peserta yang memiliki profil toksik seperti Anda"
+  },
+  "share": {
+    "text": "Pengadilan menyatakan aku bersalah: {trait} {emoji} Apa putusanmu?",
+    "copied": "Tersalin!",
+    "twitter": "Bagikan di X",
+    "copyUrl": "Salin Link"
+  },
+  "nav": {
+    "back": "DopaBrain Beranda"
+  },
+  "related": {
+    "darkCore": "Inti Gelap",
+    "villainType": "Tipe Penjahat",
+    "redGreenFlag": "Bendera Merah Hijau",
+    "eqTest": "Tes EQ"
+  }
 }

@@ -38,70 +38,125 @@
   "scenarios": {
     "msg1": {
       "name": "Best Friend",
-      "messages": ["Hey, I'm really sorry but I have to cancel tonight", "Something came up last minute \uD83D\uDE14"],
-      "options": ["No worries! Things happen, we'll reschedule \uD83D\uDE0A", "Wow, again? I always make time for you though...", "..."]
+      "messages": [
+        "Hey, I'm really sorry but I have to cancel tonight",
+        "Something came up last minute 😔"
+      ],
+      "options": [
+        "No worries! Things happen, we'll reschedule 😊",
+        "Wow, again? I always make time for you though...",
+        "..."
+      ]
     },
     "msg2": {
       "name": "Partner",
-      "messages": ["Hey, who were you texting just now?", "You were smiling a lot at your phone"],
-      "options": ["Oh, it was [name]! Look, we were talking about...", "Why do you need to know everything I do?", "Interesting. Who were YOU texting yesterday? \uD83E\uDD14"]
+      "messages": [
+        "Hey, who were you texting just now?",
+        "You were smiling a lot at your phone"
+      ],
+      "options": [
+        "Oh, it was [name]! Look, we were talking about...",
+        "Why do you need to know everything I do?",
+        "Interesting. Who were YOU texting yesterday? 🤔"
+      ]
     },
     "msg3": {
       "name": "Colleague",
-      "messages": ["Great news! The boss loved the project idea", "She wants me to lead it going forward \uD83D\uDE04"],
-      "options": ["Wait, that was my idea. We need to talk about this.", "Omg congrats... *screenshots to group chat* can you believe this??", "Per my last email, I believe the original concept was a collaborative effort \uD83D\uDE42"]
+      "messages": [
+        "Great news! The boss loved the project idea",
+        "She wants me to lead it going forward 😄"
+      ],
+      "options": [
+        "Wait, that was my idea. We need to talk about this.",
+        "Omg congrats... *screenshots to group chat* can you believe this??",
+        "Per my last email, I believe the original concept was a collaborative effort 🙂"
+      ]
     },
     "msg4": {
       "name": "Ex",
-      "messages": ["Hey...", "I miss you"],
-      "options": ["*does not respond*", "Haha I miss you too... so what have you been up to? \uD83D\uDE0F", "*screenshots to friends* LOOK WHO CRAWLED BACK"]
+      "messages": [
+        "Hey...",
+        "I miss you"
+      ],
+      "options": [
+        "*does not respond*",
+        "Haha I miss you too... so what have you been up to? 😏",
+        "*screenshots to friends* LOOK WHO CRAWLED BACK"
+      ]
     },
     "msg5": {
       "name": "Close Friend",
-      "messages": ["I GOT IN!!! \uD83C\uDF89\uD83C\uDF89\uD83C\uDF89", "I got accepted into the program we both applied to!"],
-      "options": ["OMG CONGRATULATIONS!! I'm so proud of you!! \uD83E\uDD73", "Oh nice... I mean I didn't really want it that bad anyway", "That's cool. I heard it's not as good as people say though"]
+      "messages": [
+        "I GOT IN!!! 🎉🎉🎉",
+        "I got accepted into the program we both applied to!"
+      ],
+      "options": [
+        "OMG CONGRATULATIONS!! I'm so proud of you!! 🥳",
+        "Oh nice... I mean I didn't really want it that bad anyway",
+        "That's cool. I heard it's not as good as people say though"
+      ]
     },
     "msg6": {
       "name": "Crush",
-      "messages": ["*Read 2 hours ago*"],
-      "options": ["*puts phone down, continues with day*", "Hey did you see my message?\nHello?\nAre you okay?", "So you have time to post stories but not reply to me? \uD83D\uDE10"]
+      "messages": [
+        "*Read 2 hours ago*"
+      ],
+      "options": [
+        "*puts phone down, continues with day*",
+        "Hey did you see my message?\nHello?\nAre you okay?",
+        "So you have time to post stories but not reply to me? 😐"
+      ]
     },
     "msg7": {
       "name": "Friend Group",
-      "messages": ["[You notice a new group chat was created without you]", "They posted photos from a hangout you weren't invited to"],
-      "options": ["Hey, I noticed you guys hung out! Would love to join next time \uD83D\uDE0A", "*Creates new group chat without them* \"Who wants to do something ACTUALLY fun?\"", "I guess no one actually cares about me... I'm always the one left out \uD83D\uDE22"]
+      "messages": [
+        "[You notice a new group chat was created without you]",
+        "They posted photos from a hangout you weren't invited to"
+      ],
+      "options": [
+        "Hey, I noticed you guys hung out! Would love to join next time 😊",
+        "*Creates new group chat without them* \"Who wants to do something ACTUALLY fun?\"",
+        "I guess no one actually cares about me... I'm always the one left out 😢"
+      ]
     },
     "msg8": {
       "name": "Partner",
-      "messages": ["We need to talk.", "Can you call me when you're free?"],
-      "options": ["Sure, I'm free now. What's on your mind?", "Oh god what did I do?? Is it about last Tuesday? Or was it what I said on Saturday? ARE YOU BREAKING UP WITH ME?!", "Sorry, super busy right now. *turns off phone for 3 days*"]
+      "messages": [
+        "We need to talk.",
+        "Can you call me when you're free?"
+      ],
+      "options": [
+        "Sure, I'm free now. What's on your mind?",
+        "Oh god what did I do?? Is it about last Tuesday? Or was it what I said on Saturday? ARE YOU BREAKING UP WITH ME?!",
+        "Sorry, super busy right now. *turns off phone for 3 days*"
+      ]
     },
     "social1": {
       "username": "Your Ex",
       "handle": "@living_my_best_life",
-      "image": "\uD83C\uDFD6\uFE0F\u2728",
-      "content": "Best vacation ever! Finally living the life I deserve \u2728\uD83C\uDF34 #blessed #newchapter",
-      "engagement": "847 likes \u00B7 62 comments"
+      "image": "🏖️✨",
+      "content": "Best vacation ever! Finally living the life I deserve ✨🌴 #blessed #newchapter",
+      "engagement": "847 likes · 62 comments"
     },
     "social2": {
       "username": "That Acquaintance",
       "handle": "@humble_grind",
-      "image": "\uD83D\uDCAA\u2728",
-      "content": "So humbled to announce I just got promoted AGAIN \uD83D\uDE07 Hard work pays off! (driving my new BMW to celebrate lol) #grateful #hustle",
-      "engagement": "1.2K likes \u00B7 89 comments"
+      "image": "💪✨",
+      "content": "So humbled to announce I just got promoted AGAIN 😇 Hard work pays off! (driving my new BMW to celebrate lol) #grateful #hustle",
+      "engagement": "1.2K likes · 89 comments"
     },
     "social3": {
       "username": "Mysterious Friend",
       "handle": "@cryptic_poster",
-      "content": "Some people really show their true colors when you need them most \uD83D\uDE12 You know who you are. #fakefriends #overit",
-      "engagement": "234 likes \u00B7 47 comments"
+      "content": "Some people really show their true colors when you need them most 😒 You know who you are. #fakefriends #overit",
+      "engagement": "234 likes · 47 comments"
     },
     "social4": {
       "username": "Your Friend",
       "handle": "@social_butterfly",
-      "image": "\uD83D\uDC6B\uD83C\uDF89",
-      "content": "Best night ever with my FAVORITE people!! \uD83E\uDD70 So grateful for this friend group \u2764\uFE0F #squad #blessed",
-      "engagement": "562 likes \u00B7 38 comments"
+      "image": "👫🎉",
+      "content": "Best night ever with my FAVORITE people!! 🥰 So grateful for this friend group ❤️ #squad #blessed",
+      "engagement": "562 likes · 38 comments"
     }
   },
   "dimensions": {
@@ -117,43 +172,43 @@
   "archetypes": {
     "puppeteer": {
       "title": "The Puppeteer",
-      "desc": "You pull invisible strings in every conversation. Guilt trips, subtle manipulation, strategic vulnerability \u2014 you\u2019ve mastered them all.",
-      "defense": "Your emotional intelligence is off the charts. You understand people deeply \u2014 you just need to use that power for connection, not control."
+      "desc": "You pull invisible strings in every conversation. Guilt trips, subtle manipulation, strategic vulnerability — you’ve mastered them all.",
+      "defense": "Your emotional intelligence is off the charts. You understand people deeply — you just need to use that power for connection, not control."
     },
     "ghost": {
       "title": "The Ghost",
-      "desc": "When things get uncomfortable, you vanish like you never existed. Read receipts? Never heard of them. Confrontation? You\u2019ve already left the building.",
-      "defense": "You\u2019re a master of protecting your peace. Your ability to detach shows incredible self-preservation instincts \u2014 just don\u2019t forget the people you leave behind."
+      "desc": "When things get uncomfortable, you vanish like you never existed. Read receipts? Never heard of them. Confrontation? You’ve already left the building.",
+      "defense": "You’re a master of protecting your peace. Your ability to detach shows incredible self-preservation instincts — just don’t forget the people you leave behind."
     },
     "victim": {
       "title": "The Victim",
       "desc": "Everything happens TO you, never because of you. The world is a conspiracy designed to make your life harder, and you have the receipts to prove it.",
-      "defense": "Your sensitivity to injustice is actually a superpower. You notice unfairness that others miss \u2014 channel it into advocacy instead of self-pity."
+      "defense": "Your sensitivity to injustice is actually a superpower. You notice unfairness that others miss — channel it into advocacy instead of self-pity."
     },
     "prosecutor": {
       "title": "The Prosecutor",
       "desc": "You remember every slight, every broken promise, every unanswered text. Your mental filing cabinet of grievances is meticulously organized.",
-      "defense": "Your attention to detail and strong sense of accountability are genuine strengths. You hold people to high standards \u2014 including yourself."
+      "defense": "Your attention to detail and strong sense of accountability are genuine strengths. You hold people to high standards — including yourself."
     },
     "spy": {
       "title": "The Spy",
-      "desc": "You\u2019ve checked their followers list, their following list, their tagged photos, and their friends\u2019 stories. You call it \u201Cbeing aware.\u201D We call it surveillance.",
-      "defense": "Your research skills are unmatched. That hypervigilance comes from caring deeply \u2014 redirect it toward curiosity rather than suspicion."
+      "desc": "You’ve checked their followers list, their following list, their tagged photos, and their friends’ stories. You call it “being aware.” We call it surveillance.",
+      "defense": "Your research skills are unmatched. That hypervigilance comes from caring deeply — redirect it toward curiosity rather than suspicion."
     },
     "saboteur": {
       "title": "The Saboteur",
-      "desc": "Just when things are going well, you find a way to blow it up. Too good to be true? You\u2019ll prove yourself right. Self-fulfilling prophecy is your art form.",
-      "defense": "Your self-awareness about imperfection is rare and valuable. You test boundaries because you want to know what\u2019s real \u2014 learn to trust the good things."
+      "desc": "Just when things are going well, you find a way to blow it up. Too good to be true? You’ll prove yourself right. Self-fulfilling prophecy is your art form.",
+      "defense": "Your self-awareness about imperfection is rare and valuable. You test boundaries because you want to know what’s real — learn to trust the good things."
     },
     "mirror": {
       "title": "The Mirror",
-      "desc": "Whatever someone accuses you of, you reflect it right back at them. \u201CYou\u2019re being defensive!\u201D \u201CNo, YOU\u2019re being defensive!\u201D \u2014 you, always.",
-      "defense": "Your ability to see other perspectives is actually powerful. You instinctively understand that criticism often reveals the critic \u2014 use that insight compassionately."
+      "desc": "Whatever someone accuses you of, you reflect it right back at them. “You’re being defensive!” “No, YOU’re being defensive!” — you, always.",
+      "defense": "Your ability to see other perspectives is actually powerful. You instinctively understand that criticism often reveals the critic — use that insight compassionately."
     },
     "thermometer": {
       "title": "The Thermometer",
       "desc": "Your emotions run the room. One text can send you from joy to rage to existential crisis in 30 seconds. Everyone around you is on constant weather alert.",
-      "defense": "Your emotional depth is extraordinary. You feel everything at full volume \u2014 that passion makes you incredibly alive and authentic when channeled well."
+      "defense": "Your emotional depth is extraordinary. You feel everything at full volume — that passion makes you incredibly alive and authentic when channeled well."
     }
   },
   "verdict": {
@@ -164,7 +219,9 @@
     "toxicityLevel": "TOXICITY LEVEL",
     "breakdownTitle": "TOXICITY BREAKDOWN",
     "defenseTitle": "DEFENSE BRIEF",
-    "retake": "New Trial"
+    "retake": "New Trial",
+    "moreTests": "Explore More Tests",
+    "percentileStat": "Only <strong>{percent}%</strong> of participants share your toxic trait profile"
   },
   "share": {
     "text": "The Tribunal found me guilty: {trait} {emoji} What's your verdict?",
@@ -174,5 +231,11 @@
   },
   "nav": {
     "back": "DopaBrain Home"
+  },
+  "related": {
+    "darkCore": "Dark Core",
+    "villainType": "Villain Type",
+    "redGreenFlag": "Red Green Flag",
+    "eqTest": "EQ Test"
   }
 }
