@@ -236,6 +236,8 @@
     "darkCore": "Inti Gelap",
     "villainType": "Tipe Penjahat",
     "redGreenFlag": "Bendera Merah Hijau",
-    "eqTest": "Tes EQ"
+    "eqTest": "Tes EQ",
+    "villainOrigin": "Asal-usul Villain",
+    "attachmentStyle": "Gaya Kelekatan"
   }
 }

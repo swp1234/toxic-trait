@@ -236,6 +236,8 @@
     "darkCore": "黑暗核心",
     "villainType": "反派类型",
     "redGreenFlag": "红绿旗",
-    "eqTest": "EQ测试"
+    "eqTest": "EQ测试",
+    "villainOrigin": "反派起源测试",
+    "attachmentStyle": "依恋风格测试"
   }
 }

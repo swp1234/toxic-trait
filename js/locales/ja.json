@@ -236,6 +236,8 @@
     "darkCore": "ダークコア",
     "villainType": "ヴィランタイプ",
     "redGreenFlag": "レッドグリーンフラッグ",
-    "eqTest": "EQテスト"
+    "eqTest": "EQテスト",
+    "villainOrigin": "ヴィランの起源診断",
+    "attachmentStyle": "愛着スタイル診断"
   }
 }

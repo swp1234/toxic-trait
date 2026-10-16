@@ -236,6 +236,8 @@
     "darkCore": "Noyau sombre",
     "villainType": "Type de méchant",
     "redGreenFlag": "Drapeau rouge vert",
-    "eqTest": "Test EQ"
+    "eqTest": "Test EQ",
+    "villainOrigin": "Origine de Vilain",
+    "attachmentStyle": "Style d’Attachement"
   }
 }

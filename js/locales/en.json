@@ -236,6 +236,8 @@
     "darkCore": "Dark Core",
     "villainType": "Villain Type",
     "redGreenFlag": "Red Green Flag",
-    "eqTest": "EQ Test"
+    "eqTest": "EQ Test",
+    "villainOrigin": "Villain Origin",
+    "attachmentStyle": "Attachment Style"
   }
 }

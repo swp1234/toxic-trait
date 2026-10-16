@@ -236,6 +236,8 @@
     "darkCore": "Karanlık Çekirdek",
     "villainType": "Kötü Karakter",
     "redGreenFlag": "Kırmızı Yeşil Bayrak",
-    "eqTest": "EQ Testi"
+    "eqTest": "EQ Testi",
+    "villainOrigin": "Kötü Karakter Kökeni",
+    "attachmentStyle": "Bağlanma Stili"
   }
 }

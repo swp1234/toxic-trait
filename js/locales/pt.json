@@ -236,6 +236,8 @@
     "darkCore": "Núcleo sombrio",
     "villainType": "Tipo de vilão",
     "redGreenFlag": "Bandeira vermelha verde",
-    "eqTest": "Teste EQ"
+    "eqTest": "Teste EQ",
+    "villainOrigin": "Origem de Vilão",
+    "attachmentStyle": "Estilo de Apego"
   }
 }

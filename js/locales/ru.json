@@ -236,6 +236,8 @@
     "darkCore": "Тёмное ядро",
     "villainType": "Тип злодея",
     "redGreenFlag": "Красный зелёный флаг",
-    "eqTest": "EQ Тест"
+    "eqTest": "EQ Тест",
+    "villainOrigin": "История злодея",
+    "attachmentStyle": "Тип привязанности"
   }
 }

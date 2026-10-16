@@ -236,6 +236,8 @@
     "darkCore": "Dunkler Kern",
     "villainType": "Schurkentyp",
     "redGreenFlag": "Rot-Grün-Flagge",
-    "eqTest": "EQ-Test"
+    "eqTest": "EQ-Test",
+    "villainOrigin": "Schurken-Ursprung",
+    "attachmentStyle": "Bindungsstil-Test"
   }
 }

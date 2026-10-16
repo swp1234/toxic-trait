@@ -236,6 +236,8 @@
     "darkCore": "다크 코어",
     "villainType": "빌런 유형",
     "redGreenFlag": "레드 그린 플래그",
-    "eqTest": "EQ 테스트"
+    "eqTest": "EQ 테스트",
+    "villainOrigin": "빌런 오리진 테스트",
+    "attachmentStyle": "애착 유형 테스트"
   }
 }
