@@ -262,6 +262,7 @@
         if (inst && typeof inst.setLanguage === 'function') {
           inst.setLanguage(lang).then(function() {
             updateLangLabel(btn);
+            preserveLanguageLinks();
           });
         }
         dropdown.classList.remove('open');
@@ -631,6 +632,7 @@
 
     // Breakdown bars
     renderBreakdown();
+    preserveLanguageLinks();
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -794,12 +796,47 @@
   // ============================================================
   // INIT
   // ============================================================
+  
+  // ============================================================
+  // PRESERVE LANGUAGE LINKS & TELEMETRY
+  // ============================================================
+  function preserveLanguageLinks() {
+    var inst = getI18n();
+    var currentLang = (inst && inst.currentLang) || (new URLSearchParams(window.location.search).get('lang')) || 'ko';
+    var links = document.querySelectorAll('.related-card, footer a');
+    links.forEach(function(link) {
+      var href = link.getAttribute('href');
+      if (!href || href.startsWith('http') || href.startsWith('#')) return;
+      try {
+        var url = new URL(href, window.location.origin);
+        url.searchParams.set('lang', currentLang);
+        url.searchParams.set('source', 'toxic_trait_result');
+        link.setAttribute('href', url.pathname + url.search);
+      } catch(e) {}
+
+      if (!link.dataset.trackedCta) {
+        link.dataset.trackedCta = 'true';
+        link.addEventListener('click', function() {
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'content_cta_click', {
+              cta_surface: 'toxic_trait_related',
+              destination: link.getAttribute('href'),
+              source: 'toxic_trait_result',
+              lang: currentLang
+            });
+          }
+        });
+      }
+    });
+  }
+
   function init() {
     initTheme();
     initLangSelector();
     initStart();
     initShare();
     initRetake();
+    preserveLanguageLinks();
 
     var inst = getI18n();
     if (inst && typeof inst.loadTranslations === 'function') {
