@@ -238,7 +238,10 @@
     "redGreenFlag": "Drapeau rouge vert",
     "eqTest": "Test EQ",
     "villainOrigin": "Origine de Vilain",
-    "attachmentStyle": "Style d’Attachement"
+    "attachmentStyle": "Style d’Attachement",
+    "stressCheck": "Bilan de Stress",
+    "futureSelf": "Moi Futur",
+    "hspTest": "Test HSP"
   },
   "about": {
     "summaryTitle": "Guide des Traits Toxiques: Défenses Relationnelles & FAQ",

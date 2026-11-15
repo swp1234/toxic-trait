@@ -238,7 +238,10 @@
     "redGreenFlag": "रेड ग्रीन फ्लैग",
     "eqTest": "EQ टेस्ट",
     "villainOrigin": "विलेन ओरिजिन",
-    "attachmentStyle": "अटैचमेंट स्टाइल"
+    "attachmentStyle": "अटैचमेंट स्टाइल",
+    "stressCheck": "तनाव जांच",
+    "futureSelf": "भविष्य का स्वयं",
+    "hspTest": "HSP संवेदनशीलता टेस्ट"
   },
   "about": {
     "summaryTitle": "विषाक्त लक्षण गाइड: संवादात्मक रक्षा तंत्र और FAQ",

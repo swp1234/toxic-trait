@@ -238,7 +238,10 @@
     "redGreenFlag": "Bendera Merah Hijau",
     "eqTest": "Tes EQ",
     "villainOrigin": "Asal-usul Villain",
-    "attachmentStyle": "Gaya Kelekatan"
+    "attachmentStyle": "Gaya Kelekatan",
+    "stressCheck": "Cek Stres",
+    "futureSelf": "Diri Masa Depan",
+    "hspTest": "Tes HSP"
   },
   "about": {
     "summaryTitle": "Panduan Toxic Trait: Pertahanan Relasi & FAQ",

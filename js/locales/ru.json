@@ -238,7 +238,10 @@
     "redGreenFlag": "Красный зелёный флаг",
     "eqTest": "EQ Тест",
     "villainOrigin": "История злодея",
-    "attachmentStyle": "Тип привязанности"
+    "attachmentStyle": "Тип привязанности",
+    "stressCheck": "Проверка стресса",
+    "futureSelf": "Будущее Я",
+    "hspTest": "Тест ВЧЛ (HSP)"
   },
   "about": {
     "summaryTitle": "Гид по токсичным чертам: психологические защиты и FAQ",

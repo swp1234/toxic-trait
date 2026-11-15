@@ -238,7 +238,10 @@
     "redGreenFlag": "Bandeira vermelha verde",
     "eqTest": "Teste EQ",
     "villainOrigin": "Origem de Vilão",
-    "attachmentStyle": "Estilo de Apego"
+    "attachmentStyle": "Estilo de Apego",
+    "stressCheck": "Checagem de Estresse",
+    "futureSelf": "Eu do Futuro",
+    "hspTest": "Teste HSP"
   },
   "about": {
     "summaryTitle": "Guia de Traços Tóxicos: Defesas em Relações & FAQ",

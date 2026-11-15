@@ -51,7 +51,9 @@ try {
       }
       updateUI() {
         document.querySelectorAll('[data-i18n]').forEach(el => {
-          el.textContent = this.t(el.getAttribute('data-i18n'));
+          const key = el.getAttribute('data-i18n');
+          const val = this.t(key);
+          if (val && val !== key && !el.querySelector('svg')) el.textContent = val;
         });
         document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
           el.placeholder = this.t(el.getAttribute('data-i18n-placeholder'));

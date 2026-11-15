@@ -238,7 +238,10 @@
     "redGreenFlag": "Kırmızı Yeşil Bayrak",
     "eqTest": "EQ Testi",
     "villainOrigin": "Kötü Karakter Kökeni",
-    "attachmentStyle": "Bağlanma Stili"
+    "attachmentStyle": "Bağlanma Stili",
+    "stressCheck": "Stres Kontrolü",
+    "futureSelf": "Gelecekteki Ben",
+    "hspTest": "HSP Hassasiyet Testi"
   },
   "about": {
     "summaryTitle": "Toksik Özellikler Rehberi: İletişim Savunmaları & SSS",

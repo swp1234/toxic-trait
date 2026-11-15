@@ -238,7 +238,10 @@
     "redGreenFlag": "Rot-Grün-Flagge",
     "eqTest": "EQ-Test",
     "villainOrigin": "Schurken-Ursprung",
-    "attachmentStyle": "Bindungsstil-Test"
+    "attachmentStyle": "Bindungsstil-Test",
+    "stressCheck": "Stress-Check",
+    "futureSelf": "Zukünftiges Ich",
+    "hspTest": "HSP-Test"
   },
   "about": {
     "summaryTitle": "Leitfaden für Toxische Muster: Beziehungsabwehr & FAQ",

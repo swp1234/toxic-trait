@@ -238,7 +238,10 @@
     "redGreenFlag": "レッドグリーンフラッグ",
     "eqTest": "EQテスト",
     "villainOrigin": "ヴィランの起源診断",
-    "attachmentStyle": "愛着スタイル診断"
+    "attachmentStyle": "愛着スタイル診断",
+    "stressCheck": "ストレスチェック",
+    "futureSelf": "未来の自分",
+    "hspTest": "HSP 繊細さん診断"
   },
   "about": {
     "summaryTitle": "有害な関係性ガイド: 防衛機制・類型 & FAQ",

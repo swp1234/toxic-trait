@@ -238,7 +238,10 @@
     "redGreenFlag": "红绿旗",
     "eqTest": "EQ测试",
     "villainOrigin": "反派起源测试",
-    "attachmentStyle": "依恋风格测试"
+    "attachmentStyle": "依恋风格测试",
+    "stressCheck": "压力检测",
+    "futureSelf": "未来的自己",
+    "hspTest": "HSP 高敏感测试"
   },
   "about": {
     "summaryTitle": "毒性特质指南：人际防卫机制与常见问题 (FAQ)",

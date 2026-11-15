@@ -238,7 +238,10 @@
     "redGreenFlag": "레드 그린 플래그",
     "eqTest": "EQ 테스트",
     "villainOrigin": "빌런 오리진 테스트",
-    "attachmentStyle": "애착 유형 테스트"
+    "attachmentStyle": "애착 유형 테스트",
+    "stressCheck": "스트레스 체크",
+    "futureSelf": "미래의 나",
+    "hspTest": "HSP 민감도 테스트"
   },
   "about": {
     "summaryTitle": "독성 특성 가이드: 관계 방어기제 & FAQ",
