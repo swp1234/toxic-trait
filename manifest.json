@@ -1,0 +1,24 @@
+{
+  "name": "Toxic Trait Tribunal | DopaBrain",
+  "short_name": "Toxic Trait",
+  "description": "Examine your messaging habits in Toxic Trait Tribunal.",
+  "start_url": "/toxic-trait/",
+  "scope": "/toxic-trait/",
+  "display": "standalone",
+  "background_color": "#0f0f23",
+  "theme_color": "#ef4444",
+  "icons": [
+    {
+      "src": "icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
