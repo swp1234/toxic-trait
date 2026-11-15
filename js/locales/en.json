@@ -220,14 +220,14 @@
     "breakdownTitle": "TOXICITY BREAKDOWN",
     "defenseTitle": "DEFENSE BRIEF",
     "retake": "New Trial",
-    "moreTests": "Explore More Tests",
-    "percentileStat": "Only <strong>{percent}%</strong> of participants share your toxic trait profile"
+    "moreTests": "Explore More Tests"
   },
   "share": {
     "text": "The Tribunal found me guilty: {trait} {emoji} What's your verdict?",
     "copied": "Copied!",
     "twitter": "Share on X",
-    "copyUrl": "Copy Link"
+    "copyUrl": "Copy Link",
+    "saveCard": "Save Story Card"
   },
   "nav": {
     "back": "DopaBrain Home"
@@ -272,5 +272,20 @@
     "faq4A": "A: Never. All calculations are executed completely inside your browser runtime. No answers, scores, or choices are ever collected or stored externally.",
     "reviewDate": "Editorial Review: November 2026",
     "reviewTeam": "DopaBrain Relational Psychology Team"
+  },
+  "curated": {
+    "badge": "Recommended Guides",
+    "title": "Build Healthier Communication Habits",
+    "disclosure": "Curated picks · May earn a small commission at no extra cost",
+    "crucialConversations": {
+      "title": "Crucial Conversations",
+      "author": "Joseph Grenny, Kerry Patterson, et al.",
+      "why": "Practical framework to replace defensiveness, silent treatment, and guilt-tripping with clear dialogue."
+    },
+    "attached": {
+      "title": "Attached",
+      "author": "Amir Levine & Rachel Heller",
+      "why": "Explains why protest behaviors, hypervigilance, and distancing surface in modern texting and love."
+    }
   }
 }

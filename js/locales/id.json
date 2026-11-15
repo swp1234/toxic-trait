@@ -220,14 +220,14 @@
     "breakdownTitle": "RINCIAN TOKSISITAS",
     "defenseTitle": "RINGKASAN PEMBELAAN",
     "retake": "Sidang Ulang",
-    "moreTests": "Jelajahi tes lainnya",
-    "percentileStat": "Hanya <strong>{percent}%</strong> peserta yang memiliki profil toksik seperti Anda"
+    "moreTests": "Jelajahi tes lainnya"
   },
   "share": {
     "text": "Pengadilan menyatakan aku bersalah: {trait} {emoji} Apa putusanmu?",
     "copied": "Tersalin!",
     "twitter": "Bagikan di X",
-    "copyUrl": "Salin Link"
+    "copyUrl": "Salin Link",
+    "saveCard": "Simpan Kartu Story"
   },
   "nav": {
     "back": "DopaBrain Beranda"
@@ -272,5 +272,20 @@
     "faq4A": "A: Tidak pernah. Seluruh kalkulasi diproses lokal di peramban Anda.",
     "reviewDate": "Tinjauan Editorial: November 2026",
     "reviewTeam": "Tim Psikologi Relasi DopaBrain"
+  },
+  "curated": {
+    "badge": "Panduan Pilihan",
+    "title": "Bangun Kebiasaan Komunikasi yang Lebih Sehat",
+    "disclosure": "Pilihan terkurasi · Dapat memperoleh komisi kecil tanpa biaya tambahan",
+    "crucialConversations": {
+      "title": "Crucial Conversations",
+      "author": "Joseph Grenny, Kerry Patterson, et al.",
+      "why": "Panduan praktis mengganti sikap defensif dan silent treatment dengan dialog terbuka."
+    },
+    "attached": {
+      "title": "Attached",
+      "author": "Amir Levine & Rachel Heller",
+      "why": "Menjelaskan mengapa perilaku protes dan menjauh muncul saat berkirim pesan."
+    }
   }
 }

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title data-i18n="meta.title">Toxic Trait Tribunal | DopaBrain</title>
   <meta name="description" data-i18n="meta.description" content="Your texts have been subpoenaed. The Tribunal examines your messaging behavior to expose your toxic trait.">
-    <meta name="dateModified" content="2026-11-07">
+    <meta name="dateModified" content="2026-11-15">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta property="og:title" content="Toxic Trait Tribunal - DopaBrain">
   <meta property="og:description" content="Your texts have been subpoenaed. The Tribunal will now examine your messaging behavior.">
@@ -221,6 +221,7 @@
 
       <div class="share-section">
         <div class="share-btns">
+          <button class="share-btn share-save" id="saveCardBtn" data-i18n="share.saveCard">Save Story Card</button>
           <button class="share-btn share-twitter" id="shareTwitterBtn" data-i18n="share.twitter">Share on X</button>
           <button class="share-btn share-copy" id="shareCopyBtn" data-i18n="share.copyUrl">Copy Link</button>
         </div>
@@ -228,6 +229,15 @@
       </div>
 
       <button class="retake-btn" id="retakeBtn" data-i18n="result.retake">New Trial</button>
+
+      <div class="curated-resources-card" id="curated-resources-card">
+        <div class="curated-header">
+          <span class="curated-badge" data-i18n="curated.badge">Recommended Guides</span>
+          <h3 class="curated-title" data-i18n="curated.title">Build Healthier Communication Habits</h3>
+        </div>
+        <div class="curated-list" id="curated-resources-list"></div>
+        <p class="curated-disclosure" data-i18n="curated.disclosure">Curated picks · May earn a small commission at no extra cost</p>
+      </div>
 
       <div class="related-tests">
         <h3 data-i18n="result.moreTests">Explore More Tests</h3>

@@ -220,14 +220,14 @@
     "breakdownTitle": "毒性分析",
     "defenseTitle": "辩护摘要",
     "retake": "重新审判",
-    "moreTests": "探索更多测试",
-    "percentileStat": "只有<strong>{percent}%</strong>的参与者拥有您的毒性特征"
+    "moreTests": "探索更多测试"
   },
   "share": {
     "text": "法庭判我有罪: {trait} {emoji} 你的判决呢？",
     "copied": "已复制！",
     "twitter": "分享到X",
-    "copyUrl": "复制链接"
+    "copyUrl": "复制链接",
+    "saveCard": "保存故事卡片"
   },
   "nav": {
     "back": "DopaBrain 首页"
@@ -272,5 +272,20 @@
     "faq4A": "A: 绝对不会。全部运算均在本地浏览器中即时运行，绝不上载至外部服务器。",
     "reviewDate": "编辑审核：2026年11月",
     "reviewTeam": "DopaBrain人际心理学研究团队"
+  },
+  "curated": {
+    "badge": "精选阅读指南",
+    "title": "建立更健康沟通与关系习惯的书单",
+    "disclosure": "精选推荐 · 在不增加您费用的前提下可能获得微薄佣金",
+    "crucialConversations": {
+      "title": "关键对话 (Crucial Conversations)",
+      "author": "Joseph Grenny 等",
+      "why": "用坦诚建设性沟通替代冷战、逃避或道德绑架的实用对话方法。"
+    },
+    "attached": {
+      "title": "依恋与亲密关系 (Attached)",
+      "author": "Amir Levine & Rachel Heller",
+      "why": "解析信息交流中过度试探、回避疏离和敏感反应的依恋心理学根源。"
+    }
   }
 }

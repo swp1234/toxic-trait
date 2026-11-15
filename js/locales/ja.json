@@ -220,14 +220,14 @@
     "breakdownTitle": "毒性内訳",
     "defenseTitle": "弁護要旨",
     "retake": "再裁判",
-    "moreTests": "もっとテストを探す",
-    "percentileStat": "参加者の<strong>{percent}%</strong>だけがあなたと同じ毒性プロフィールです"
+    "moreTests": "もっとテストを探す"
   },
   "share": {
     "text": "法廷が私を有罪にした: {trait} {emoji} あなたの判決は？",
     "copied": "コピーしました！",
     "twitter": "Xで共有",
-    "copyUrl": "リンクコピー"
+    "copyUrl": "リンクコピー",
+    "saveCard": "カード画像を保存"
   },
   "nav": {
     "back": "DopaBrain ホーム"
@@ -272,5 +272,20 @@
     "faq4A": "A: 一切保存されません。すべての計算は端末内のブラウザで完結します。",
     "reviewDate": "編集レビュー: 2026年11月",
     "reviewTeam": "DopaBrain関係心理学チーム"
+  },
+  "curated": {
+    "badge": "おすすめガイド",
+    "title": "健全なコミュニケーション習慣を育てる本",
+    "disclosure": "厳選セレクション · 追加費用なしで少額の紹介料を受け取る場合があります",
+    "crucialConversations": {
+      "title": "Crucial Conversations（決定的な対話）",
+      "author": "ケリー・パターソン 他",
+      "why": "防衛的な沈黙や責任転嫁を手放し、率直で建設的な対話へ切り替える実践法。"
+    },
+    "attached": {
+      "title": "異性の心を上手に透視する方法 (Attached)",
+      "author": "アミール・レヴィン / レイチェル・ヘラー",
+      "why": "SNSやメッセージで過度な確認や距離置きが起きる愛着心理を科学的に解説。"
+    }
   }
 }

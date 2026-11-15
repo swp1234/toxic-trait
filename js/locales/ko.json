@@ -220,14 +220,14 @@
     "breakdownTitle": "독성 분석",
     "defenseTitle": "변호 요약",
     "retake": "새로운 재판",
-    "moreTests": "더 많은 테스트",
-    "percentileStat": "참가자의 <strong>{percent}%</strong>만이 당신과 같은 독성 특성 프로필입니다"
+    "moreTests": "더 많은 테스트"
   },
   "share": {
     "text": "재판소가 나를 유죄로 판결했다: {trait} {emoji} 너의 판결은?",
     "copied": "복사됨!",
     "twitter": "X에 공유",
-    "copyUrl": "링크 복사"
+    "copyUrl": "링크 복사",
+    "saveCard": "스토리 카드 저장"
   },
   "nav": {
     "back": "DopaBrain 홈"
@@ -272,5 +272,20 @@
     "faq4A": "A: 절대 저장되지 않습니다. 모든 연산은 브라우저 런타임 내에서만 안전하게 실행됩니다.",
     "reviewDate": "편집 검토: 2026년 11월",
     "reviewTeam": "DopaBrain 관계심리학 연구팀"
+  },
+  "curated": {
+    "badge": "추천 가이드",
+    "title": "건강한 대화와 관계 습관을 만드는 추천 도서",
+    "disclosure": "선별 추천 도서 · 추가 비용 없이 소정의 수수료를 받을 수 있습니다",
+    "crucialConversations": {
+      "title": "결정적 대화 (Crucial Conversations)",
+      "author": "케리 패터슨 · 조셉 그레니 외",
+      "why": "방어적 회피나 침묵, 감정 몰이 대신 솔직하고 안전한 대화를 여는 실전 기술."
+    },
+    "attached": {
+      "title": "그들이 사랑하는 법 (Attached)",
+      "author": "아미르 레빈 · 레이첼 헬러",
+      "why": "연애와 메신저 소통에서 불안·감시·거리두기 반응이 나타나는 애착 원리를 해설합니다."
+    }
   }
 }

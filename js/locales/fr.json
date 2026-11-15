@@ -220,14 +220,14 @@
     "breakdownTitle": "DÉCOMPOSITION DE TOXICITÉ",
     "defenseTitle": "RÉSUMÉ DE DÉFENSE",
     "retake": "Nouveau Procès",
-    "moreTests": "Découvrir plus de tests",
-    "percentileStat": "Seulement <strong>{percent}%</strong> des participants partagent votre profil toxique"
+    "moreTests": "Découvrir plus de tests"
   },
   "share": {
     "text": "Le Tribunal m'a déclaré/e coupable : {trait} {emoji} Quel est ton verdict ?",
     "copied": "Copié !",
     "twitter": "Partager sur X",
-    "copyUrl": "Copier le lien"
+    "copyUrl": "Copier le lien",
+    "saveCard": "Enregistrer la carte Story"
   },
   "nav": {
     "back": "DopaBrain Accueil"
@@ -272,5 +272,20 @@
     "faq4A": "A: Non, l'ensemble des calculs s'exécute localement dans votre navigateur.",
     "reviewDate": "Validation éditoriale: novembre 2026",
     "reviewTeam": "Équipe Psychologie Relationnelle DopaBrain"
+  },
+  "curated": {
+    "badge": "Guides Recommandés",
+    "title": "Développer une Communication Plus Saine",
+    "disclosure": "Sélection éditoriale · Peut générer une petite commission sans surcoût",
+    "crucialConversations": {
+      "title": "Conversations Cruciales",
+      "author": "Joseph Grenny, Kerry Patterson, et al.",
+      "why": "Méthode concrète pour remplacer la défensive et le silence punitif par un dialogue clair."
+    },
+    "attached": {
+      "title": "Attachés (Attached)",
+      "author": "Amir Levine & Rachel Heller",
+      "why": "Explique pourquoi vigilance excessive et prise de distance surgissent dans les échanges."
+    }
   }
 }

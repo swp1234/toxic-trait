@@ -220,14 +220,14 @@
     "breakdownTitle": "DESGLOSE DE TOXICIDAD",
     "defenseTitle": "RESUMEN DE DEFENSA",
     "retake": "Nuevo Juicio",
-    "moreTests": "Explorar más tests",
-    "percentileStat": "Solo el <strong>{percent}%</strong> de los participantes comparte tu perfil tóxico"
+    "moreTests": "Explorar más tests"
   },
   "share": {
     "text": "El Tribunal me declaró culpable: {trait} {emoji} ¿Cuál es tu veredicto?",
     "copied": "¡Copiado!",
     "twitter": "Compartir en X",
-    "copyUrl": "Copiar enlace"
+    "copyUrl": "Copiar enlace",
+    "saveCard": "Guardar Tarjeta Story"
   },
   "nav": {
     "back": "Inicio DopaBrain"
@@ -272,5 +272,20 @@
     "faq4A": "A: Nunca. Todo se procesa de forma segura y local en su navegador.",
     "reviewDate": "Revisión editorial: noviembre de 2026",
     "reviewTeam": "Equipo de Psicología Relacional DopaBrain"
+  },
+  "curated": {
+    "badge": "Guías Recomendadas",
+    "title": "Construye Hábitos de Comunicación Saludables",
+    "disclosure": "Selección curada · Puede generar una pequeña comisión sin coste adicional",
+    "crucialConversations": {
+      "title": "Conversaciones Cruciales",
+      "author": "Joseph Grenny, Kerry Patterson, et al.",
+      "why": "Marco práctico para reemplazar la evasión, la ley del hielo y la culpa por diálogo claro."
+    },
+    "attached": {
+      "title": "Maneras de Amar (Attached)",
+      "author": "Amir Levine & Rachel Heller",
+      "why": "Explica por qué surgen conductas de protesta y vigilancia emocional en los mensajes."
+    }
   }
 }

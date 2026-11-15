@@ -263,6 +263,11 @@
           inst.setLanguage(lang).then(function() {
             updateLangLabel(btn);
             preserveLanguageLinks();
+            renderCuratedResources();
+            if (lastVerdictPrimary) {
+              updateVerdictText(lastVerdictPrimary);
+              renderBreakdown();
+            }
           });
         }
         dropdown.classList.remove('open');
@@ -285,11 +290,19 @@
   // ============================================================
   // START
   // ============================================================
+  var lastVerdictPrimary = null;
+
   function initStart() {
     var btn = $('startBtn');
     if (btn) {
       btn.addEventListener('click', function() {
         resetState();
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'test_start', {
+            event_category: 'toxic_trait_tribunal',
+            app_name: 'toxic-trait'
+          });
+        }
         hideScreen('start-screen');
         showScreen('quiz-screen');
         renderRound(0);
@@ -566,6 +579,19 @@
   // ============================================================
   // VERDICT / RESULT
   // ============================================================
+  function updateVerdictText(primary) {
+    var archData = ARCHETYPES[primary];
+    if (!archData) return;
+    var emojiEl = $('resultEmoji');
+    if (emojiEl) emojiEl.textContent = archData.emoji;
+    var titleEl = $('resultTitle');
+    if (titleEl) titleEl.textContent = t('archetypes.' + primary + '.title');
+    var descEl = $('resultDesc');
+    if (descEl) descEl.textContent = t('archetypes.' + primary + '.desc');
+    var defenseEl = $('defenseText');
+    if (defenseEl) defenseEl.textContent = t('archetypes.' + primary + '.defense');
+  }
+
   function showVerdictScreen() {
     hideScreen('quiz-screen');
     showScreen('result-screen');
@@ -586,23 +612,8 @@
     });
 
     var primary = sorted[0];
-    var archData = ARCHETYPES[primary];
-
-    // Emoji
-    var emojiEl = $('resultEmoji');
-    if (emojiEl) emojiEl.textContent = archData.emoji;
-
-    // Title
-    var titleEl = $('resultTitle');
-    if (titleEl) titleEl.textContent = t('archetypes.' + primary + '.title');
-
-    // Desc
-    var descEl = $('resultDesc');
-    if (descEl) descEl.textContent = t('archetypes.' + primary + '.desc');
-
-    // Defense brief
-    var defenseEl = $('defenseText');
-    if (defenseEl) defenseEl.textContent = t('archetypes.' + primary + '.defense');
+    lastVerdictPrimary = primary;
+    updateVerdictText(primary);
 
     // Overall toxicity percentage (40-90 range for drama)
     var totalDim = 0;
@@ -630,18 +641,19 @@
       animateCounter(meterValue, 0, toxicity, 1200);
     }
 
-    // Breakdown bars
+    // Breakdown bars & curated guides
     renderBreakdown();
+    renderCuratedResources();
     preserveLanguageLinks();
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    // GA4 event
+    // Clean GA4 event without numeric toxicity score leak
     if (typeof gtag !== 'undefined') {
       gtag('event', 'test_complete', {
         event_category: 'toxic_trait_tribunal',
-        primary_trait: primary,
-        toxicity_level: toxicity
+        app_name: 'toxic-trait',
+        result_type: primary
       });
     }
   }
@@ -711,49 +723,237 @@
   // ============================================================
   // SHARE
   // ============================================================
+  function getActiveLang() {
+    var inst = getI18n();
+    return (inst && inst.currentLang) || (new URLSearchParams(window.location.search).get('lang')) || 'ko';
+  }
+
+  function getShareUrl() {
+    return 'https://dopabrain.com/toxic-trait/?lang=' + encodeURIComponent(getActiveLang()) + '&utm_source=share';
+  }
+
+  function renderCuratedResources() {
+    var list = $('curated-resources-list');
+    if (!list) return;
+    var lang = getActiveLang();
+    var domains = {
+      ko: 'https://www.amazon.com/dp/{asin}?tag=dopabrain-20',
+      en: 'https://www.amazon.com/dp/{asin}?tag=dopabrain-20',
+      ja: 'https://www.amazon.co.jp/dp/{asin}?tag=dopabrain-20',
+      zh: 'https://www.amazon.com/dp/{asin}?tag=dopabrain-20',
+      es: 'https://www.amazon.es/dp/{asin}?tag=dopabrain-20',
+      pt: 'https://www.amazon.com.br/dp/{asin}?tag=dopabrain-20',
+      hi: 'https://www.amazon.in/dp/{asin}?tag=dopabrain-20',
+      ru: 'https://www.amazon.com/dp/{asin}?tag=dopabrain-20',
+      id: 'https://www.amazon.sg/dp/{asin}?tag=dopabrain-20',
+      tr: 'https://www.amazon.com.tr/dp/{asin}?tag=dopabrain-20',
+      de: 'https://www.amazon.de/dp/{asin}?tag=dopabrain-20',
+      fr: 'https://www.amazon.fr/dp/{asin}?tag=dopabrain-20'
+    };
+    var tr = function(k, fb) {
+      var v = t(k);
+      return (v && v !== k) ? v : fb;
+    };
+    var books = [
+      {
+        key: 'crucialConversations',
+        asin: '1260474186',
+        icon: '💬',
+        title: tr('curated.crucialConversations.title', 'Crucial Conversations'),
+        author: tr('curated.crucialConversations.author', 'Joseph Grenny, Kerry Patterson, et al.'),
+        why: tr('curated.crucialConversations.why', 'Practical framework to replace defensiveness, silent treatment, and guilt-tripping with clear dialogue.')
+      },
+      {
+        key: 'attached',
+        asin: '1585429139',
+        icon: '🔗',
+        title: tr('curated.attached.title', 'Attached'),
+        author: tr('curated.attached.author', 'Amir Levine & Rachel Heller'),
+        why: tr('curated.attached.why', 'Explains why protest behaviors, hypervigilance, and distancing surface in modern texting and love.')
+      }
+    ];
+
+    list.innerHTML = '';
+    books.forEach(function(book) {
+      var href = (domains[lang] || domains.en).replace('{asin}', book.asin);
+      var item = document.createElement('a');
+      item.className = 'curated-item';
+      item.href = href;
+      item.target = '_blank';
+      item.rel = 'noopener noreferrer sponsored';
+
+      var iconSpan = document.createElement('span');
+      iconSpan.className = 'curated-icon';
+      iconSpan.textContent = book.icon;
+
+      var copyDiv = document.createElement('div');
+      copyDiv.className = 'curated-copy';
+
+      var titleDiv = document.createElement('div');
+      titleDiv.className = 'curated-item-title';
+      titleDiv.textContent = book.title;
+
+      var authorDiv = document.createElement('div');
+      authorDiv.className = 'curated-item-author';
+      authorDiv.textContent = book.author;
+
+      var whyDiv = document.createElement('div');
+      whyDiv.className = 'curated-item-why';
+      whyDiv.textContent = book.why;
+
+      copyDiv.appendChild(titleDiv);
+      copyDiv.appendChild(authorDiv);
+      copyDiv.appendChild(whyDiv);
+
+      var arrowSpan = document.createElement('span');
+      arrowSpan.className = 'curated-arrow';
+      arrowSpan.textContent = '→';
+
+      item.appendChild(iconSpan);
+      item.appendChild(copyDiv);
+      item.appendChild(arrowSpan);
+
+      item.addEventListener('click', function() {
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'curated_resource_click', {
+            app_name: 'toxic-trait',
+            resource_key: book.key,
+            content_locale: lang,
+            cta_surface: 'curated_resources'
+          });
+          gtag('event', 'content_cta_click', {
+            cta_type: 'curated_book',
+            destination: href,
+            source: 'toxic_trait'
+          });
+        }
+      });
+      list.appendChild(item);
+    });
+  }
+
+  function generateStoryCard() {
+    var primary = lastVerdictPrimary || 'puppeteer';
+    var archData = ARCHETYPES[primary];
+    var canvas = document.getElementById('share-canvas');
+    if (!canvas) {
+      canvas = document.createElement('canvas');
+      canvas.id = 'share-canvas';
+      canvas.style.display = 'none';
+      document.body.appendChild(canvas);
+    }
+    canvas.width = 1080;
+    canvas.height = 1920;
+    var ctx = canvas.getContext('2d');
+
+    var grad = ctx.createLinearGradient(0, 0, 1080, 1920);
+    grad.addColorStop(0, '#0f0a1e');
+    grad.addColorStop(0.55, '#1e1035');
+    grad.addColorStop(1, '#2b0d26');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, 1080, 1920);
+
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#c084fc';
+    ctx.font = 'bold 34px -apple-system, BlinkMacSystemFont, sans-serif';
+    ctx.fillText('DOPABRAIN · TOXIC TRAIT TRIBUNAL', 540, 190);
+
+    ctx.font = '150px sans-serif';
+    ctx.fillText(archData.emoji, 540, 440);
+
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'bold 58px -apple-system, BlinkMacSystemFont, sans-serif';
+    ctx.fillText(t('archetypes.' + primary + '.title'), 540, 580);
+
+    ctx.fillStyle = '#e2e8f0';
+    ctx.font = '600 32px -apple-system, BlinkMacSystemFont, sans-serif';
+    var words = t('archetypes.' + primary + '.desc').split(' ');
+    var lines = [];
+    var cur = '';
+    words.forEach(function(w) {
+      var test = cur ? cur + ' ' + w : w;
+      if (ctx.measureText(test).width > 840 && cur) {
+        lines.push(cur);
+        cur = w;
+      } else {
+        cur = test;
+      }
+    });
+    if (cur) lines.push(cur);
+    lines.slice(0, 7).forEach(function(line, i) {
+      ctx.fillText(line, 540, 700 + i * 54);
+    });
+
+    ctx.fillStyle = 'rgba(255,255,255,0.72)';
+    ctx.font = '600 30px -apple-system, BlinkMacSystemFont, sans-serif';
+    ctx.fillText('dopabrain.com/toxic-trait', 540, 1740);
+
+    try {
+      var a = document.createElement('a');
+      a.download = 'toxic-trait-' + primary + '.png';
+      a.href = canvas.toDataURL('image/png');
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      showCopiedMsg();
+    } catch (e) {}
+
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'save_image', {
+        event_category: 'toxic_trait_tribunal',
+        app_name: 'toxic-trait',
+        result_type: primary,
+        save_surface: 'result_story_1080x1920'
+      });
+    }
+  }
+
   function initShare() {
+    var saveBtn = $('saveCardBtn');
+    if (saveBtn) {
+      saveBtn.addEventListener('click', generateStoryCard);
+    }
+
     var twitterBtn = $('shareTwitterBtn');
     if (twitterBtn) {
       twitterBtn.addEventListener('click', function() {
-        var archetypeScores = {};
-        Object.keys(ARCHETYPES).forEach(function(key) {
-          var arch = ARCHETYPES[key];
-          var score = 0;
-          arch.dims.forEach(function(d) {
-            score += dimScores[d] || 0;
-          });
-          archetypeScores[key] = score;
-        });
-        var sorted = Object.keys(archetypeScores).sort(function(a, b) {
-          return archetypeScores[b] - archetypeScores[a];
-        });
-        var primary = sorted[0];
+        var primary = lastVerdictPrimary || 'puppeteer';
         var archData = ARCHETYPES[primary];
-
         var shareTemplate = t('share.text');
         if (shareTemplate === 'share.text') shareTemplate = 'The Tribunal found me guilty: {trait} {emoji} What\'s your verdict?';
-
         var traitTitle = t('archetypes.' + primary + '.title');
         var text = fmt(shareTemplate, { trait: traitTitle, emoji: archData.emoji });
 
-        var url = encodeURIComponent(window.location.href);
+        var url = encodeURIComponent(getShareUrl());
         var tweetText = encodeURIComponent(text);
         window.open('https://twitter.com/intent/tweet?url=' + url + '&text=' + tweetText, '_blank', 'noopener');
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'share', {
+            event_category: 'toxic_trait_tribunal',
+            method: 'twitter',
+            content_type: 'tribunal_verdict'
+          });
+        }
       });
     }
 
     var copyBtn = $('shareCopyBtn');
     if (copyBtn) {
       copyBtn.addEventListener('click', function() {
-        var url = window.location.href;
-        if (navigator.clipboard) {
+        var url = getShareUrl();
+        if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(url).then(function() {
             showCopiedMsg();
           }).catch(function() {
-            prompt('Copy:', url);
+            showCopiedMsg();
           });
-        } else {
-          prompt('Copy:', url);
+        }
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'share', {
+            event_category: 'toxic_trait_tribunal',
+            method: 'copy',
+            content_type: 'tribunal_verdict'
+          });
         }
       });
     }
@@ -841,8 +1041,10 @@
     var inst = getI18n();
     if (inst && typeof inst.loadTranslations === 'function') {
       var lang = inst.currentLang || 'en';
+      document.documentElement.lang = lang;
       inst.loadTranslations(lang).then(function() {
         inst.updateUI();
+        preserveLanguageLinks();
         var langLabel = $('currentLang');
         var langNames = {
           ko: '\uD55C\uAD6D\uC5B4', en: 'English', ja: '\u65E5\u672C\u8A9E', zh: '\u4E2D\u6587',

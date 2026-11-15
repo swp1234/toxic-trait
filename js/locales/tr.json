@@ -220,14 +220,14 @@
     "breakdownTitle": "TOKSİSİTE DAĞILIMI",
     "defenseTitle": "SAVUNMA ÖZETİ",
     "retake": "Yeni Dava",
-    "moreTests": "Daha fazla test keşfet",
-    "percentileStat": "Katılımcıların sadece <strong>{percent}%</strong>'i sizinle aynı toksik profile sahip"
+    "moreTests": "Daha fazla test keşfet"
   },
   "share": {
     "text": "Mahkeme beni suçlu buldu: {trait} {emoji} Senin kararın ne?",
     "copied": "Kopyalandı!",
     "twitter": "X'te Paylaş",
-    "copyUrl": "Linki Kopyala"
+    "copyUrl": "Linki Kopyala",
+    "saveCard": "Hikaye Kartını Kaydet"
   },
   "nav": {
     "back": "DopaBrain Ana Sayfa"
@@ -272,5 +272,20 @@
     "faq4A": "A: Asla. Tüm değerlendirme sadece tarayıcınızda yerel olarak gerçekleşir.",
     "reviewDate": "Editör İncelemesi: Kasım 2026",
     "reviewTeam": "DopaBrain İlişki Psikolojisi Ekibi"
+  },
+  "curated": {
+    "badge": "Önerilen Rehberler",
+    "title": "Daha Sağlıklı İletişim Alışkanlıkları Kur",
+    "disclosure": "Seçilmiş öneriler · Ek ücret olmadan küçük bir komisyon kazanılabilir",
+    "crucialConversations": {
+      "title": "Kritik Konuşmalar (Crucial Conversations)",
+      "author": "Joseph Grenny, Kerry Patterson ve ark.",
+      "why": "Savunmacılık ve sessiz kalma yerine net ve yapıcı diyalog kurmanın pratik çerçevesi."
+    },
+    "attached": {
+      "title": "Bağlanma (Attached)",
+      "author": "Amir Levine & Rachel Heller",
+      "why": "Mesajlaşma ve ilişkilerde aşırı tetikte olma veya kaçınma tepkilerini açıklar."
+    }
   }
 }

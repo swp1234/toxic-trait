@@ -220,14 +220,14 @@
     "breakdownTitle": "ANÁLISE DE TOXICIDADE",
     "defenseTitle": "RESUMO DA DEFESA",
     "retake": "Novo Julgamento",
-    "moreTests": "Explorar mais testes",
-    "percentileStat": "Apenas <strong>{percent}%</strong> dos participantes compartilham seu perfil tóxico"
+    "moreTests": "Explorar mais testes"
   },
   "share": {
     "text": "O Tribunal me declarou culpado: {trait} {emoji} Qual seu veredicto?",
     "copied": "Copiado!",
     "twitter": "Compartilhar no X",
-    "copyUrl": "Copiar link"
+    "copyUrl": "Copiar link",
+    "saveCard": "Salvar Card Story"
   },
   "nav": {
     "back": "DopaBrain Início"
@@ -272,5 +272,20 @@
     "faq4A": "A: Jamais. Todo processamento ocorre exclusivamente no seu navegador.",
     "reviewDate": "Revisão editorial: novembro de 2026",
     "reviewTeam": "Equipe de Psicologia Relacional DopaBrain"
+  },
+  "curated": {
+    "badge": "Guias Recomendados",
+    "title": "Construa Hábitos de Comunicação Saudáveis",
+    "disclosure": "Seleção curada · Pode gerar uma pequena comissão sem custo extra",
+    "crucialConversations": {
+      "title": "Conversas Cruciais (Crucial Conversations)",
+      "author": "Joseph Grenny, Kerry Patterson, et al.",
+      "why": "Ferramentas práticas para substituir defensividade e silêncio punitivo por diálogo claro."
+    },
+    "attached": {
+      "title": "Apegados (Attached)",
+      "author": "Amir Levine & Rachel Heller",
+      "why": "Explica por que comportamentos de protesto e distanciamento surgem nas mensagens."
+    }
   }
 }

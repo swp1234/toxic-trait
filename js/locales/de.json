@@ -220,14 +220,14 @@
     "breakdownTitle": "TOXIZITÄTS-AUFSCHLÜSSELUNG",
     "defenseTitle": "ZUSAMMENFASSUNG DER VERTEIDIGUNG",
     "retake": "Neues Verfahren",
-    "moreTests": "Weitere Tests entdecken",
-    "percentileStat": "Nur <strong>{percent}%</strong> der Teilnehmer teilen Ihr toxisches Profil"
+    "moreTests": "Weitere Tests entdecken"
   },
   "share": {
     "text": "Das Tribunal hat mich schuldig gesprochen: {trait} {emoji} Was ist dein Urteil?",
     "copied": "Kopiert!",
     "twitter": "Auf X teilen",
-    "copyUrl": "Link kopieren"
+    "copyUrl": "Link kopieren",
+    "saveCard": "Story-Karte speichern"
   },
   "nav": {
     "back": "DopaBrain Startseite"
@@ -272,5 +272,20 @@
     "faq4A": "A: Niemals. Die Auswertung erfolgt vollkommen lokal im Webbrowser.",
     "reviewDate": "Redaktionelle Prüfung: November 2026",
     "reviewTeam": "DopaBrain Beziehungspsychologie-Team"
+  },
+  "curated": {
+    "badge": "Empfohlene Lektüre",
+    "title": "Gesündere Kommunikationsmuster entwickeln",
+    "disclosure": "Kuratierte Auswahl · Kleine Provision ohne Mehrkosten möglich",
+    "crucialConversations": {
+      "title": "Crucial Conversations",
+      "author": "Joseph Grenny, Kerry Patterson, et al.",
+      "why": "Praxiserprobte Methode, um Abwehrhaltung und Schweigen durch klaren Dialog zu ersetzen."
+    },
+    "attached": {
+      "title": "Warum wir lieben, wie wir lieben (Attached)",
+      "author": "Amir Levine & Rachel Heller",
+      "why": "Erklärt, warum Kontrollverhalten und Rückzugsmuster im digitalen Austausch entstehen."
+    }
   }
 }
